@@ -1,0 +1,5 @@
+{
+  "validation_accuracy": 0.6579333345095316,
+  "arm": "baseline",
+  "mode": "magnitude_soft"
+}

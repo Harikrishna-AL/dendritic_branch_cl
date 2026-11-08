@@ -1,0 +1,100 @@
+[
+  {
+    "method": "aux",
+    "order": "forward",
+    "mode": "prototype",
+    "accuracy": 27.08666721979777,
+    "sd": 0.7894520096563333
+  },
+  {
+    "method": "aux",
+    "order": "forward",
+    "mode": "learned_context",
+    "accuracy": 31.709999839464825,
+    "sd": 0.9885346016240562
+  },
+  {
+    "method": "aux",
+    "order": "forward",
+    "mode": "oracle",
+    "accuracy": 63.803333044052124,
+    "sd": 1.1499703310446148
+  },
+  {
+    "method": "aux",
+    "order": "reverse",
+    "mode": "prototype",
+    "accuracy": 22.73999998966853,
+    "sd": 2.460263968727613
+  },
+  {
+    "method": "aux",
+    "order": "reverse",
+    "mode": "learned_context",
+    "accuracy": 28.63333324591319,
+    "sd": 2.3072143265232787
+  },
+  {
+    "method": "aux",
+    "order": "reverse",
+    "mode": "oracle",
+    "accuracy": 59.85666513442993,
+    "sd": 3.5391718218787984
+  },
+  {
+    "method": "ce",
+    "order": "forward",
+    "mode": "prototype",
+    "accuracy": 26.153332988421123,
+    "sd": 2.3344662228165314
+  },
+  {
+    "method": "ce",
+    "order": "forward",
+    "mode": "learned_context",
+    "accuracy": 31.129999955495197,
+    "sd": 2.813769983757106
+  },
+  {
+    "method": "ce",
+    "order": "forward",
+    "mode": "oracle",
+    "accuracy": 61.890000104904175,
+    "sd": 7.449637214442628
+  },
+  {
+    "method": "ce",
+    "order": "reverse",
+    "mode": "prototype",
+    "accuracy": 22.656666735808056,
+    "sd": 3.176702186467979
+  },
+  {
+    "method": "ce",
+    "order": "reverse",
+    "mode": "learned_context",
+    "accuracy": 29.18666700522105,
+    "sd": 3.1700839257387288
+  },
+  {
+    "method": "ce",
+    "order": "reverse",
+    "mode": "oracle",
+    "accuracy": 66.24000072479248,
+    "sd": 5.8656554172321735
+  },
+  {
+    "method": "pec",
+    "order": "forward",
+    "mode": "autonomous",
+    "accuracy": 33.91666611035665,
+    "sd": 1.2234935991824583
+  },
+  {
+    "method": "pec",
+    "order": "reverse",
+    "mode": "autonomous",
+    "accuracy": 33.62333377202352,
+    "sd": 1.0346658861831235
+  }
+]

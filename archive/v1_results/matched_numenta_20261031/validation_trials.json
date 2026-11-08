@@ -1,0 +1,281 @@
+[
+  {
+    "arm": "numenta",
+    "rate": 0.0005,
+    "validation_accuracy": 0.20579999685287476,
+    "training_seconds_excluding_validation": 1.8511236891208682,
+    "steps": 866,
+    "clipped_steps": 281,
+    "optimizer_state_bytes": 4454512,
+    "stages": [
+      {
+        "group": 0,
+        "validation_oracle_acquisition": 0.996999979019165
+      },
+      {
+        "group": 1,
+        "validation_oracle_acquisition": 0.9660000205039978
+      },
+      {
+        "group": 2,
+        "validation_oracle_acquisition": 0.9729999899864197
+      },
+      {
+        "group": 3,
+        "validation_oracle_acquisition": 0.9779999852180481
+      },
+      {
+        "group": 4,
+        "validation_oracle_acquisition": 0.9470000267028809
+      }
+    ]
+  },
+  {
+    "arm": "numenta",
+    "rate": 0.001,
+    "validation_accuracy": 0.10000000149011612,
+    "training_seconds_excluding_validation": 1.7685716369887814,
+    "steps": 866,
+    "clipped_steps": 110,
+    "optimizer_state_bytes": 4454512,
+    "stages": [
+      {
+        "group": 0,
+        "validation_oracle_acquisition": 0.9950000047683716
+      },
+      {
+        "group": 1,
+        "validation_oracle_acquisition": 0.972000002861023
+      },
+      {
+        "group": 2,
+        "validation_oracle_acquisition": 0.9739999771118164
+      },
+      {
+        "group": 3,
+        "validation_oracle_acquisition": 0.9980000257492065
+      },
+      {
+        "group": 4,
+        "validation_oracle_acquisition": 0.5
+      }
+    ]
+  },
+  {
+    "arm": "numenta",
+    "rate": 0.003,
+    "validation_accuracy": 0.11919999867677689,
+    "training_seconds_excluding_validation": 1.7483774320135126,
+    "steps": 866,
+    "clipped_steps": 136,
+    "optimizer_state_bytes": 4454512,
+    "stages": [
+      {
+        "group": 0,
+        "validation_oracle_acquisition": 0.9990000128746033
+      },
+      {
+        "group": 1,
+        "validation_oracle_acquisition": 0.9819999933242798
+      },
+      {
+        "group": 2,
+        "validation_oracle_acquisition": 0.9800000190734863
+      },
+      {
+        "group": 3,
+        "validation_oracle_acquisition": 1.0
+      },
+      {
+        "group": 4,
+        "validation_oracle_acquisition": 0.5960000157356262
+      }
+    ]
+  },
+  {
+    "arm": "branch_aux",
+    "rate": 0.0005,
+    "validation_accuracy": 0.7368000149726868,
+    "training_seconds_excluding_validation": 3.7413463200027763,
+    "steps": 866,
+    "clipped_steps": 14,
+    "optimizer_state_bytes": 4233696,
+    "stages": [
+      {
+        "group": 0,
+        "validation_oracle_acquisition": 0.9990000128746033
+      },
+      {
+        "group": 1,
+        "validation_oracle_acquisition": 0.984000027179718
+      },
+      {
+        "group": 2,
+        "validation_oracle_acquisition": 0.9890000224113464
+      },
+      {
+        "group": 3,
+        "validation_oracle_acquisition": 0.9990000128746033
+      },
+      {
+        "group": 4,
+        "validation_oracle_acquisition": 0.9900000095367432
+      }
+    ]
+  },
+  {
+    "arm": "branch_aux",
+    "rate": 0.001,
+    "validation_accuracy": 0.49799999594688416,
+    "training_seconds_excluding_validation": 3.717309075040248,
+    "steps": 866,
+    "clipped_steps": 13,
+    "optimizer_state_bytes": 4233696,
+    "stages": [
+      {
+        "group": 0,
+        "validation_oracle_acquisition": 0.9990000128746033
+      },
+      {
+        "group": 1,
+        "validation_oracle_acquisition": 0.9890000224113464
+      },
+      {
+        "group": 2,
+        "validation_oracle_acquisition": 0.9919999837875366
+      },
+      {
+        "group": 3,
+        "validation_oracle_acquisition": 1.0
+      },
+      {
+        "group": 4,
+        "validation_oracle_acquisition": 0.9909999966621399
+      }
+    ]
+  },
+  {
+    "arm": "branch_aux",
+    "rate": 0.003,
+    "validation_accuracy": 0.3691999912261963,
+    "training_seconds_excluding_validation": 3.7496135790461267,
+    "steps": 866,
+    "clipped_steps": 15,
+    "optimizer_state_bytes": 4233696,
+    "stages": [
+      {
+        "group": 0,
+        "validation_oracle_acquisition": 0.9990000128746033
+      },
+      {
+        "group": 1,
+        "validation_oracle_acquisition": 0.9860000014305115
+      },
+      {
+        "group": 2,
+        "validation_oracle_acquisition": 0.9959999918937683
+      },
+      {
+        "group": 3,
+        "validation_oracle_acquisition": 1.0
+      },
+      {
+        "group": 4,
+        "validation_oracle_acquisition": 0.9919999837875366
+      }
+    ]
+  },
+  {
+    "arm": "branch_ce",
+    "rate": 0.0005,
+    "validation_accuracy": 0.7296000123023987,
+    "training_seconds_excluding_validation": 2.3926735490786086,
+    "steps": 866,
+    "clipped_steps": 9,
+    "optimizer_state_bytes": 4233696,
+    "stages": [
+      {
+        "group": 0,
+        "validation_oracle_acquisition": 0.9990000128746033
+      },
+      {
+        "group": 1,
+        "validation_oracle_acquisition": 0.9810000061988831
+      },
+      {
+        "group": 2,
+        "validation_oracle_acquisition": 0.9909999966621399
+      },
+      {
+        "group": 3,
+        "validation_oracle_acquisition": 0.9990000128746033
+      },
+      {
+        "group": 4,
+        "validation_oracle_acquisition": 0.9869999885559082
+      }
+    ]
+  },
+  {
+    "arm": "branch_ce",
+    "rate": 0.001,
+    "validation_accuracy": 0.7382000088691711,
+    "training_seconds_excluding_validation": 2.386546008998266,
+    "steps": 866,
+    "clipped_steps": 9,
+    "optimizer_state_bytes": 4233696,
+    "stages": [
+      {
+        "group": 0,
+        "validation_oracle_acquisition": 0.9990000128746033
+      },
+      {
+        "group": 1,
+        "validation_oracle_acquisition": 0.9869999885559082
+      },
+      {
+        "group": 2,
+        "validation_oracle_acquisition": 0.9890000224113464
+      },
+      {
+        "group": 3,
+        "validation_oracle_acquisition": 0.9990000128746033
+      },
+      {
+        "group": 4,
+        "validation_oracle_acquisition": 0.9890000224113464
+      }
+    ]
+  },
+  {
+    "arm": "branch_ce",
+    "rate": 0.003,
+    "validation_accuracy": 0.3887999951839447,
+    "training_seconds_excluding_validation": 2.3858753349923063,
+    "steps": 866,
+    "clipped_steps": 12,
+    "optimizer_state_bytes": 4233696,
+    "stages": [
+      {
+        "group": 0,
+        "validation_oracle_acquisition": 0.9990000128746033
+      },
+      {
+        "group": 1,
+        "validation_oracle_acquisition": 0.9850000143051147
+      },
+      {
+        "group": 2,
+        "validation_oracle_acquisition": 0.9950000047683716
+      },
+      {
+        "group": 3,
+        "validation_oracle_acquisition": 1.0
+      },
+      {
+        "group": 4,
+        "validation_oracle_acquisition": 0.9909999966621399
+      }
+    ]
+  }
+]

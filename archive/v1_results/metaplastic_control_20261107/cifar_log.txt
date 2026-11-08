@@ -1,0 +1,75 @@
+cifar branch 0 201 0 160778 CIL 21.9 TIL 63.9 oracleTIL 76.47 loss 1.7 frozen None 82s
+cifar branch 0 201 4 160778 CIL 15.96 TIL 68.36 oracleTIL 73.3 loss 4.7 frozen None 75s
+cifar branch 0 202 0 160778 CIL 19.17 TIL 64.51 oracleTIL 74.79 loss 5.5 frozen None 68s
+cifar branch 0 202 4 160778 CIL 19.37 TIL 63.77 oracleTIL 72.79 loss 4.1 frozen None 65s
+cifar branch 0 203 0 160778 CIL 14.57 TIL 64.36 oracleTIL 72.23 loss 4.5 frozen None 66s
+cifar branch 0 203 4 160778 CIL 19.52 TIL 67.73 oracleTIL 71.1 loss 6.1 frozen None 64s
+cifar cnn 0 201 0 159146 CIL 15.39 TIL 60.04 oracleTIL nan loss 21.3 frozen None 39s
+cifar cnn 0 201 4 159146 CIL 16.93 TIL 60.85 oracleTIL nan loss 22.3 frozen None 40s
+cifar cnn 0 202 0 159146 CIL 15.88 TIL 60.73 oracleTIL nan loss 19.9 frozen None 40s
+cifar cnn 0 202 4 159146 CIL 16.66 TIL 56.33 oracleTIL nan loss 28.8 frozen None 41s
+cifar cnn 0 203 0 159146 CIL 15.89 TIL 52.01 oracleTIL nan loss 23.0 frozen None 41s
+cifar cnn 0 203 4 159146 CIL 16.6 TIL 56.81 oracleTIL nan loss 26.6 frozen None 41s
+cifar cnn 3 201 0 159146 CIL 15.68 TIL 59.43 oracleTIL nan loss 17.9 frozen 0.015677428273409323 42s
+cifar cnn 3 201 4 159146 CIL 16.82 TIL 58.56 oracleTIL nan loss 24.5 frozen 0.014357885212320762 42s
+cifar cnn 3 202 0 159146 CIL 15.73 TIL 54.73 oracleTIL nan loss 27.7 frozen 0.013427921531172634 42s
+cifar cnn 3 202 4 159146 CIL 16.99 TIL 58.81 oracleTIL nan loss 26.2 frozen 0.015011373204478906 43s
+cifar cnn 3 203 0 159146 CIL 15.82 TIL 55.16 oracleTIL nan loss 22.6 frozen 0.01377979968079625 42s
+cifar cnn 3 203 4 159146 CIL 16.56 TIL 58.98 oracleTIL nan loss 24.5 frozen 0.01268018046322245 40s
+cifar cnn 10 201 0 159146 CIL 15.65 TIL 57.86 oracleTIL nan loss 17.6 frozen 0.04411043947067473 40s
+cifar cnn 10 201 4 159146 CIL 15.99 TIL 56.49 oracleTIL nan loss 25.6 frozen 0.04935091048471215 40s
+cifar cnn 10 202 0 159146 CIL 15.71 TIL 51.81 oracleTIL nan loss 32.0 frozen 0.04718937327988137 40s
+cifar cnn 10 202 4 159146 CIL 16.86 TIL 53.02 oracleTIL nan loss 33.2 frozen 0.04840837972679175 40s
+cifar cnn 10 203 0 159146 CIL 15.79 TIL 57.63 oracleTIL nan loss 18.5 frozen 0.04394706747263519 42s
+cifar cnn 10 203 4 159146 CIL 16.46 TIL 57.91 oracleTIL nan loss 26.5 frozen 0.04847121511065311 38s
+cifar cnn 30 201 0 159146 CIL 15.62 TIL 55.77 oracleTIL nan loss 26.5 frozen 0.13040855566586657 43s
+cifar cnn 30 201 4 159146 CIL 16.63 TIL 56.81 oracleTIL nan loss 27.5 frozen 0.13402159023789476 46s
+/Users/harikrishna/Documents/lossfunk/cl-tokenformer/.venv/lib/python3.13/site-packages/numpy/_core/getlimits.py:559: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/Users/harikrishna/Documents/lossfunk/cl-tokenformer/.venv/lib/python3.13/site-packages/numpy/_core/getlimits.py:91: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+cifar cnn 30 202 0 159146 CIL 15.46 TIL 55.56 oracleTIL nan loss 25.2 frozen 0.1331356113254496 45s
+cifar cnn 30 202 4 159146 CIL 16.56 TIL 58.04 oracleTIL nan loss 25.6 frozen 0.13150817488344035 47s
+cifar cnn 30 203 0 159146 CIL 16.14 TIL 61.24 oracleTIL nan loss 19.8 frozen 0.12670755155643246 47s
+cifar cnn 30 203 4 159146 CIL 16.69 TIL 62.9 oracleTIL nan loss 20.4 frozen 0.13605745667500282 53s
+cifar cnn 100 201 0 159146 CIL 15.62 TIL 54.79 oracleTIL nan loss 24.5 frozen 0.3520980734671308 49s
+/Users/harikrishna/Documents/lossfunk/cl-tokenformer/.venv/lib/python3.13/site-packages/numpy/_core/getlimits.py:559: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/Users/harikrishna/Documents/lossfunk/cl-tokenformer/.venv/lib/python3.13/site-packages/numpy/_core/getlimits.py:91: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+cifar cnn 100 201 4 159146 CIL 10.03 TIL 50.71 oracleTIL nan loss 27.0 frozen 0.34511077878174756 32s
+cifar cnn 100 202 0 159146 CIL 14.96 TIL 59.81 oracleTIL nan loss 20.7 frozen 0.3251291267138351 35s
+cifar cnn 100 202 4 159146 CIL 16.52 TIL 56.23 oracleTIL nan loss 25.6 frozen 0.3500182222613198 36s
+cifar cnn 100 203 0 159146 CIL 15.79 TIL 57.62 oracleTIL nan loss 23.8 frozen 0.3532102597614769 35s
+cifar cnn 100 203 4 159146 CIL 16.15 TIL 58.46 oracleTIL nan loss 24.8 frozen 0.336628001960464 38s
+cifar cnn 300 201 0 CIL 15.91 TIL 62.93 loss 17.1 frozen 0.6319920073391728 36s
+cifar cnn 300 201 4 CIL 10.0 TIL 50.4 loss 24.2 frozen 0.6221394191497116 35s
+cifar cnn 300 202 0 CIL 14.92 TIL 56.92 loss 24.3 frozen 0.6226986540660777 35s
+cifar cnn 300 202 4 CIL 16.35 TIL 55.39 loss 28.2 frozen 0.6175461525894461 35s
+cifar cnn 300 203 0 CIL 15.7 TIL 56.69 loss 23.0 frozen 0.6526271473992434 38s
+cifar cnn 300 203 4 CIL 15.06 TIL 56.9 loss 25.5 frozen 0.6345054226936272 36s
+cifar cnn 1000 201 0 CIL 19.68 TIL 57.93 loss 13.7 frozen 0.862729820416473 39s
+cifar cnn 1000 201 4 CIL 16.36 TIL 54.78 loss 20.5 frozen 0.8753220313422895 36s
+cifar cnn 1000 202 0 CIL 14.75 TIL 56.94 loss 20.7 frozen 0.857005516946703 35s
+cifar cnn 1000 202 4 CIL 15.39 TIL 56.38 loss 25.2 frozen 0.8677755017405401 35s
+cifar cnn 1000 203 0 CIL 14.78 TIL 59.92 loss 11.4 frozen 0.8661417817601448 35s
+cifar cnn 1000 203 4 CIL 15.18 TIL 62.39 loss 18.1 frozen 0.8833838110917019 40s
+cifar cnn 3000 201 0 CIL 18.91 TIL 58.86 loss 7.6 frozen 0.9418898370050143 50s
+cifar cnn 3000 201 4 CIL 10.05 TIL 48.72 loss 19.9 frozen 0.9607844369321252 39s
+cifar cnn 3000 202 0 CIL 10.15 TIL 52.03 loss 15.3 frozen 0.9520440350370101 34s
+cifar cnn 3000 202 4 CIL 15.22 TIL 58.5 loss 16.6 frozen 0.9596408329458485 35s
+cifar cnn 3000 203 0 CIL 16.62 TIL 55.85 loss 11.3 frozen 0.9584092594221658 32s
+cifar cnn 3000 203 4 CIL 18.82 TIL 57.81 loss 15.8 frozen 0.9688210825279931 29s
+cifar cnn 10000 201 0 CIL 9.98 TIL 53.98 loss 8.9 frozen 0.9896007439709449 28s
+cifar cnn 10000 201 4 CIL 15.84 TIL 56.42 loss 9.4 frozen 0.9911464944139343 28s
+cifar cnn 10000 202 0 CIL 11.55 TIL 56.31 loss 4.2 frozen 0.9895693262790143 28s
+cifar cnn 10000 202 4 CIL 13.43 TIL 58.51 loss 6.0 frozen 0.9910899425684592 28s
+cifar cnn 10000 203 0 CIL 12.64 TIL 62.02 loss 5.0 frozen 0.9920576074799241 28s
+cifar cnn 10000 203 4 CIL 15.15 TIL 61.4 loss 5.8 frozen 0.9906123936511129 28s
+cifar cnn 30000 201 0 CIL 8.93 TIL 56.64 loss 0.9 frozen 0.9976499566435851 28s
+cifar cnn 30000 201 4 CIL 16.19 TIL 56.37 loss 1.6 frozen 0.9975682706445653 28s
+cifar cnn 30000 202 0 CIL 12.56 TIL 58.46 loss 0.1 frozen 0.9973923315697536 28s
+cifar cnn 30000 202 4 CIL 14.36 TIL 59.08 loss 2.3 frozen 0.997832179256783 28s
+cifar cnn 30000 203 0 CIL 11.53 TIL 59.5 loss 2.1 frozen 0.9979138652558028 28s
+cifar cnn 30000 203 4 CIL 17.38 TIL 56.48 loss 2.1 frozen 0.9976311060284268 28s
+ALLDONE

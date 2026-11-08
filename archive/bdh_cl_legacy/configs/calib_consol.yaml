@@ -1,0 +1,51 @@
+# Strength calibration for consolidation, BEFORE the real sweep.
+#
+# lam is the one hyperparameter that decides whether the idea works at all:
+# too small and the mask does nothing (naive floor), too large and later tasks
+# cannot be learned at all (the PackNet/HAT rigidity failure). Sweeping it on
+# one seed costs a fraction of the full sweep and sets the value the sweep uses.
+#
+# Driven by --consol-lam from the sbatch array; everything else fixed.
+name: calib_consol
+family: mnist
+preset: tiny
+mnist_cache: data_cache/mnist
+mnist_side: 14
+mnist_task_tags: false
+tasks: [mnist_01, mnist_23, mnist_45, mnist_67, mnist_89]
+models: [bdh_den_gated]
+strategies: [naive+consol]
+seeds: [0]
+n_eval: 200
+eval_batch_size: 64
+probe_batches: 1
+save_checkpoints: false
+plasticity_target_frac: 0.5
+
+narrow:
+  mlp_internal_dim_multiplier: 11
+dendritic_variants:
+  gated:
+    mlp_internal_dim_multiplier: 11
+    neuron_unit_kwargs: {n_branches: 4, soma: gated}
+
+consolidation:
+  signal: activity
+  granularity: branch
+  mode: penalty
+  lam: 100.0       # overridden by --consol-lam
+  decay: 0.9
+  cap: 0.25
+  batches: 8
+  protect_decoder: true
+
+train:
+  block_size: 200
+  batch_size: 32
+  steps_per_task: 800
+  warmup_steps: 80
+  eval_every: 200
+  log_every: 400
+
+wandb:
+  enabled: false

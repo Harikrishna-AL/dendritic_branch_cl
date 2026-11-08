@@ -1,0 +1,17 @@
+mnist 101 0 4s {'route_diag': (24.1, 24.4), 'branch_diag': (25.9, 26.2), 'branch_pca': (19.5, 19.9), 'randproj_diag': (80.8, 81.3), 'pixel_diag': (56.9, 57.2), 'pixel_pca': (91.2, 91.9), 'branch_diag_final': (75.4, 75.9), 'soft_magnitude': (63.4, nan), 'oracle': (98.8, 100.0)}
+mnist 101 4 4s {'route_diag': (32.2, 32.5), 'branch_diag': (25.8, 25.8), 'branch_pca': (21.9, 21.9), 'randproj_diag': (80.4, 81.3), 'pixel_diag': (56.8, 57.2), 'pixel_pca': (90.9, 91.9), 'branch_diag_final': (74.5, 75.5), 'soft_magnitude': (70.0, nan), 'oracle': (98.4, 100.0)}
+mnist 102 0 4s {'route_diag': (27.0, 27.6), 'branch_diag': (25.2, 25.7), 'branch_pca': (19.4, 19.9), 'randproj_diag': (80.3, 81.3), 'pixel_diag': (56.6, 57.2), 'pixel_pca': (90.8, 91.9), 'branch_diag_final': (75.4, 76.3), 'soft_magnitude': (68.2, nan), 'oracle': (98.2, 100.0)}
+mnist 102 4 5s {'route_diag': (37.9, 38.9), 'branch_diag': (28.5, 29.3), 'branch_pca': (22.9, 23.0), 'randproj_diag': (78.5, 81.3), 'pixel_diag': (55.5, 57.2), 'pixel_pca': (88.5, 91.9), 'branch_diag_final': (72.5, 75.4), 'soft_magnitude': (66.0, nan), 'oracle': (96.1, 100.0)}
+mnist 103 0 5s {'route_diag': (25.9, 26.4), 'branch_diag': (25.5, 25.8), 'branch_pca': (19.5, 19.9), 'randproj_diag': (80.2, 80.9), 'pixel_diag': (56.8, 57.2), 'pixel_pca': (91.0, 91.9), 'branch_diag_final': (75.5, 76.1), 'soft_magnitude': (71.2, nan), 'oracle': (98.5, 100.0)}
+mnist 103 4 4s {'route_diag': (32.9, 33.2), 'branch_diag': (27.6, 27.6), 'branch_pca': (22.2, 22.3), 'randproj_diag': (79.5, 80.9), 'pixel_diag': (56.2, 57.2), 'pixel_pca': (90.3, 91.9), 'branch_diag_final': (73.9, 75.3), 'soft_magnitude': (68.7, nan), 'oracle': (97.9, 100.0)}
+
+mnist: test accuracy / task-ID accuracy, mean ± sd over seed means
+route_diag          29.99 ± 2.22   task-ID  30.49
+branch_diag         26.41 ± 0.52   task-ID  26.75
+branch_pca          20.89 ± 0.22   task-ID  21.14
+randproj_diag       79.96 ± 0.60   task-ID  81.20
+pixel_diag          56.47 ± 0.40   task-ID  57.23
+pixel_pca           90.45 ± 0.69   task-ID  91.86
+branch_diag_final   74.52 ± 0.52   task-ID  75.75
+soft_magnitude      67.91 ± 1.79   task-ID    nan
+oracle              97.98 ± 0.77   task-ID 100.00

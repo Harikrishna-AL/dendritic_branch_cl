@@ -1,0 +1,66 @@
+# Phase 6b: does k-WTA hurt because sparsity hurts, or because it COMPOUNDS
+# through BDH's multiplicative gate?
+#
+# exp7 applied wta_frac to both latent paths. BDH's output is the product
+# x_sparse * y_sparse, so two 5%-dense codes give a ~0.25%-dense conjunction --
+# a ~300x reduction in active conjunctions against unconstrained max (~0.74).
+# That is a BDH-specific cost with no analogue in the feedforward MLPs the
+# sparse-coding results come from.
+#
+# The control: apply the same constraint to ONE path. Conjunction density then
+# falls to ~5% rather than ~0.25%. If the damage largely disappears, the
+# problem is the compounding, not sparsity; if it persists, sparsity itself is
+# the cost. Either answer is a statement about multiplicative architectures.
+#
+# Parameter counts are identical to exp7 and exp5 -- wta_frac adds nothing.
+name: exp8_wta_onepath
+family: mnist
+preset: tiny
+mnist_cache: data_cache/mnist
+mnist_side: 14
+mnist_task_tags: false
+tasks: [mnist_01, mnist_23, mnist_45, mnist_67, mnist_89]
+models:
+  - bdh_den_max            # reference, no neuron WTA
+  - bdh_den_max_wta05      # both paths (exp7 arm, repeated here for one-job comparability)
+  - bdh_den_max_wta05x     # x path only
+  - bdh_den_max_wta05y     # y path only -- the attention/context path
+strategies: [replay]
+seeds: [0, 1, 2]
+n_eval: 200
+eval_batch_size: 64
+probe_batches: 2
+save_checkpoints: true
+plasticity_target_frac: 0.5
+
+narrow:
+  mlp_internal_dim_multiplier: 11
+
+dendritic_variants:
+  max:
+    mlp_internal_dim_multiplier: 11
+    neuron_unit_kwargs: {n_branches: 4, soma: max}
+  max_wta05:
+    mlp_internal_dim_multiplier: 11
+    neuron_unit_kwargs: {n_branches: 4, soma: max, wta_frac: 0.05}
+  max_wta05x:
+    mlp_internal_dim_multiplier: 11
+    neuron_unit_kwargs: {n_branches: 4, soma: max}
+    neuron_unit_kwargs_x: {wta_frac: 0.05}
+  max_wta05y:
+    mlp_internal_dim_multiplier: 11
+    neuron_unit_kwargs: {n_branches: 4, soma: max}
+    neuron_unit_kwargs_y: {wta_frac: 0.05}
+
+train:
+  block_size: 200
+  batch_size: 32
+  steps_per_task: 800
+  warmup_steps: 80
+  eval_every: 100
+  log_every: 200
+
+wandb:
+  enabled: true
+  project: bdh-cl
+  group: exp8_wta_onepath

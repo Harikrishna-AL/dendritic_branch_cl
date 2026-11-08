@@ -1,0 +1,36 @@
+[
+  {
+    "label": "OCAR (ICML 2025), adapted",
+    "accuracy": 93.0616666873296,
+    "sd": 0.12553318777917144,
+    "mb": 14.314882,
+    "kind": "ocar",
+    "experimental_status": "Explicit local adaptation; different intrinsic optimizer/modules; not original-paper reproduction",
+    "parameters": 529480,
+    "model_mb": 2.11792,
+    "teacher_mb": 0.0,
+    "curvature_mb": 12.03816,
+    "buffer_mb": 0.158616,
+    "optimizer_mb": 0.0,
+    "max_optimizer_mb": 0.0,
+    "extra_module_presentations": 0,
+    "mean_training_seconds": 12.655510305666516
+  },
+  {
+    "label": "RFE (TMLR 2026), adapted",
+    "accuracy": 59.25833384195963,
+    "sd": 0.5229097375107931,
+    "mb": 3.524176,
+    "kind": "rfe",
+    "experimental_status": "Explicit local adaptation; different intrinsic optimizer/modules; not original-paper reproduction",
+    "parameters": 528014,
+    "model_mb": 2.112056,
+    "teacher_mb": 1.41196,
+    "curvature_mb": 0.0,
+    "buffer_mb": 0.0,
+    "optimizer_mb": 2.823968,
+    "max_optimizer_mb": 3.28112,
+    "extra_module_presentations": 110000,
+    "mean_training_seconds": 8.412791117999708
+  }
+]

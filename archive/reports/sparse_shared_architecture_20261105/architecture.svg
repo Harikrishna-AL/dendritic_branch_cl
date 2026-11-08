@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1050" viewBox="0 0 1400 1050">
+<defs><marker id="arrow" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><path d="M0,0 L9,3.5 L0,7" fill="#64748b"/></marker></defs>
+<rect width="1400" height="1050" fill="#f8fafc"/>
+<text x="55" y="52" font-family="Arial,sans-serif" font-size="30" fill="#0f172a" text-anchor="start" font-weight="bold">One shared idea: four sparse dendritic branches per neuron</text>
+<text x="55" y="85" font-family="Arial,sans-serif" font-size="19" fill="#475569" text-anchor="start" font-weight="normal">Fixed random input subsets • learned weights • tanh in each branch • no task ID at image-only inference</text>
+<rect x="45" y="115" width="630" height="380" rx="22" fill="white" stroke="#dbe3ed"/>
+<text x="70" y="153" font-family="Arial,sans-serif" font-size="25" fill="#0f172a" text-anchor="start" font-weight="bold">MLP · Split MNIST</text>
+<rect x="725" y="115" width="630" height="380" rx="22" fill="white" stroke="#dbe3ed"/>
+<text x="750" y="153" font-family="Arial,sans-serif" font-size="25" fill="#0f172a" text-anchor="start" font-weight="bold">CNN · Split CIFAR-10</text>
+<rect x="80" y="178" width="560" height="76" rx="15" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="360.0" y="208" font-family="Arial,sans-serif" font-size="20" fill="#0f172a" text-anchor="middle" font-weight="bold">28 × 28 grayscale image</text>
+<text x="360.0" y="235" font-family="Arial,sans-serif" font-size="16" fill="#475569" text-anchor="middle" font-weight="normal">Flatten and apply the original fixed MNIST standardization</text>
+<path d="M360,254 L360,279" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="80" y="280" width="560" height="76" rx="15" fill="#eff6ff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="360.0" y="310" font-family="Arial,sans-serif" font-size="20" fill="#0f172a" text-anchor="middle" font-weight="bold">784 pixel inputs</text>
+<text x="360.0" y="337" font-family="Arial,sans-serif" font-size="16" fill="#475569" text-anchor="middle" font-weight="normal">No per-image LayerNorm in the strongest sparse MLP</text>
+<path d="M360,356 L360,380" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="80" y="381" width="560" height="85" rx="15" fill="#ecfdf5" stroke="#cbd5e1" stroke-width="2"/>
+<text x="360.0" y="411" font-family="Arial,sans-serif" font-size="20" fill="#0f172a" text-anchor="middle" font-weight="bold">168 neurons × 4 branches</text>
+<text x="360.0" y="438" font-family="Arial,sans-serif" font-size="16" fill="#475569" text-anchor="middle" font-weight="normal">Each branch learns from 196 of the 784 pixels</text>
+<rect x="760" y="178" width="560" height="76" rx="15" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="1040.0" y="208" font-family="Arial,sans-serif" font-size="20" fill="#0f172a" text-anchor="middle" font-weight="bold">32 × 32 RGB image</text>
+<text x="1040.0" y="235" font-family="Arial,sans-serif" font-size="16" fill="#475569" text-anchor="middle" font-weight="normal">Fixed channel standardization</text>
+<path d="M1040,254 L1040,279" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="760" y="280" width="560" height="76" rx="15" fill="#eff6ff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="1040.0" y="310" font-family="Arial,sans-serif" font-size="20" fill="#0f172a" text-anchor="middle" font-weight="bold">Trainable CNN → 1,024 features → LayerNorm</text>
+<text x="1040.0" y="337" font-family="Arial,sans-serif" font-size="16" fill="#475569" text-anchor="middle" font-weight="normal">Three 3 × 3 stride-2 conv layers: 16 → 32 → 64 channels</text>
+<path d="M1040,356 L1040,380" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="760" y="381" width="560" height="85" rx="15" fill="#ecfdf5" stroke="#cbd5e1" stroke-width="2"/>
+<text x="1040.0" y="411" font-family="Arial,sans-serif" font-size="20" fill="#0f172a" text-anchor="middle" font-weight="bold">64 neurons × 4 branches</text>
+<text x="1040.0" y="438" font-family="Arial,sans-serif" font-size="16" fill="#475569" text-anchor="middle" font-weight="normal">Each branch learns from 256 of the 1,024 features</text>
+<text x="55" y="535" font-family="Arial,sans-serif" font-size="25" fill="#0f172a" text-anchor="start" font-weight="bold">Inside each neuron — the same sparse branch structure</text>
+<rect x="55" y="615" width="220" height="100" rx="15" fill="#eff6ff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="165.0" y="645" font-family="Arial,sans-serif" font-size="20" fill="#0f172a" text-anchor="middle" font-weight="bold">Input vector</text>
+<text x="165.0" y="672" font-family="Arial,sans-serif" font-size="16" fill="#475569" text-anchor="middle" font-weight="normal">Pixels or CNN features</text>
+<rect x="340" y="562" width="335" height="57" rx="15" fill="#dbeafe" stroke="#cbd5e1" stroke-width="2"/>
+<text x="507.5" y="592" font-family="Arial,sans-serif" font-size="20" fill="#0f172a" text-anchor="middle" font-weight="bold">Branch 1 : tanh(w · subset + b)</text>
+<path d="M275,665 L340,590" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M675,590 L745,665" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="340" y="629" width="335" height="57" rx="15" fill="#dcfce7" stroke="#cbd5e1" stroke-width="2"/>
+<text x="507.5" y="659" font-family="Arial,sans-serif" font-size="20" fill="#0f172a" text-anchor="middle" font-weight="bold">Branch 2 : tanh(w · subset + b)</text>
+<path d="M275,665 L340,657" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M675,657 L745,665" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="340" y="696" width="335" height="57" rx="15" fill="#fef3c7" stroke="#cbd5e1" stroke-width="2"/>
+<text x="507.5" y="726" font-family="Arial,sans-serif" font-size="20" fill="#0f172a" text-anchor="middle" font-weight="bold">Branch 3 : tanh(w · subset + b)</text>
+<path d="M275,665 L340,724" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M675,724 L745,665" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="340" y="763" width="335" height="57" rx="15" fill="#fce7f3" stroke="#cbd5e1" stroke-width="2"/>
+<text x="507.5" y="793" font-family="Arial,sans-serif" font-size="20" fill="#0f172a" text-anchor="middle" font-weight="bold">Branch 4 : tanh(w · subset + b)</text>
+<path d="M275,665 L340,791" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M675,791 L745,665" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="750" y="612" width="255" height="106" rx="15" fill="#ede9fe" stroke="#cbd5e1" stroke-width="2"/>
+<text x="877.5" y="642" font-family="Arial,sans-serif" font-size="20" fill="#0f172a" text-anchor="middle" font-weight="bold">Select one response</text>
+<text x="877.5" y="669" font-family="Arial,sans-serif" font-size="16" fill="#475569" text-anchor="middle" font-weight="normal">Preserve its sign</text>
+<path d="M1005,665 L1055,665" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="1060" y="612" width="285" height="106" rx="15" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="1202.5" y="642" font-family="Arial,sans-serif" font-size="20" fill="#0f172a" text-anchor="middle" font-weight="bold">Shared 10-class head</text>
+<text x="1202.5" y="669" font-family="Arial,sans-serif" font-size="16" fill="#475569" text-anchor="middle" font-weight="normal">One value per neuron</text>
+<text x="55" y="868" font-family="Arial,sans-serif" font-size="17" fill="#0f766e" text-anchor="start" font-weight="bold">TRAINING</text>
+<text x="55" y="899" font-family="Arial,sans-serif" font-size="20" fill="#0f172a" text-anchor="start" font-weight="normal">Labels → branch-error EMA → branch selection; CE + auxiliary single-neuron substitution loss.</text>
+<text x="55" y="944" font-family="Arial,sans-serif" font-size="17" fill="#6d28d9" text-anchor="start" font-weight="bold">IMAGE-ONLY INFERENCE</text>
+<text x="55" y="975" font-family="Arial,sans-serif" font-size="20" fill="#0f172a" text-anchor="start" font-weight="normal">Select the branch with the largest absolute response independently in each neuron.</text>
+<text x="55" y="1007" font-family="Arial,sans-serif" font-size="18" fill="#475569" text-anchor="start" font-weight="normal">No prototypes or archived task routes are used. Random input subsets are fixed and may overlap.</text>
+</svg>

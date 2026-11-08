@@ -1,0 +1,23 @@
+{
+  "source_results": [
+    "results/split_mnist_usefulness_hard_20261011/results.json",
+    "results/split_mnist_route_audit_20261011/results.json",
+    "results/split_mnist_retention_diagnostic_20261011/results.json"
+  ],
+  "seeds": [
+    34,
+    35,
+    36
+  ],
+  "figures": [
+    "01_architecture.png",
+    "01_architecture.svg",
+    "02_accuracy_and_retrieval.png",
+    "02_accuracy_and_retrieval.svg",
+    "03_route_cross_accuracy.png",
+    "03_route_cross_accuracy.svg",
+    "04_readout_diagnostics.png",
+    "04_readout_diagnostics.svg"
+  ],
+  "aggregation": "Arithmetic seed means; Figure 2 whiskers are sample SD across seeds, not confidence intervals; heatmaps are seed means of per-pair accuracy; ordinary learning curve shades seed min/max."
+}

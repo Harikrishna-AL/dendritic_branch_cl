@@ -1,0 +1,98 @@
+[
+  {
+    "arm": "original",
+    "mode": "strongest_linear",
+    "accuracy": 56.556665897369385,
+    "seed_sd": 4.775421918430306,
+    "mean_acquisition_to_final_drop": 30.417115134575095,
+    "parameters": 529210
+  },
+  {
+    "arm": "original",
+    "mode": "strongest_tanh",
+    "accuracy": 53.753332793712616,
+    "seed_sd": 3.7078767218038835,
+    "mean_acquisition_to_final_drop": 34.32092310734637,
+    "parameters": 529210
+  },
+  {
+    "arm": "original",
+    "mode": "oracle",
+    "accuracy": 97.38666812578838,
+    "seed_sd": 0.9023902721792249,
+    "mean_acquisition_to_final_drop": 1.5542673567930858,
+    "parameters": 529210
+  },
+  {
+    "arm": "normalized",
+    "mode": "strongest_linear",
+    "accuracy": 59.459999203681946,
+    "seed_sd": 4.200306572672685,
+    "mean_acquisition_to_final_drop": 26.019061268501293,
+    "parameters": 529210
+  },
+  {
+    "arm": "normalized",
+    "mode": "strongest_tanh",
+    "accuracy": 56.7783330877622,
+    "seed_sd": 4.222866589955886,
+    "mean_acquisition_to_final_drop": 29.37402830818125,
+    "parameters": 529210
+  },
+  {
+    "arm": "normalized",
+    "mode": "oracle",
+    "accuracy": 96.76166673501332,
+    "seed_sd": 0.6974474129972578,
+    "mean_acquisition_to_final_drop": 3.1455462177594504,
+    "parameters": 529210
+  },
+  {
+    "arm": "extra_linear",
+    "mode": "strongest_linear",
+    "accuracy": 56.294999519983925,
+    "seed_sd": 5.398194511684549,
+    "mean_acquisition_to_final_drop": 30.09057107071082,
+    "parameters": 1583578
+  },
+  {
+    "arm": "extra_linear",
+    "mode": "strongest_tanh",
+    "accuracy": 54.926666617393494,
+    "seed_sd": 3.864228826274936,
+    "mean_acquisition_to_final_drop": 31.415110566983156,
+    "parameters": 1583578
+  },
+  {
+    "arm": "extra_linear",
+    "mode": "oracle",
+    "accuracy": 96.59333328406017,
+    "seed_sd": 0.5379195507470075,
+    "mean_acquisition_to_final_drop": 3.309339533249537,
+    "parameters": 1583578
+  },
+  {
+    "arm": "quadratic",
+    "mode": "strongest_linear",
+    "accuracy": 51.06666684150696,
+    "seed_sd": 10.811367430973943,
+    "mean_acquisition_to_final_drop": 48.06761193613056,
+    "parameters": 1583578
+  },
+  {
+    "arm": "quadratic",
+    "mode": "strongest_tanh",
+    "accuracy": 52.05166588226954,
+    "seed_sd": 6.968330827365252,
+    "mean_acquisition_to_final_drop": 46.18463631510773,
+    "parameters": 1583578
+  },
+  {
+    "arm": "quadratic",
+    "mode": "oracle",
+    "accuracy": 97.7700004975001,
+    "seed_sd": 1.1581557265466436,
+    "mean_acquisition_to_final_drop": 2.0880311727523804,
+    "parameters": 1583578
+  }
+]

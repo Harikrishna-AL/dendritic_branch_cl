@@ -1,0 +1,18 @@
+[
+  {
+    "batch_best_branch_agreement": 0.956679892760736,
+    "sample_best_branch_agreement": 0.9861946437093947,
+    "mean_exact_regret": 6.43383823167659e-06,
+    "mean_absolute_loss_error": 0.0001285938247932521,
+    "sign_agreement": 0.9968004039040318,
+    "approximation": "linear"
+  },
+  {
+    "batch_best_branch_agreement": 0.9994488557179769,
+    "sample_best_branch_agreement": 0.9948373127866674,
+    "mean_exact_regret": 2.4508813156691406e-09,
+    "mean_absolute_loss_error": 3.3385825062210912e-06,
+    "sign_agreement": 0.9999631488764728,
+    "approximation": "quadratic"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "revisions": {
+    "htmpapers": "c59a339a05478f5ae76fc6243c553ef125c0c51a",
+    "nupic.research": "85d9961b3a2ee0590d336baf4ead89f29fe03340",
+    "nupic.torch": "0682f8e434bb25acb326f27c214f5753ced6db8d"
+  },
+  "source_sha256": {
+    "matched_numenta_comparison.py": "da2e22bb31e9cf8d3a9c2a1c33ccf9198acd9121ba1fe73147eda4932f95d289",
+    "matched_numenta_activity_sensitivity.py": "7494ef5e7fa6afd678cd2042ab22d3f8039826e506bd11e45fb38669838978ca",
+    "split_mnist_usefulness.py": "0071026d21b70952e9ad9e5463e5d0e6a74afc6e36e1d3502bd80ea2dd2fa751",
+    "numenta_split_mnist_comparison.py": "39ccb1310b0dc11a583dd558c9c0d1990bef48045637abac65abdee3029cba43"
+  }
+}

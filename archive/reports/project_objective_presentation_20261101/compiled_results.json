@@ -1,0 +1,914 @@
+[
+  {
+    "study": "MNIST baseline suite",
+    "method": "Replay: 1,000 images",
+    "accuracy": 90.54999947547913,
+    "sd": 0.28969935779039147,
+    "memory_mb": 2.910936,
+    "representation": "Earlier standardized-pixel protocol",
+    "status": "Earlier matched-protocol result",
+    "source": "reports/leaderboard_constraints_20261031/all_presented_methods.csv"
+  },
+  {
+    "study": "MNIST baseline suite",
+    "method": "Replay: 200 images",
+    "accuracy": 81.59333268801372,
+    "sd": 0.9299499358145464,
+    "memory_mb": 2.276536,
+    "representation": "Earlier standardized-pixel protocol",
+    "status": "Earlier matched-protocol result",
+    "source": "reports/leaderboard_constraints_20261031/all_presented_methods.csv"
+  },
+  {
+    "study": "MNIST baseline suite",
+    "method": "Branch + auxiliary loss",
+    "accuracy": 74.76333280404408,
+    "sd": 0.5320309966817028,
+    "memory_mb": 2.136048,
+    "representation": "Earlier standardized-pixel protocol",
+    "status": "Earlier matched-protocol result",
+    "source": "reports/leaderboard_constraints_20261031/all_presented_methods.csv"
+  },
+  {
+    "study": "MNIST baseline suite",
+    "method": "Branch CE-only",
+    "accuracy": 72.10999925931294,
+    "sd": 2.6426727541926387,
+    "memory_mb": 2.136048,
+    "representation": "Earlier standardized-pixel protocol",
+    "status": "Earlier matched-protocol result",
+    "source": "reports/leaderboard_constraints_20261031/all_presented_methods.csv"
+  },
+  {
+    "study": "MNIST baseline suite",
+    "method": "Online EWC",
+    "accuracy": 23.383333285649616,
+    "sd": 0.35501206249378187,
+    "memory_mb": 6.35376,
+    "representation": "Earlier standardized-pixel protocol",
+    "status": "Earlier matched-protocol result",
+    "source": "reports/leaderboard_constraints_20261031/all_presented_methods.csv"
+  },
+  {
+    "study": "MNIST baseline suite",
+    "method": "Synaptic Intelligence",
+    "accuracy": 20.340000092983246,
+    "sd": 0.02179486364878823,
+    "memory_mb": 8.47168,
+    "representation": "Earlier standardized-pixel protocol",
+    "status": "Earlier matched-protocol result",
+    "source": "reports/leaderboard_constraints_20261031/all_presented_methods.csv"
+  },
+  {
+    "study": "MNIST baseline suite",
+    "method": "Fine-tuning",
+    "accuracy": 20.30999983350436,
+    "sd": 0.018027648262659058,
+    "memory_mb": 2.11792,
+    "representation": "Earlier standardized-pixel protocol",
+    "status": "Earlier matched-protocol result",
+    "source": "reports/leaderboard_constraints_20261031/all_presented_methods.csv"
+  },
+  {
+    "study": "MNIST baseline suite",
+    "method": "Numenta (5% activity)",
+    "accuracy": 18.57166662812233,
+    "sd": 1.990492052156536,
+    "memory_mb": 3.356784,
+    "representation": "Earlier standardized-pixel protocol",
+    "status": "Earlier matched-protocol result",
+    "source": "reports/leaderboard_constraints_20261031/all_presented_methods.csv"
+  },
+  {
+    "study": "MNIST baseline suite",
+    "method": "DER++: 200 images",
+    "accuracy": 88.44499886035919,
+    "sd": 0.39950063099851274,
+    "memory_mb": 2.284696,
+    "representation": "Earlier standardized-pixel protocol",
+    "status": "Earlier matched-protocol result",
+    "source": "reports/leaderboard_constraints_20261031/all_presented_methods.csv"
+  },
+  {
+    "study": "MNIST baseline suite",
+    "method": "DER++: 1,000 images",
+    "accuracy": 94.51666673024495,
+    "sd": 0.11405508598451443,
+    "memory_mb": 2.951096,
+    "representation": "Earlier standardized-pixel protocol",
+    "status": "Earlier matched-protocol result",
+    "source": "reports/leaderboard_constraints_20261031/all_presented_methods.csv"
+  },
+  {
+    "study": "MNIST baseline suite",
+    "method": "ER-ACE: 200 images",
+    "accuracy": 85.71833372116089,
+    "sd": 0.577437401486149,
+    "memory_mb": 2.276736,
+    "representation": "Earlier standardized-pixel protocol",
+    "status": "Earlier matched-protocol result",
+    "source": "reports/leaderboard_constraints_20261031/all_presented_methods.csv"
+  },
+  {
+    "study": "MNIST baseline suite",
+    "method": "ER-ACE: 1,000 images",
+    "accuracy": 91.12666447957356,
+    "sd": 0.2527022388905436,
+    "memory_mb": 2.911136,
+    "representation": "Earlier standardized-pixel protocol",
+    "status": "Earlier matched-protocol result",
+    "source": "reports/leaderboard_constraints_20261031/all_presented_methods.csv"
+  },
+  {
+    "study": "MNIST baseline suite",
+    "method": "Numenta (20% activity)*",
+    "accuracy": 20.280000070730846,
+    "sd": 0.027838958522274967,
+    "memory_mb": 3.356784,
+    "representation": "Earlier standardized-pixel protocol",
+    "status": "exploratory activity sensitivity",
+    "source": "reports/leaderboard_constraints_20261031/all_presented_methods.csv"
+  },
+  {
+    "study": "MNIST baseline suite",
+    "method": "Numenta (ReLU)*",
+    "accuracy": 20.178333421548206,
+    "sd": 0.055075781012651565,
+    "memory_mb": 3.356264,
+    "representation": "Earlier standardized-pixel protocol",
+    "status": "exploratory activity sensitivity",
+    "source": "reports/leaderboard_constraints_20261031/all_presented_methods.csv"
+  },
+  {
+    "study": "MNIST baseline suite",
+    "method": "OCAR (ICML 2025), adapted",
+    "accuracy": 93.0616666873296,
+    "sd": 0.12553318777917144,
+    "memory_mb": 14.314882,
+    "representation": "Earlier standardized-pixel protocol",
+    "status": "Explicit local adaptation; different intrinsic optimizer/modules; not original-paper reproduction",
+    "source": "reports/leaderboard_constraints_20261031/all_presented_methods.csv"
+  },
+  {
+    "study": "MNIST baseline suite",
+    "method": "RFE (TMLR 2026), adapted",
+    "accuracy": 59.25833384195963,
+    "sd": 0.5229097375107931,
+    "memory_mb": 3.524176,
+    "representation": "Earlier standardized-pixel protocol",
+    "status": "Explicit local adaptation; different intrinsic optimizer/modules; not original-paper reproduction",
+    "source": "reports/leaderboard_constraints_20261031/all_presented_methods.csv"
+  },
+  {
+    "study": "MNIST baseline suite",
+    "method": "PEC (ICLR 2024), size-matched",
+    "accuracy": 91.34833415349324,
+    "sd": 0.18823756423244595,
+    "memory_mb": 2.11658,
+    "representation": "784 standardized pixels",
+    "status": "Explicit local adaptation; MIST is a paper reconstruction, not official implementation",
+    "source": "reports/leaderboard_constraints_20261031/all_presented_methods.csv"
+  },
+  {
+    "study": "MNIST baseline suite",
+    "method": "Streaming LDA, PCA50",
+    "accuracy": 86.05833351612091,
+    "sd": 0.19939588322373702,
+    "memory_mb": 0.54396,
+    "representation": "PCA50 from first1000 initial-task samples",
+    "status": "Explicit local adaptation; MIST is a paper reconstruction, not official implementation",
+    "source": "reports/leaderboard_constraints_20261031/all_presented_methods.csv"
+  },
+  {
+    "study": "MNIST baseline suite",
+    "method": "Streaming QDA, PCA50",
+    "accuracy": 95.21166682243347,
+    "sd": 0.1661557722814975,
+    "memory_mb": 0.724032,
+    "representation": "PCA50 from first1000 initial-task samples",
+    "status": "Explicit local adaptation; MIST is a paper reconstruction, not official implementation",
+    "source": "reports/leaderboard_constraints_20261031/all_presented_methods.csv"
+  },
+  {
+    "study": "MNIST baseline suite",
+    "method": "RLS / ridge, PCA50",
+    "accuracy": 83.228333791097,
+    "sd": 0.14767552563382844,
+    "memory_mb": 0.34884,
+    "representation": "PCA50 from first1000 initial-task samples",
+    "status": "Explicit local adaptation; MIST is a paper reconstruction, not official implementation",
+    "source": "reports/leaderboard_constraints_20261031/all_presented_methods.csv"
+  },
+  {
+    "study": "MNIST baseline suite",
+    "method": "VFDT (River), PCA50",
+    "accuracy": 33.618332942326866,
+    "sd": 2.983497722231561,
+    "memory_mb": 0.9119916666666666,
+    "representation": "PCA50 from first1000 initial-task samples",
+    "status": "Explicit local adaptation; MIST is a paper reconstruction, not official implementation",
+    "source": "reports/leaderboard_constraints_20261031/all_presented_methods.csv"
+  },
+  {
+    "study": "MNIST baseline suite",
+    "method": "MIST-G reconstruction, PCA50",
+    "accuracy": 87.06000049908955,
+    "sd": 0.36086637914327324,
+    "memory_mb": 0.9344146666666666,
+    "representation": "PCA50 from first1000 initial-task samples",
+    "status": "Explicit local adaptation; MIST is a paper reconstruction, not official implementation",
+    "source": "reports/leaderboard_constraints_20261031/all_presented_methods.csv"
+  },
+  {
+    "study": "MNIST offline reference",
+    "method": "Joint training",
+    "accuracy": 96.97,
+    "sd": 0.11,
+    "memory_mb": 2.11792,
+    "status": "offline, not continual",
+    "source": "reports/continual_learning_evidence_20261031/matched_baselines.json"
+  },
+  {
+    "study": "MNIST additional gating controls",
+    "method": "hat",
+    "accuracy": 75.21666685740153,
+    "sd": 0.04310966756610044,
+    "oracle": 98.70499968528748,
+    "memory_mb": 2.131752,
+    "parameters": 528162,
+    "status": "official-network Class-IL adaptation",
+    "source": "results/rawpixel_gating_baselines_20261101/summary.json"
+  },
+  {
+    "study": "MNIST additional gating controls",
+    "method": "twta",
+    "accuracy": 36.31500005722046,
+    "sd": 0.8102007524339109,
+    "oracle": 37.48333305120468,
+    "memory_mb": 2.14052,
+    "parameters": 531210,
+    "status": "paper reconstruction, constrained adaptation",
+    "source": "results/rawpixel_gating_baselines_20261101/summary.json"
+  },
+  {
+    "study": "MNIST additional gating controls",
+    "method": "ftn_slow",
+    "accuracy": 71.62333329518636,
+    "sd": 2.524303621666836,
+    "oracle": 93.40833326180775,
+    "memory_mb": 2.116416,
+    "parameters": 524864,
+    "status": "paper reconstruction, constrained adaptation",
+    "source": "results/rawpixel_gating_baselines_20261101/summary.json"
+  },
+  {
+    "study": "MNIST gate pilot, single seed",
+    "method": "fixed_random",
+    "seed": 101,
+    "order": "forward",
+    "scores": {
+      "current": {
+        "accuracy": 0.19439999759197235,
+        "old_accuracy": 0.0,
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.9803328514099121
+        ]
+      },
+      "inferred": {
+        "accuracy": 0.19439999759197235,
+        "old_accuracy": 0.0,
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.9803328514099121
+        ]
+      },
+      "oracle": {
+        "accuracy": 0.19439999759197235,
+        "old_accuracy": 0.0,
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.9803328514099121
+        ]
+      },
+      "bank_any_correct": 0.19439999759197235
+    },
+    "status": "pilot, no auxiliary loss",
+    "source": "results/mnist_gate_training_wta_20261101/combined_results.json"
+  },
+  {
+    "study": "MNIST gate pilot, single seed",
+    "method": "random_per_batch",
+    "seed": 101,
+    "order": "forward",
+    "scores": {
+      "current": {
+        "accuracy": 0.19249999523162842,
+        "old_accuracy": 0.0001247349428012967,
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.0005035246722400188,
+          0.9702470898628235
+        ]
+      },
+      "inferred": {
+        "accuracy": 0.20229999721050262,
+        "old_accuracy": 0.012598228640854359,
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.05085599049925804,
+          0.9692385196685791
+        ]
+      },
+      "oracle": {
+        "accuracy": 0.20250000059604645,
+        "old_accuracy": 0.012598228640854359,
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.05085599049925804,
+          0.9702470898628235
+        ]
+      },
+      "bank_any_correct": 0.20489999651908875
+    },
+    "status": "pilot, no auxiliary loss",
+    "source": "results/mnist_gate_training_wta_20261101/combined_results.json"
+  },
+  {
+    "study": "MNIST gate pilot, single seed",
+    "method": "error_trace",
+    "seed": 101,
+    "order": "forward",
+    "scores": {
+      "current": {
+        "accuracy": 0.19589999318122864,
+        "old_accuracy": 0.0,
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.9878970980644226
+        ]
+      },
+      "inferred": {
+        "accuracy": 0.7437999844551086,
+        "old_accuracy": 0.7586379051208496,
+        "pair_accuracy": [
+          0.8628841638565063,
+          0.7708129286766052,
+          0.5752401351928711,
+          0.8081570863723755,
+          0.6838123798370361
+        ]
+      },
+      "oracle": {
+        "accuracy": 0.9674999713897705,
+        "old_accuracy": 0.9624547958374023,
+        "pair_accuracy": [
+          0.9891253113746643,
+          0.9750244617462158,
+          0.8868730068206787,
+          0.9924471378326416,
+          0.9878970980644226
+        ]
+      },
+      "bank_any_correct": 0.9685999751091003
+    },
+    "status": "pilot, no auxiliary loss",
+    "source": "results/mnist_gate_training_wta_20261101/combined_results.json"
+  },
+  {
+    "study": "MNIST gate pilot, single seed",
+    "method": "task_assigned",
+    "seed": 101,
+    "order": "forward",
+    "scores": {
+      "current": {
+        "accuracy": 0.195700004696846,
+        "old_accuracy": 0.0,
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.9868885278701782
+        ]
+      },
+      "inferred": {
+        "accuracy": 0.7537999749183655,
+        "old_accuracy": 0.7749781608581543,
+        "pair_accuracy": [
+          0.8633569478988647,
+          0.7678746581077576,
+          0.6467449069023132,
+          0.8091641664505005,
+          0.6681795120239258
+        ]
+      },
+      "oracle": {
+        "accuracy": 0.9912999868392944,
+        "old_accuracy": 0.9923911690711975,
+        "pair_accuracy": [
+          1.0,
+          0.9784525036811829,
+          0.9951974153518677,
+          0.9959717988967896,
+          0.9868885278701782
+        ]
+      },
+      "bank_any_correct": 0.9912999868392944
+    },
+    "status": "pilot, no auxiliary loss",
+    "source": "results/mnist_gate_training_wta_20261101/combined_results.json"
+  },
+  {
+    "study": "MNIST gate pilot, single seed",
+    "method": "fixed_random",
+    "seed": 101,
+    "order": "reverse",
+    "scores": {
+      "current": {
+        "accuracy": 0.21140000224113464,
+        "old_accuracy": 0.0,
+        "pair_accuracy": [
+          0.9995272159576416,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "inferred": {
+        "accuracy": 0.21140000224113464,
+        "old_accuracy": 0.0,
+        "pair_accuracy": [
+          0.9995272159576416,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "oracle": {
+        "accuracy": 0.21140000224113464,
+        "old_accuracy": 0.0,
+        "pair_accuracy": [
+          0.9995272159576416,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "bank_any_correct": 0.21140000224113464
+    },
+    "status": "pilot, no auxiliary loss",
+    "source": "results/mnist_gate_training_wta_20261101/combined_results.json"
+  },
+  {
+    "study": "MNIST gate pilot, single seed",
+    "method": "random_per_batch",
+    "seed": 101,
+    "order": "reverse",
+    "scores": {
+      "current": {
+        "accuracy": 0.210999995470047,
+        "old_accuracy": 0.0,
+        "pair_accuracy": [
+          0.9976359605789185,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "inferred": {
+        "accuracy": 0.21119999885559082,
+        "old_accuracy": 0.0,
+        "pair_accuracy": [
+          0.99858158826828,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "oracle": {
+        "accuracy": 0.210999995470047,
+        "old_accuracy": 0.0,
+        "pair_accuracy": [
+          0.9976359605789185,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "bank_any_correct": 0.21140000224113464
+    },
+    "status": "pilot, no auxiliary loss",
+    "source": "results/mnist_gate_training_wta_20261101/combined_results.json"
+  },
+  {
+    "study": "MNIST gate pilot, single seed",
+    "method": "error_trace",
+    "seed": 101,
+    "order": "reverse",
+    "scores": {
+      "current": {
+        "accuracy": 0.21130000054836273,
+        "old_accuracy": 0.0,
+        "pair_accuracy": [
+          0.9990543723106384,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "inferred": {
+        "accuracy": 0.7203999757766724,
+        "old_accuracy": 0.6782498359680176,
+        "pair_accuracy": [
+          0.8775413632392883,
+          0.7571008801460266,
+          0.5736392736434937,
+          0.8031218647956848,
+          0.5708522200584412
+        ]
+      },
+      "oracle": {
+        "accuracy": 0.9147999882698059,
+        "old_accuracy": 0.8922003507614136,
+        "pair_accuracy": [
+          0.9990543723106384,
+          0.9666993021965027,
+          0.7796158194541931,
+          0.981873095035553,
+          0.8320726156234741
+        ]
+      },
+      "bank_any_correct": 0.9154000282287598
+    },
+    "status": "pilot, no auxiliary loss",
+    "source": "results/mnist_gate_training_wta_20261101/combined_results.json"
+  },
+  {
+    "study": "MNIST gate pilot, single seed",
+    "method": "task_assigned",
+    "seed": 101,
+    "order": "reverse",
+    "scores": {
+      "current": {
+        "accuracy": 0.21130000054836273,
+        "old_accuracy": 0.0,
+        "pair_accuracy": [
+          0.9990543723106384,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "inferred": {
+        "accuracy": 0.7533000111579895,
+        "old_accuracy": 0.7239061594009399,
+        "pair_accuracy": [
+          0.8628841638565063,
+          0.772282063961029,
+          0.6472785472869873,
+          0.808660626411438,
+          0.6616237759590149
+        ]
+      },
+      "oracle": {
+        "accuracy": 0.9896000027656555,
+        "old_accuracy": 0.9870640635490417,
+        "pair_accuracy": [
+          0.9990543723106384,
+          0.9823701977729797,
+          0.9962646961212158,
+          0.9949647784233093,
+          0.9752899408340454
+        ]
+      },
+      "bank_any_correct": 0.9896000027656555
+    },
+    "status": "pilot, no auxiliary loss",
+    "source": "results/mnist_gate_training_wta_20261101/combined_results.json"
+  },
+  {
+    "study": "MNIST gate pilot, single seed",
+    "method": "activation_wta",
+    "seed": 101,
+    "order": "forward",
+    "scores": {
+      "current": {
+        "accuracy": 0.19429999589920044,
+        "old_accuracy": 0.0,
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.9798285365104675
+        ]
+      },
+      "inferred": {
+        "accuracy": 0.19439999759197235,
+        "old_accuracy": 0.0,
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.9803328514099121
+        ]
+      },
+      "oracle": {
+        "accuracy": 0.19429999589920044,
+        "old_accuracy": 0.0,
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.9798285365104675
+        ]
+      },
+      "bank_any_correct": 0.19519999623298645
+    },
+    "status": "pilot, no auxiliary loss",
+    "source": "results/mnist_gate_training_wta_20261101/combined_results.json"
+  },
+  {
+    "study": "MNIST gate pilot, single seed",
+    "method": "activation_wta",
+    "seed": 101,
+    "order": "reverse",
+    "scores": {
+      "current": {
+        "accuracy": 0.21140000224113464,
+        "old_accuracy": 0.0,
+        "pair_accuracy": [
+          0.9995272159576416,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "inferred": {
+        "accuracy": 0.21140000224113464,
+        "old_accuracy": 0.0,
+        "pair_accuracy": [
+          0.9995272159576416,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "oracle": {
+        "accuracy": 0.21140000224113464,
+        "old_accuracy": 0.0,
+        "pair_accuracy": [
+          0.9995272159576416,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "bank_any_correct": 0.21140000224113464
+    },
+    "status": "pilot, no auxiliary loss",
+    "source": "results/mnist_gate_training_wta_20261101/combined_results.json"
+  },
+  {
+    "study": "CIFAR-10, CNN from scratch",
+    "method": "aux",
+    "mode": "current",
+    "accuracy": 18.37333341439565,
+    "sd": 0.14268265347879758,
+    "memory_mb": 2.102008,
+    "parameters": 525014,
+    "source": "reports/cifar10_routing_gap_20261031/summary.json"
+  },
+  {
+    "study": "CIFAR-10, CNN from scratch",
+    "method": "aux",
+    "mode": "prototype",
+    "accuracy": 24.91333360473315,
+    "sd": 0.8675009701296771,
+    "memory_mb": 2.164058,
+    "parameters": 525014,
+    "source": "reports/cifar10_routing_gap_20261031/summary.json"
+  },
+  {
+    "study": "CIFAR-10, CNN from scratch",
+    "method": "aux",
+    "mode": "learned_context",
+    "accuracy": 30.171666542689007,
+    "sd": 0.7335933955923405,
+    "memory_mb": 2.272646,
+    "parameters": 525014,
+    "source": "reports/cifar10_routing_gap_20261031/summary.json"
+  },
+  {
+    "study": "CIFAR-10, CNN from scratch",
+    "method": "aux",
+    "mode": "entropy",
+    "accuracy": 22.998332977294922,
+    "sd": 3.1269812051142467,
+    "memory_mb": 2.102618,
+    "parameters": 525014,
+    "source": "reports/cifar10_routing_gap_20261031/summary.json"
+  },
+  {
+    "study": "CIFAR-10, CNN from scratch",
+    "method": "aux",
+    "mode": "margin",
+    "accuracy": 22.91333352526029,
+    "sd": 3.182421828052451,
+    "memory_mb": 2.102618,
+    "parameters": 525014,
+    "source": "reports/cifar10_routing_gap_20261031/summary.json"
+  },
+  {
+    "study": "CIFAR-10, CNN from scratch",
+    "method": "aux",
+    "mode": "random_route",
+    "accuracy": 14.780000100533167,
+    "sd": 0.9679746786464053,
+    "memory_mb": 2.102618,
+    "parameters": 525014,
+    "source": "reports/cifar10_routing_gap_20261031/summary.json"
+  },
+  {
+    "study": "CIFAR-10, CNN from scratch",
+    "method": "aux",
+    "mode": "wrong_route",
+    "accuracy": 1.9716666041252513,
+    "sd": 1.7418547598595868,
+    "memory_mb": 2.102618,
+    "parameters": 525014,
+    "source": "reports/cifar10_routing_gap_20261031/summary.json"
+  },
+  {
+    "study": "CIFAR-10, CNN from scratch",
+    "method": "aux",
+    "mode": "oracle",
+    "accuracy": 61.82999908924103,
+    "sd": 1.9122697914737146,
+    "memory_mb": 2.102618,
+    "parameters": 525014,
+    "source": "reports/cifar10_routing_gap_20261031/summary.json"
+  },
+  {
+    "study": "CIFAR-10, CNN from scratch",
+    "method": "aux",
+    "mode": "bank_any_correct",
+    "accuracy": 63.086666663487755,
+    "sd": 2.6150405982753173,
+    "memory_mb": 2.102618,
+    "parameters": 525014,
+    "source": "reports/cifar10_routing_gap_20261031/summary.json"
+  },
+  {
+    "study": "CIFAR-10, CNN from scratch",
+    "method": "ce",
+    "mode": "current",
+    "accuracy": 18.40166648228963,
+    "sd": 0.21367828356749444,
+    "memory_mb": 2.102008,
+    "parameters": 525014,
+    "source": "reports/cifar10_routing_gap_20261031/summary.json"
+  },
+  {
+    "study": "CIFAR-10, CNN from scratch",
+    "method": "ce",
+    "mode": "prototype",
+    "accuracy": 24.40499986211459,
+    "sd": 2.5726788993751506,
+    "memory_mb": 2.164058,
+    "parameters": 525014,
+    "source": "reports/cifar10_routing_gap_20261031/summary.json"
+  },
+  {
+    "study": "CIFAR-10, CNN from scratch",
+    "method": "ce",
+    "mode": "learned_context",
+    "accuracy": 30.158333480358124,
+    "sd": 2.781534478169607,
+    "memory_mb": 2.272646,
+    "parameters": 525014,
+    "source": "reports/cifar10_routing_gap_20261031/summary.json"
+  },
+  {
+    "study": "CIFAR-10, CNN from scratch",
+    "method": "ce",
+    "mode": "entropy",
+    "accuracy": 21.396666516860325,
+    "sd": 0.8551949420494698,
+    "memory_mb": 2.102618,
+    "parameters": 525014,
+    "source": "reports/cifar10_routing_gap_20261031/summary.json"
+  },
+  {
+    "study": "CIFAR-10, CNN from scratch",
+    "method": "ce",
+    "mode": "margin",
+    "accuracy": 22.536666442950565,
+    "sd": 1.702184519459672,
+    "memory_mb": 2.102618,
+    "parameters": 525014,
+    "source": "reports/cifar10_routing_gap_20261031/summary.json"
+  },
+  {
+    "study": "CIFAR-10, CNN from scratch",
+    "method": "ce",
+    "mode": "random_route",
+    "accuracy": 13.515000169475874,
+    "sd": 0.34597693616528674,
+    "memory_mb": 2.102618,
+    "parameters": 525014,
+    "source": "reports/cifar10_routing_gap_20261031/summary.json"
+  },
+  {
+    "study": "CIFAR-10, CNN from scratch",
+    "method": "ce",
+    "mode": "wrong_route",
+    "accuracy": 1.9116666963479172,
+    "sd": 3.189958253142348,
+    "memory_mb": 2.102618,
+    "parameters": 525014,
+    "source": "reports/cifar10_routing_gap_20261031/summary.json"
+  },
+  {
+    "study": "CIFAR-10, CNN from scratch",
+    "method": "ce",
+    "mode": "oracle",
+    "accuracy": 64.06500041484833,
+    "sd": 5.807403443648883,
+    "memory_mb": 2.102618,
+    "parameters": 525014,
+    "source": "reports/cifar10_routing_gap_20261031/summary.json"
+  },
+  {
+    "study": "CIFAR-10, CNN from scratch",
+    "method": "ce",
+    "mode": "bank_any_correct",
+    "accuracy": 64.34166630109151,
+    "sd": 5.619392766840848,
+    "memory_mb": 2.102618,
+    "parameters": 525014,
+    "source": "reports/cifar10_routing_gap_20261031/summary.json"
+  },
+  {
+    "study": "CIFAR-10, CNN from scratch",
+    "method": "pec",
+    "mode": "autonomous",
+    "accuracy": 33.769999941190086,
+    "sd": 1.1136882237603503,
+    "memory_mb": 2.091708,
+    "parameters": 522927,
+    "source": "reports/cifar10_routing_gap_20261031/summary.json"
+  },
+  {
+    "study": "CIFAR-10, CNN from scratch",
+    "method": "joint_aux",
+    "mode": "autonomous",
+    "accuracy": 64.46333328882854,
+    "sd": 1.2404186095184648,
+    "memory_mb": 2.102008,
+    "parameters": 525014,
+    "source": "reports/cifar10_routing_gap_20261031/summary.json"
+  },
+  {
+    "study": "CIFAR-10, CNN from scratch",
+    "method": "joint_ce",
+    "mode": "autonomous",
+    "accuracy": 63.04333209991455,
+    "sd": 0.7669650556846273,
+    "memory_mb": 2.102008,
+    "parameters": 525014,
+    "source": "reports/cifar10_routing_gap_20261031/summary.json"
+  }
+]

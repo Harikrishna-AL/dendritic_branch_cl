@@ -1,0 +1,37 @@
+# Step 3 / Experiment 1, reduced scope after measuring real compute costs.
+#
+# Three tasks, not five: `add` (0.275) and `lookup` (0.24) barely clear the
+# floor at this scale, so their forgetting and BWT numbers are noise. Dropping
+# them costs almost nothing scientifically and saves ~40% of the budget.
+#
+# 800 steps/task: copy reaches ~0.98 by 900 and sort ~0.95 by 600 (see
+# results/logs/exp1.log), so 800 is enough for all three to be learned.
+#
+# Evaluation, not training, was the dominant cost (14.5s per quick eval,
+# 23.6s per full eval), so n_eval is halved, quick evals are rarer and
+# smaller, and length-generalization is only scored on the final row.
+name: exp2_synthetic3
+family: synthetic
+preset: tiny
+tasks: [copy, reverse, sort]
+models: [bdh, gpt]
+strategies: [naive, replay, joint]
+seeds: [0, 1, 2]
+n_eval: 100
+eval_batch_size: 32
+probe_batches: 2
+save_checkpoints: true
+plasticity_target_frac: 0.5
+train:
+  block_size: 96
+  batch_size: 32
+  steps_per_task: 800
+  warmup_steps: 80
+  eval_every: 400
+  log_every: 400
+
+# Live logging (cluster runs); harmless locally since it degrades to a no-op.
+wandb:
+  enabled: true
+  project: bdh-cl
+  group: exp2_synthetic3

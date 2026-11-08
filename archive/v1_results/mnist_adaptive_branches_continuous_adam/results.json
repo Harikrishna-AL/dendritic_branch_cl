@@ -1,0 +1,3594 @@
+[
+  {
+    "arm": "adaptive",
+    "seed": 101,
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "stages": [
+      {
+        "pair": 0,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.9990000128746033
+          },
+          {
+            "branches": 2,
+            "seen_validation": 0.9990000128746033
+          },
+          {
+            "branches": 3,
+            "seen_validation": 0.9990000128746033
+          },
+          {
+            "branches": 4,
+            "seen_validation": 0.9990000128746033
+          }
+        ],
+        "pair_accuracy": [
+          0.9990543723106384,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.21130000054836273,
+        "parameters": 133570
+      },
+      {
+        "pair": 1,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.48899999260902405
+          },
+          {
+            "branches": 2,
+            "seen_validation": 0.4855000078678131
+          },
+          {
+            "branches": 3,
+            "seen_validation": 0.48649999499320984
+          },
+          {
+            "branches": 4,
+            "seen_validation": 0.4860000014305115
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.971106767654419,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.19830000400543213,
+        "parameters": 133570
+      },
+      {
+        "pair": 2,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.3283333381017049
+          },
+          {
+            "branches": 2,
+            "seen_validation": 0.3259999950726827
+          },
+          {
+            "branches": 3,
+            "seen_validation": 0.32200000683466595
+          },
+          {
+            "branches": 4,
+            "seen_validation": 0.3199999928474426
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.9893276691436768,
+          0.0,
+          0.0
+        ],
+        "overall": 0.18539999425411224,
+        "parameters": 133570
+      },
+      {
+        "pair": 3,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.25
+          },
+          {
+            "branches": 2,
+            "seen_validation": 0.24674999713897705
+          },
+          {
+            "branches": 3,
+            "seen_validation": 0.24175000190734863
+          },
+          {
+            "branches": 4,
+            "seen_validation": 0.24050000309944153
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.9939576983451843,
+          0.0
+        ],
+        "overall": 0.19740000367164612,
+        "parameters": 133570
+      },
+      {
+        "pair": 4,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.1947999954223633
+          },
+          {
+            "branches": 2,
+            "seen_validation": 0.1351999968290329
+          },
+          {
+            "branches": 3,
+            "seen_validation": 0.1305999937467277
+          },
+          {
+            "branches": 4,
+            "seen_validation": 0.13579999860376119
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.9707514047622681
+        ],
+        "overall": 0.19249999523162842,
+        "parameters": 133570
+      }
+    ]
+  },
+  {
+    "arm": "1",
+    "seed": 101,
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "stages": [
+      {
+        "pair": 0,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.9990000128746033
+          }
+        ],
+        "pair_accuracy": [
+          0.9990543723106384,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.21130000054836273,
+        "parameters": 133570
+      },
+      {
+        "pair": 1,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.48899999260902405
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.971106767654419,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.19830000400543213,
+        "parameters": 133570
+      },
+      {
+        "pair": 2,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.3283333381017049
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.9893276691436768,
+          0.0,
+          0.0
+        ],
+        "overall": 0.18539999425411224,
+        "parameters": 133570
+      },
+      {
+        "pair": 3,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.25
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.9939576983451843,
+          0.0
+        ],
+        "overall": 0.19740000367164612,
+        "parameters": 133570
+      },
+      {
+        "pair": 4,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.1947999954223633
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.9707514047622681
+        ],
+        "overall": 0.19249999523162842,
+        "parameters": 133570
+      }
+    ]
+  },
+  {
+    "arm": "2",
+    "seed": 101,
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "stages": [
+      {
+        "pair": 0,
+        "branches": 2,
+        "validation_trials": [
+          {
+            "branches": 2,
+            "seen_validation": 0.9990000128746033
+          }
+        ],
+        "pair_accuracy": [
+          0.99858158826828,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.21119999885559082,
+        "parameters": 265450
+      },
+      {
+        "pair": 1,
+        "branches": 2,
+        "validation_trials": [
+          {
+            "branches": 2,
+            "seen_validation": 0.48199999978533015
+          }
+        ],
+        "pair_accuracy": [
+          0.00047281323350034654,
+          0.9608227014541626,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.19629999995231628,
+        "parameters": 265450
+      },
+      {
+        "pair": 2,
+        "branches": 2,
+        "validation_trials": [
+          {
+            "branches": 2,
+            "seen_validation": 0.5856666564941406
+          }
+        ],
+        "pair_accuracy": [
+          0.00047281323350034654,
+          0.8261508345603943,
+          0.949306309223175,
+          0.0,
+          0.0
+        ],
+        "overall": 0.3467000126838684,
+        "parameters": 265450
+      },
+      {
+        "pair": 3,
+        "branches": 2,
+        "validation_trials": [
+          {
+            "branches": 2,
+            "seen_validation": 0.5450000050186645
+          }
+        ],
+        "pair_accuracy": [
+          0.010874704457819462,
+          0.6704211831092834,
+          0.9621131420135498,
+          0.5815709829330444,
+          0.0
+        ],
+        "overall": 0.4350000023841858,
+        "parameters": 265450
+      },
+      {
+        "pair": 4,
+        "branches": 2,
+        "validation_trials": [
+          {
+            "branches": 2,
+            "seen_validation": 0.5249999940395356
+          }
+        ],
+        "pair_accuracy": [
+          0.3479905426502228,
+          0.5455436110496521,
+          0.6942369341850281,
+          0.5815709829330444,
+          0.4997478425502777
+        ],
+        "overall": 0.529699981212616,
+        "parameters": 265450
+      }
+    ]
+  },
+  {
+    "arm": "3",
+    "seed": 101,
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "stages": [
+      {
+        "pair": 0,
+        "branches": 3,
+        "validation_trials": [
+          {
+            "branches": 3,
+            "seen_validation": 0.9990000128746033
+          }
+        ],
+        "pair_accuracy": [
+          0.9990543723106384,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.21130000054836273,
+        "parameters": 397330
+      },
+      {
+        "pair": 1,
+        "branches": 3,
+        "validation_trials": [
+          {
+            "branches": 3,
+            "seen_validation": 0.5184999853372574
+          }
+        ],
+        "pair_accuracy": [
+          0.09929078072309494,
+          0.9299706220626831,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.21089999377727509,
+        "parameters": 397330
+      },
+      {
+        "pair": 2,
+        "branches": 3,
+        "validation_trials": [
+          {
+            "branches": 3,
+            "seen_validation": 0.5700000002980232
+          }
+        ],
+        "pair_accuracy": [
+          0.009929077699780464,
+          0.8031342029571533,
+          0.9130202531814575,
+          0.0,
+          0.0
+        ],
+        "overall": 0.33719998598098755,
+        "parameters": 397330
+      },
+      {
+        "pair": 3,
+        "branches": 3,
+        "validation_trials": [
+          {
+            "branches": 3,
+            "seen_validation": 0.5682499967515469
+          }
+        ],
+        "pair_accuracy": [
+          0.19716311991214752,
+          0.7091087102890015,
+          0.7870864272117615,
+          0.6430010199546814,
+          0.0
+        ],
+        "overall": 0.4616999924182892,
+        "parameters": 397330
+      },
+      {
+        "pair": 4,
+        "branches": 3,
+        "validation_trials": [
+          {
+            "branches": 3,
+            "seen_validation": 0.5297999978065491
+          }
+        ],
+        "pair_accuracy": [
+          0.45295509696006775,
+          0.7389813661575317,
+          0.5277481079101562,
+          0.5,
+          0.5320221781730652
+        ],
+        "overall": 0.5504000186920166,
+        "parameters": 397330
+      }
+    ]
+  },
+  {
+    "arm": "4",
+    "seed": 101,
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "stages": [
+      {
+        "pair": 0,
+        "branches": 4,
+        "validation_trials": [
+          {
+            "branches": 4,
+            "seen_validation": 0.9990000128746033
+          }
+        ],
+        "pair_accuracy": [
+          0.9990543723106384,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.21130000054836273,
+        "parameters": 529210
+      },
+      {
+        "pair": 1,
+        "branches": 4,
+        "validation_trials": [
+          {
+            "branches": 4,
+            "seen_validation": 0.5065000094473362
+          }
+        ],
+        "pair_accuracy": [
+          0.05248226970434189,
+          0.948090136051178,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.20469999313354492,
+        "parameters": 529210
+      },
+      {
+        "pair": 2,
+        "branches": 4,
+        "validation_trials": [
+          {
+            "branches": 4,
+            "seen_validation": 0.5603333376348019
+          }
+        ],
+        "pair_accuracy": [
+          0.024586288258433342,
+          0.9206660389900208,
+          0.7502667903900146,
+          0.0,
+          0.0
+        ],
+        "overall": 0.33379998803138733,
+        "parameters": 529210
+      },
+      {
+        "pair": 3,
+        "branches": 4,
+        "validation_trials": [
+          {
+            "branches": 4,
+            "seen_validation": 0.5589999943040311
+          }
+        ],
+        "pair_accuracy": [
+          0.02600472792983055,
+          0.8472086191177368,
+          0.7267876267433167,
+          0.6983886957168579,
+          0.0
+        ],
+        "overall": 0.45339998602867126,
+        "parameters": 529210
+      },
+      {
+        "pair": 4,
+        "branches": 4,
+        "validation_trials": [
+          {
+            "branches": 4,
+            "seen_validation": 0.5980000138282776
+          }
+        ],
+        "pair_accuracy": [
+          0.3957446813583374,
+          0.8496571779251099,
+          0.612593412399292,
+          0.6283987760543823,
+          0.5416036248207092
+        ],
+        "overall": 0.604200005531311,
+        "parameters": 529210
+      }
+    ]
+  },
+  {
+    "arm": "adaptive",
+    "seed": 101,
+    "order": [
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "stages": [
+      {
+        "pair": 4,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.9829999804496765
+          },
+          {
+            "branches": 2,
+            "seen_validation": 0.9800000190734863
+          },
+          {
+            "branches": 3,
+            "seen_validation": 0.9789999723434448
+          },
+          {
+            "branches": 4,
+            "seen_validation": 0.9750000238418579
+          }
+        ],
+        "pair_accuracy": [
+          0.9773070812225342,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.19380000233650208,
+        "parameters": 133570
+      },
+      {
+        "pair": 3,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.49900001287460327
+          },
+          {
+            "branches": 2,
+            "seen_validation": 0.4925000071525574
+          },
+          {
+            "branches": 3,
+            "seen_validation": 0.4934999942779541
+          },
+          {
+            "branches": 4,
+            "seen_validation": 0.4934999942779541
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.9944612383842468,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.19750000536441803,
+        "parameters": 133570
+      },
+      {
+        "pair": 2,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.3293333252271016
+          },
+          {
+            "branches": 2,
+            "seen_validation": 0.31199999650319415
+          },
+          {
+            "branches": 3,
+            "seen_validation": 0.31600000460942584
+          },
+          {
+            "branches": 4,
+            "seen_validation": 0.31566667556762695
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.9919957518577576,
+          0.0,
+          0.0
+        ],
+        "overall": 0.1859000027179718,
+        "parameters": 133570
+      },
+      {
+        "pair": 1,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.24300000071525574
+          },
+          {
+            "branches": 2,
+            "seen_validation": 0.12675000727176666
+          },
+          {
+            "branches": 3,
+            "seen_validation": 0.12700000405311584
+          },
+          {
+            "branches": 4,
+            "seen_validation": 0.1277499943971634
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.9720861911773682,
+          0.0
+        ],
+        "overall": 0.19850000739097595,
+        "parameters": 133570
+      },
+      {
+        "pair": 0,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.19980000257492064
+          },
+          {
+            "branches": 2,
+            "seen_validation": 0.20000000258442013
+          },
+          {
+            "branches": 3,
+            "seen_validation": 0.20120000261813403
+          },
+          {
+            "branches": 4,
+            "seen_validation": 0.20140000265091657
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.9990543723106384
+        ],
+        "overall": 0.21130000054836273,
+        "parameters": 133570
+      }
+    ]
+  },
+  {
+    "arm": "1",
+    "seed": 101,
+    "order": [
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "stages": [
+      {
+        "pair": 4,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.9829999804496765
+          }
+        ],
+        "pair_accuracy": [
+          0.9773070812225342,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.19380000233650208,
+        "parameters": 133570
+      },
+      {
+        "pair": 3,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.49900001287460327
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.9944612383842468,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.19750000536441803,
+        "parameters": 133570
+      },
+      {
+        "pair": 2,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.3293333252271016
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.9919957518577576,
+          0.0,
+          0.0
+        ],
+        "overall": 0.1859000027179718,
+        "parameters": 133570
+      },
+      {
+        "pair": 1,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.24300000071525574
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.9720861911773682,
+          0.0
+        ],
+        "overall": 0.19850000739097595,
+        "parameters": 133570
+      },
+      {
+        "pair": 0,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.19980000257492064
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.9990543723106384
+        ],
+        "overall": 0.21130000054836273,
+        "parameters": 133570
+      }
+    ]
+  },
+  {
+    "arm": "2",
+    "seed": 101,
+    "order": [
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "stages": [
+      {
+        "pair": 4,
+        "branches": 2,
+        "validation_trials": [
+          {
+            "branches": 2,
+            "seen_validation": 0.9649999737739563
+          }
+        ],
+        "pair_accuracy": [
+          0.9591528177261353,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.19020000100135803,
+        "parameters": 265450
+      },
+      {
+        "pair": 3,
+        "branches": 2,
+        "validation_trials": [
+          {
+            "branches": 2,
+            "seen_validation": 0.4980000024079345
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.9904330372810364,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.19670000672340393,
+        "parameters": 265450
+      },
+      {
+        "pair": 2,
+        "branches": 2,
+        "validation_trials": [
+          {
+            "branches": 2,
+            "seen_validation": 0.5726666649182638
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.7573010921478271,
+          0.9669156670570374,
+          0.0,
+          0.0
+        ],
+        "overall": 0.33160001039505005,
+        "parameters": 265450
+      },
+      {
+        "pair": 1,
+        "branches": 2,
+        "validation_trials": [
+          {
+            "branches": 2,
+            "seen_validation": 0.5347499996423721
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.6440080404281616,
+          0.9381003379821777,
+          0.5073457360267639,
+          0.0
+        ],
+        "overall": 0.4072999954223633,
+        "parameters": 265450
+      },
+      {
+        "pair": 0,
+        "branches": 2,
+        "validation_trials": [
+          {
+            "branches": 2,
+            "seen_validation": 0.5761999964714051
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.43907350301742554,
+          0.8383137583732605,
+          0.7438785433769226,
+          0.8326241374015808
+        ],
+        "overall": 0.5723000168800354,
+        "parameters": 265450
+      }
+    ]
+  },
+  {
+    "arm": "3",
+    "seed": 101,
+    "order": [
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "stages": [
+      {
+        "pair": 4,
+        "branches": 3,
+        "validation_trials": [
+          {
+            "branches": 3,
+            "seen_validation": 0.9760000109672546
+          }
+        ],
+        "pair_accuracy": [
+          0.9737771153450012,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.1931000053882599,
+        "parameters": 397330
+      },
+      {
+        "pair": 3,
+        "branches": 3,
+        "validation_trials": [
+          {
+            "branches": 3,
+            "seen_validation": 0.5004999896045774
+          }
+        ],
+        "pair_accuracy": [
+          0.0030257184989750385,
+          0.9889224767684937,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.19699999690055847,
+        "parameters": 397330
+      },
+      {
+        "pair": 2,
+        "branches": 3,
+        "validation_trials": [
+          {
+            "branches": 3,
+            "seen_validation": 0.5896666646003723
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.8796576261520386,
+          0.9071505069732666,
+          0.0,
+          0.0
+        ],
+        "overall": 0.34470000863075256,
+        "parameters": 397330
+      },
+      {
+        "pair": 1,
+        "branches": 3,
+        "validation_trials": [
+          {
+            "branches": 3,
+            "seen_validation": 0.5707499980926514
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.7865055203437805,
+          0.8655282855033875,
+          0.6229187250137329,
+          0.0
+        ],
+        "overall": 0.4456000030040741,
+        "parameters": 397330
+      },
+      {
+        "pair": 0,
+        "branches": 3,
+        "validation_trials": [
+          {
+            "branches": 3,
+            "seen_validation": 0.5953999996185303
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.7673715949058533,
+          0.6840981841087341,
+          0.6072477698326111,
+          0.9617021083831787
+        ],
+        "overall": 0.6079999804496765,
+        "parameters": 397330
+      }
+    ]
+  },
+  {
+    "arm": "4",
+    "seed": 101,
+    "order": [
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "stages": [
+      {
+        "pair": 4,
+        "branches": 4,
+        "validation_trials": [
+          {
+            "branches": 4,
+            "seen_validation": 0.9769999980926514
+          }
+        ],
+        "pair_accuracy": [
+          0.9712556600570679,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.19259999692440033,
+        "parameters": 529210
+      },
+      {
+        "pair": 3,
+        "branches": 4,
+        "validation_trials": [
+          {
+            "branches": 4,
+            "seen_validation": 0.5009999894537032
+          }
+        ],
+        "pair_accuracy": [
+          0.006051436997950077,
+          0.9904330372810364,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.19789999723434448,
+        "parameters": 529210
+      },
+      {
+        "pair": 2,
+        "branches": 4,
+        "validation_trials": [
+          {
+            "branches": 4,
+            "seen_validation": 0.5786666671435038
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.8459214568138123,
+          0.9124866724014282,
+          0.0,
+          0.0
+        ],
+        "overall": 0.33899998664855957,
+        "parameters": 529210
+      },
+      {
+        "pair": 1,
+        "branches": 4,
+        "validation_trials": [
+          {
+            "branches": 4,
+            "seen_validation": 0.5397499948740005
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.7230614423751831,
+          0.9103521704673767,
+          0.5386875867843628,
+          0.0
+        ],
+        "overall": 0.42419999837875366,
+        "parameters": 529210
+      },
+      {
+        "pair": 0,
+        "branches": 4,
+        "validation_trials": [
+          {
+            "branches": 4,
+            "seen_validation": 0.5593999907374382
+          }
+        ],
+        "pair_accuracy": [
+          0.01664145290851593,
+          0.6807653307914734,
+          0.7139807939529419,
+          0.44417238235473633,
+          0.9621749520301819
+        ],
+        "overall": 0.5665000081062317,
+        "parameters": 529210
+      }
+    ]
+  },
+  {
+    "arm": "adaptive",
+    "seed": 102,
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "stages": [
+      {
+        "pair": 0,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.9990000128746033
+          },
+          {
+            "branches": 2,
+            "seen_validation": 0.9990000128746033
+          },
+          {
+            "branches": 3,
+            "seen_validation": 0.9980000257492065
+          },
+          {
+            "branches": 4,
+            "seen_validation": 0.9990000128746033
+          }
+        ],
+        "pair_accuracy": [
+          0.9995272159576416,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.21140000224113464,
+        "parameters": 133570
+      },
+      {
+        "pair": 1,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.4869999885559082
+          },
+          {
+            "branches": 2,
+            "seen_validation": 0.4659999907016754
+          },
+          {
+            "branches": 3,
+            "seen_validation": 0.4569999873638153
+          },
+          {
+            "branches": 4,
+            "seen_validation": 0.45500001311302185
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.9750244617462158,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.19910000264644623,
+        "parameters": 133570
+      },
+      {
+        "pair": 2,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.3293333252271016
+          },
+          {
+            "branches": 2,
+            "seen_validation": 0.3173333406448364
+          },
+          {
+            "branches": 3,
+            "seen_validation": 0.3243333299954732
+          },
+          {
+            "branches": 4,
+            "seen_validation": 0.3216666579246521
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.9919957518577576,
+          0.0,
+          0.0
+        ],
+        "overall": 0.1859000027179718,
+        "parameters": 133570
+      },
+      {
+        "pair": 3,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.24950000643730164
+          },
+          {
+            "branches": 2,
+            "seen_validation": 0.24924999475479126
+          },
+          {
+            "branches": 3,
+            "seen_validation": 0.2485000044107437
+          },
+          {
+            "branches": 4,
+            "seen_validation": 0.24400000274181366
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.9924471378326416,
+          0.0
+        ],
+        "overall": 0.19709999859333038,
+        "parameters": 133570
+      },
+      {
+        "pair": 4,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.19579999446868895
+          },
+          {
+            "branches": 2,
+            "seen_validation": 0.1499999973922968
+          },
+          {
+            "branches": 3,
+            "seen_validation": 0.14099999628961085
+          },
+          {
+            "branches": 4,
+            "seen_validation": 0.14499999955296516
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.9737771153450012
+        ],
+        "overall": 0.1931000053882599,
+        "parameters": 133570
+      }
+    ]
+  },
+  {
+    "arm": "1",
+    "seed": 102,
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "stages": [
+      {
+        "pair": 0,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.9990000128746033
+          }
+        ],
+        "pair_accuracy": [
+          0.9995272159576416,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.21140000224113464,
+        "parameters": 133570
+      },
+      {
+        "pair": 1,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.4869999885559082
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.9750244617462158,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.19910000264644623,
+        "parameters": 133570
+      },
+      {
+        "pair": 2,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.3293333252271016
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.9919957518577576,
+          0.0,
+          0.0
+        ],
+        "overall": 0.1859000027179718,
+        "parameters": 133570
+      },
+      {
+        "pair": 3,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.24950000643730164
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.9924471378326416,
+          0.0
+        ],
+        "overall": 0.19709999859333038,
+        "parameters": 133570
+      },
+      {
+        "pair": 4,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.19579999446868895
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.9737771153450012
+        ],
+        "overall": 0.1931000053882599,
+        "parameters": 133570
+      }
+    ]
+  },
+  {
+    "arm": "2",
+    "seed": 102,
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "stages": [
+      {
+        "pair": 0,
+        "branches": 2,
+        "validation_trials": [
+          {
+            "branches": 2,
+            "seen_validation": 0.9980000257492065
+          }
+        ],
+        "pair_accuracy": [
+          0.99858158826828,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.21119999885559082,
+        "parameters": 265450
+      },
+      {
+        "pair": 1,
+        "branches": 2,
+        "validation_trials": [
+          {
+            "branches": 2,
+            "seen_validation": 0.4915000079199672
+          }
+        ],
+        "pair_accuracy": [
+          0.01182033121585846,
+          0.960332989692688,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.19859999418258667,
+        "parameters": 265450
+      },
+      {
+        "pair": 2,
+        "branches": 2,
+        "validation_trials": [
+          {
+            "branches": 2,
+            "seen_validation": 0.4636666619141276
+          }
+        ],
+        "pair_accuracy": [
+          0.0018912529340013862,
+          0.727717936038971,
+          0.7459978461265564,
+          0.0,
+          0.0
+        ],
+        "overall": 0.2888000011444092,
+        "parameters": 265450
+      },
+      {
+        "pair": 3,
+        "branches": 2,
+        "validation_trials": [
+          {
+            "branches": 2,
+            "seen_validation": 0.5232500051497482
+          }
+        ],
+        "pair_accuracy": [
+          0.0061465720646083355,
+          0.5460333228111267,
+          0.9631803631782532,
+          0.6359516382217407,
+          0.0
+        ],
+        "overall": 0.4196000099182129,
+        "parameters": 265450
+      },
+      {
+        "pair": 4,
+        "branches": 2,
+        "validation_trials": [
+          {
+            "branches": 2,
+            "seen_validation": 0.5515999972820282
+          }
+        ],
+        "pair_accuracy": [
+          0.319621741771698,
+          0.6057786345481873,
+          0.7017076015472412,
+          0.773413896560669,
+          0.4553706645965576
+        ],
+        "overall": 0.5666999816894531,
+        "parameters": 265450
+      }
+    ]
+  },
+  {
+    "arm": "3",
+    "seed": 102,
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "stages": [
+      {
+        "pair": 0,
+        "branches": 3,
+        "validation_trials": [
+          {
+            "branches": 3,
+            "seen_validation": 0.9980000257492065
+          }
+        ],
+        "pair_accuracy": [
+          0.99858158826828,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.21119999885559082,
+        "parameters": 397330
+      },
+      {
+        "pair": 1,
+        "branches": 3,
+        "validation_trials": [
+          {
+            "branches": 3,
+            "seen_validation": 0.49400000367313623
+          }
+        ],
+        "pair_accuracy": [
+          0.01843971572816372,
+          0.9632713198661804,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.20059999823570251,
+        "parameters": 397330
+      },
+      {
+        "pair": 2,
+        "branches": 3,
+        "validation_trials": [
+          {
+            "branches": 3,
+            "seen_validation": 0.5636666615804037
+          }
+        ],
+        "pair_accuracy": [
+          0.0014184396713972092,
+          0.8330068588256836,
+          0.8703308701515198,
+          0.0,
+          0.0
+        ],
+        "overall": 0.3334999978542328,
+        "parameters": 397330
+      },
+      {
+        "pair": 3,
+        "branches": 3,
+        "validation_trials": [
+          {
+            "branches": 3,
+            "seen_validation": 0.5820000106468797
+          }
+        ],
+        "pair_accuracy": [
+          0.04018912464380264,
+          0.808521032333374,
+          0.9039487838745117,
+          0.6042296290397644,
+          0.0
+        ],
+        "overall": 0.46299999952316284,
+        "parameters": 397330
+      },
+      {
+        "pair": 4,
+        "branches": 3,
+        "validation_trials": [
+          {
+            "branches": 3,
+            "seen_validation": 0.5705999910831452
+          }
+        ],
+        "pair_accuracy": [
+          0.3640661835670471,
+          0.7766895294189453,
+          0.7748132348060608,
+          0.4622356593608856,
+          0.5864851474761963
+        ],
+        "overall": 0.5889000296592712,
+        "parameters": 397330
+      }
+    ]
+  },
+  {
+    "arm": "4",
+    "seed": 102,
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "stages": [
+      {
+        "pair": 0,
+        "branches": 4,
+        "validation_trials": [
+          {
+            "branches": 4,
+            "seen_validation": 0.9980000257492065
+          }
+        ],
+        "pair_accuracy": [
+          0.99858158826828,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.21119999885559082,
+        "parameters": 529210
+      },
+      {
+        "pair": 1,
+        "branches": 4,
+        "validation_trials": [
+          {
+            "branches": 4,
+            "seen_validation": 0.5089999940246344
+          }
+        ],
+        "pair_accuracy": [
+          0.058156028389930725,
+          0.9613124132156372,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.2085999995470047,
+        "parameters": 529210
+      },
+      {
+        "pair": 2,
+        "branches": 4,
+        "validation_trials": [
+          {
+            "branches": 4,
+            "seen_validation": 0.5696666613221169
+          }
+        ],
+        "pair_accuracy": [
+          0.09929078072309494,
+          0.9392752051353455,
+          0.72785484790802,
+          0.0,
+          0.0
+        ],
+        "overall": 0.3492000102996826,
+        "parameters": 529210
+      },
+      {
+        "pair": 3,
+        "branches": 4,
+        "validation_trials": [
+          {
+            "branches": 4,
+            "seen_validation": 0.6845000088214874
+          }
+        ],
+        "pair_accuracy": [
+          0.29314419627189636,
+          0.8942213654518127,
+          0.8132337331771851,
+          0.8096676468849182,
+          0.0
+        ],
+        "overall": 0.5577999949455261,
+        "parameters": 529210
+      },
+      {
+        "pair": 4,
+        "branches": 4,
+        "validation_trials": [
+          {
+            "branches": 4,
+            "seen_validation": 0.6340000033378601
+          }
+        ],
+        "pair_accuracy": [
+          0.673758864402771,
+          0.8129284977912903,
+          0.6184631586074829,
+          0.6983886957168579,
+          0.42360061407089233
+        ],
+        "overall": 0.6470999717712402,
+        "parameters": 529210
+      }
+    ]
+  },
+  {
+    "arm": "adaptive",
+    "seed": 102,
+    "order": [
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "stages": [
+      {
+        "pair": 4,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.9800000190734863
+          },
+          {
+            "branches": 2,
+            "seen_validation": 0.9779999852180481
+          },
+          {
+            "branches": 3,
+            "seen_validation": 0.968999981880188
+          },
+          {
+            "branches": 4,
+            "seen_validation": 0.9779999852180481
+          }
+        ],
+        "pair_accuracy": [
+          0.9722642302513123,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.19280000030994415,
+        "parameters": 133570
+      },
+      {
+        "pair": 3,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.49900001287460327
+          },
+          {
+            "branches": 2,
+            "seen_validation": 0.4950000047683716
+          },
+          {
+            "branches": 3,
+            "seen_validation": 0.4945000112056732
+          },
+          {
+            "branches": 4,
+            "seen_validation": 0.4945000112056732
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.9924471378326416,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.19709999859333038,
+        "parameters": 133570
+      },
+      {
+        "pair": 2,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.32899999618530273
+          },
+          {
+            "branches": 2,
+            "seen_validation": 0.3243333299954732
+          },
+          {
+            "branches": 3,
+            "seen_validation": 0.3253333369890849
+          },
+          {
+            "branches": 4,
+            "seen_validation": 0.3256666660308838
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.9925293326377869,
+          0.0,
+          0.0
+        ],
+        "overall": 0.1860000044107437,
+        "parameters": 133570
+      },
+      {
+        "pair": 1,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.24300000071525574
+          },
+          {
+            "branches": 2,
+            "seen_validation": 0.1340000033378601
+          },
+          {
+            "branches": 3,
+            "seen_validation": 0.12300000339746475
+          },
+          {
+            "branches": 4,
+            "seen_validation": 0.12250000238418579
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.9730656147003174,
+          0.0
+        ],
+        "overall": 0.19869999587535858,
+        "parameters": 133570
+      },
+      {
+        "pair": 0,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.1996000051498413
+          },
+          {
+            "branches": 2,
+            "seen_validation": 0.1996000051498413
+          },
+          {
+            "branches": 3,
+            "seen_validation": 0.19980000257492064
+          },
+          {
+            "branches": 4,
+            "seen_validation": 0.19980000257492064
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.9990543723106384
+        ],
+        "overall": 0.21130000054836273,
+        "parameters": 133570
+      }
+    ]
+  },
+  {
+    "arm": "1",
+    "seed": 102,
+    "order": [
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "stages": [
+      {
+        "pair": 4,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.9800000190734863
+          }
+        ],
+        "pair_accuracy": [
+          0.9722642302513123,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.19280000030994415,
+        "parameters": 133570
+      },
+      {
+        "pair": 3,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.49900001287460327
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.9924471378326416,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.19709999859333038,
+        "parameters": 133570
+      },
+      {
+        "pair": 2,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.32899999618530273
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.9925293326377869,
+          0.0,
+          0.0
+        ],
+        "overall": 0.1860000044107437,
+        "parameters": 133570
+      },
+      {
+        "pair": 1,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.24300000071525574
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.9730656147003174,
+          0.0
+        ],
+        "overall": 0.19869999587535858,
+        "parameters": 133570
+      },
+      {
+        "pair": 0,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.1996000051498413
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.9990543723106384
+        ],
+        "overall": 0.21130000054836273,
+        "parameters": 133570
+      }
+    ]
+  },
+  {
+    "arm": "2",
+    "seed": 102,
+    "order": [
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "stages": [
+      {
+        "pair": 4,
+        "branches": 2,
+        "validation_trials": [
+          {
+            "branches": 2,
+            "seen_validation": 0.9769999980926514
+          }
+        ],
+        "pair_accuracy": [
+          0.9707514047622681,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.19249999523162842,
+        "parameters": 265450
+      },
+      {
+        "pair": 3,
+        "branches": 2,
+        "validation_trials": [
+          {
+            "branches": 2,
+            "seen_validation": 0.49750000884523615
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.9904330372810364,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.19670000672340393,
+        "parameters": 265450
+      },
+      {
+        "pair": 2,
+        "branches": 2,
+        "validation_trials": [
+          {
+            "branches": 2,
+            "seen_validation": 0.4886666536331177
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.6717019081115723,
+          0.840448260307312,
+          0.0,
+          0.0
+        ],
+        "overall": 0.29089999198913574,
+        "parameters": 265450
+      },
+      {
+        "pair": 1,
+        "branches": 2,
+        "validation_trials": [
+          {
+            "branches": 2,
+            "seen_validation": 0.560249999165535
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.5639476180076599,
+          0.8697972297668457,
+          0.7859941124916077,
+          0.0
+        ],
+        "overall": 0.43549999594688416,
+        "parameters": 265450
+      },
+      {
+        "pair": 0,
+        "branches": 2,
+        "validation_trials": [
+          {
+            "branches": 2,
+            "seen_validation": 0.5825999975204468
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.5327290892601013,
+          0.697438657283783,
+          0.767384946346283,
+          0.8860520124435425
+        ],
+        "overall": 0.5806000232696533,
+        "parameters": 265450
+      }
+    ]
+  },
+  {
+    "arm": "3",
+    "seed": 102,
+    "order": [
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "stages": [
+      {
+        "pair": 4,
+        "branches": 3,
+        "validation_trials": [
+          {
+            "branches": 3,
+            "seen_validation": 0.972000002861023
+          }
+        ],
+        "pair_accuracy": [
+          0.9687342643737793,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.19210000336170197,
+        "parameters": 397330
+      },
+      {
+        "pair": 3,
+        "branches": 3,
+        "validation_trials": [
+          {
+            "branches": 3,
+            "seen_validation": 0.5005000024102628
+          }
+        ],
+        "pair_accuracy": [
+          0.004034291487187147,
+          0.9864048361778259,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.19670000672340393,
+        "parameters": 397330
+      },
+      {
+        "pair": 2,
+        "branches": 3,
+        "validation_trials": [
+          {
+            "branches": 3,
+            "seen_validation": 0.5193333427111307
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.6304128766059875,
+          0.9103521704673767,
+          0.0,
+          0.0
+        ],
+        "overall": 0.29580000042915344,
+        "parameters": 397330
+      },
+      {
+        "pair": 1,
+        "branches": 3,
+        "validation_trials": [
+          {
+            "branches": 3,
+            "seen_validation": 0.5577500015497208
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.5674722790718079,
+          0.8292422890663147,
+          0.7781586647033691,
+          0.0
+        ],
+        "overall": 0.4269999861717224,
+        "parameters": 397330
+      },
+      {
+        "pair": 0,
+        "branches": 3,
+        "validation_trials": [
+          {
+            "branches": 3,
+            "seen_validation": 0.5808000087738037
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.4456193447113037,
+          0.7545357346534729,
+          0.8344759941101074,
+          0.8586288690567017
+        ],
+        "overall": 0.5819000005722046,
+        "parameters": 397330
+      }
+    ]
+  },
+  {
+    "arm": "4",
+    "seed": 102,
+    "order": [
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "stages": [
+      {
+        "pair": 4,
+        "branches": 4,
+        "validation_trials": [
+          {
+            "branches": 4,
+            "seen_validation": 0.9670000076293945
+          }
+        ],
+        "pair_accuracy": [
+          0.9667171239852905,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.19169999659061432,
+        "parameters": 529210
+      },
+      {
+        "pair": 3,
+        "branches": 4,
+        "validation_trials": [
+          {
+            "branches": 4,
+            "seen_validation": 0.5040000127628446
+          }
+        ],
+        "pair_accuracy": [
+          0.010590014979243279,
+          0.9924471378326416,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.19920000433921814,
+        "parameters": 529210
+      },
+      {
+        "pair": 2,
+        "branches": 4,
+        "validation_trials": [
+          {
+            "branches": 4,
+            "seen_validation": 0.6069999933242798
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.8831822872161865,
+          0.942369282245636,
+          0.0,
+          0.0
+        ],
+        "overall": 0.35199999809265137,
+        "parameters": 529210
+      },
+      {
+        "pair": 1,
+        "branches": 4,
+        "validation_trials": [
+          {
+            "branches": 4,
+            "seen_validation": 0.5337499976158142
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.6711983680725098,
+          0.8207044005393982,
+          0.6591576933860779,
+          0.0
+        ],
+        "overall": 0.42170000076293945,
+        "parameters": 529210
+      },
+      {
+        "pair": 0,
+        "branches": 4,
+        "validation_trials": [
+          {
+            "branches": 4,
+            "seen_validation": 0.5520000006770716
+          }
+        ],
+        "pair_accuracy": [
+          0.0015128592494875193,
+          0.6873111724853516,
+          0.7726787328720093,
+          0.7737511992454529,
+          0.5380614399909973
+        ],
+        "overall": 0.5533999800682068,
+        "parameters": 529210
+      }
+    ]
+  },
+  {
+    "arm": "adaptive",
+    "seed": 103,
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "stages": [
+      {
+        "pair": 0,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.9990000128746033
+          },
+          {
+            "branches": 2,
+            "seen_validation": 0.9990000128746033
+          },
+          {
+            "branches": 3,
+            "seen_validation": 0.9990000128746033
+          },
+          {
+            "branches": 4,
+            "seen_validation": 0.9990000128746033
+          }
+        ],
+        "pair_accuracy": [
+          0.9995272159576416,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.21140000224113464,
+        "parameters": 133570
+      },
+      {
+        "pair": 1,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.48750001192092896
+          },
+          {
+            "branches": 2,
+            "seen_validation": 0.4814999997615814
+          },
+          {
+            "branches": 3,
+            "seen_validation": 0.4805000126361847
+          },
+          {
+            "branches": 4,
+            "seen_validation": 0.4819999933242798
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.973555326461792,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.1987999975681305,
+        "parameters": 133570
+      },
+      {
+        "pair": 2,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.32766666014989215
+          },
+          {
+            "branches": 2,
+            "seen_validation": 0.3213333288828532
+          },
+          {
+            "branches": 3,
+            "seen_validation": 0.32266666491826373
+          },
+          {
+            "branches": 4,
+            "seen_validation": 0.32466665903727215
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.989861249923706,
+          0.0,
+          0.0
+        ],
+        "overall": 0.18549999594688416,
+        "parameters": 133570
+      },
+      {
+        "pair": 3,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.24950000643730164
+          },
+          {
+            "branches": 2,
+            "seen_validation": 0.24650000035762787
+          },
+          {
+            "branches": 3,
+            "seen_validation": 0.2370000034570694
+          },
+          {
+            "branches": 4,
+            "seen_validation": 0.23649999499320984
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.9934541583061218,
+          0.0
+        ],
+        "overall": 0.1973000019788742,
+        "parameters": 133570
+      },
+      {
+        "pair": 4,
+        "branches": 2,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.19579999446868895
+          },
+          {
+            "branches": 2,
+            "seen_validation": 0.21660000046249478
+          }
+        ],
+        "pair_accuracy": [
+          0.28557920455932617,
+          0.0009794319048523903,
+          0.0,
+          0.0,
+          0.8280383348464966
+        ],
+        "overall": 0.2248000055551529,
+        "parameters": 265450
+      }
+    ]
+  },
+  {
+    "arm": "1",
+    "seed": 103,
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "stages": [
+      {
+        "pair": 0,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.9990000128746033
+          }
+        ],
+        "pair_accuracy": [
+          0.9995272159576416,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.21140000224113464,
+        "parameters": 133570
+      },
+      {
+        "pair": 1,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.48750001192092896
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.973555326461792,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.1987999975681305,
+        "parameters": 133570
+      },
+      {
+        "pair": 2,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.32766666014989215
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.989861249923706,
+          0.0,
+          0.0
+        ],
+        "overall": 0.18549999594688416,
+        "parameters": 133570
+      },
+      {
+        "pair": 3,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.24950000643730164
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.9934541583061218,
+          0.0
+        ],
+        "overall": 0.1973000019788742,
+        "parameters": 133570
+      },
+      {
+        "pair": 4,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.19579999446868895
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.9783157110214233
+        ],
+        "overall": 0.1940000057220459,
+        "parameters": 133570
+      }
+    ]
+  },
+  {
+    "arm": "2",
+    "seed": 103,
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "stages": [
+      {
+        "pair": 0,
+        "branches": 2,
+        "validation_trials": [
+          {
+            "branches": 2,
+            "seen_validation": 0.9990000128746033
+          }
+        ],
+        "pair_accuracy": [
+          0.9990543723106384,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.21130000054836273,
+        "parameters": 265450
+      },
+      {
+        "pair": 1,
+        "branches": 2,
+        "validation_trials": [
+          {
+            "branches": 2,
+            "seen_validation": 0.48449999740114436
+          }
+        ],
+        "pair_accuracy": [
+          0.0009456264670006931,
+          0.9662095904350281,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.19750000536441803,
+        "parameters": 265450
+      },
+      {
+        "pair": 2,
+        "branches": 2,
+        "validation_trials": [
+          {
+            "branches": 2,
+            "seen_validation": 0.5053333242734274
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.5866796970367432,
+          0.9407684206962585,
+          0.0,
+          0.0
+        ],
+        "overall": 0.296099990606308,
+        "parameters": 265450
+      },
+      {
+        "pair": 3,
+        "branches": 2,
+        "validation_trials": [
+          {
+            "branches": 2,
+            "seen_validation": 0.5530000030994415
+          }
+        ],
+        "pair_accuracy": [
+          0.0018912529340013862,
+          0.5205680727958679,
+          0.9626467227935791,
+          0.748237669467926,
+          0.0
+        ],
+        "overall": 0.435699999332428,
+        "parameters": 265450
+      },
+      {
+        "pair": 4,
+        "branches": 2,
+        "validation_trials": [
+          {
+            "branches": 2,
+            "seen_validation": 0.5442000031471252
+          }
+        ],
+        "pair_accuracy": [
+          0.20661938190460205,
+          0.6111655235290527,
+          0.8564567565917969,
+          0.9360523819923401,
+          0.11245587468147278
+        ],
+        "overall": 0.5371999740600586,
+        "parameters": 265450
+      }
+    ]
+  },
+  {
+    "arm": "3",
+    "seed": 103,
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "stages": [
+      {
+        "pair": 0,
+        "branches": 3,
+        "validation_trials": [
+          {
+            "branches": 3,
+            "seen_validation": 0.9990000128746033
+          }
+        ],
+        "pair_accuracy": [
+          0.9995272159576416,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.21140000224113464,
+        "parameters": 397330
+      },
+      {
+        "pair": 1,
+        "branches": 3,
+        "validation_trials": [
+          {
+            "branches": 3,
+            "seen_validation": 0.48649998707696795
+          }
+        ],
+        "pair_accuracy": [
+          0.015602837316691875,
+          0.9608227014541626,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.19949999451637268,
+        "parameters": 397330
+      },
+      {
+        "pair": 2,
+        "branches": 3,
+        "validation_trials": [
+          {
+            "branches": 3,
+            "seen_validation": 0.5883333328723287
+          }
+        ],
+        "pair_accuracy": [
+          0.0037825058680027723,
+          0.9138100147247314,
+          0.8799359798431396,
+          0.0,
+          0.0
+        ],
+        "overall": 0.3522999882698059,
+        "parameters": 397330
+      },
+      {
+        "pair": 3,
+        "branches": 3,
+        "validation_trials": [
+          {
+            "branches": 3,
+            "seen_validation": 0.6322500100359321
+          }
+        ],
+        "pair_accuracy": [
+          0.07139480113983154,
+          0.7757101058959961,
+          0.9290288090705872,
+          0.7865055203437805,
+          0.0
+        ],
+        "overall": 0.5037999749183655,
+        "parameters": 397330
+      },
+      {
+        "pair": 4,
+        "branches": 3,
+        "validation_trials": [
+          {
+            "branches": 3,
+            "seen_validation": 0.534400001168251
+          }
+        ],
+        "pair_accuracy": [
+          0.11773049831390381,
+          0.5871694684028625,
+          0.6654215455055237,
+          0.692346453666687,
+          0.6217851638793945
+        ],
+        "overall": 0.5303000211715698,
+        "parameters": 397330
+      }
+    ]
+  },
+  {
+    "arm": "4",
+    "seed": 103,
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "stages": [
+      {
+        "pair": 0,
+        "branches": 4,
+        "validation_trials": [
+          {
+            "branches": 4,
+            "seen_validation": 0.9990000128746033
+          }
+        ],
+        "pair_accuracy": [
+          0.9990543723106384,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.21130000054836273,
+        "parameters": 529210
+      },
+      {
+        "pair": 1,
+        "branches": 4,
+        "validation_trials": [
+          {
+            "branches": 4,
+            "seen_validation": 0.5219999887049198
+          }
+        ],
+        "pair_accuracy": [
+          0.09408983588218689,
+          0.9529872536659241,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.21449999511241913,
+        "parameters": 529210
+      },
+      {
+        "pair": 2,
+        "branches": 4,
+        "validation_trials": [
+          {
+            "branches": 4,
+            "seen_validation": 0.49900000045696896
+          }
+        ],
+        "pair_accuracy": [
+          0.012765957042574883,
+          0.7551420331001282,
+          0.7870864272117615,
+          0.0,
+          0.0
+        ],
+        "overall": 0.3043999969959259,
+        "parameters": 529210
+      },
+      {
+        "pair": 3,
+        "branches": 4,
+        "validation_trials": [
+          {
+            "branches": 4,
+            "seen_validation": 0.5549999931827188
+          }
+        ],
+        "pair_accuracy": [
+          0.05248226970434189,
+          0.7370225191116333,
+          0.6867662668228149,
+          0.7749244570732117,
+          0.0
+        ],
+        "overall": 0.4442000091075897,
+        "parameters": 529210
+      },
+      {
+        "pair": 4,
+        "branches": 4,
+        "validation_trials": [
+          {
+            "branches": 4,
+            "seen_validation": 0.5120000004768371
+          }
+        ],
+        "pair_accuracy": [
+          0.5096926689147949,
+          0.6669931411743164,
+          0.25880470871925354,
+          0.4048338234424591,
+          0.7690368294715881
+        ],
+        "overall": 0.5253999829292297,
+        "parameters": 529210
+      }
+    ]
+  },
+  {
+    "arm": "adaptive",
+    "seed": 103,
+    "order": [
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "stages": [
+      {
+        "pair": 4,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.9779999852180481
+          },
+          {
+            "branches": 2,
+            "seen_validation": 0.9789999723434448
+          },
+          {
+            "branches": 3,
+            "seen_validation": 0.9760000109672546
+          },
+          {
+            "branches": 4,
+            "seen_validation": 0.9729999899864197
+          }
+        ],
+        "pair_accuracy": [
+          0.9768028259277344,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.19370000064373016,
+        "parameters": 133570
+      },
+      {
+        "pair": 3,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.49900001287460327
+          },
+          {
+            "branches": 2,
+            "seen_validation": 0.48750001192092896
+          },
+          {
+            "branches": 3,
+            "seen_validation": 0.48649999499320984
+          },
+          {
+            "branches": 4,
+            "seen_validation": 0.48100000619888306
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.9949647784233093,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.19760000705718994,
+        "parameters": 133570
+      },
+      {
+        "pair": 2,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.32733333110809326
+          },
+          {
+            "branches": 2,
+            "seen_validation": 0.3103333314259847
+          },
+          {
+            "branches": 3,
+            "seen_validation": 0.3113333384195964
+          },
+          {
+            "branches": 4,
+            "seen_validation": 0.31166666746139526
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.9893276691436768,
+          0.0,
+          0.0
+        ],
+        "overall": 0.18539999425411224,
+        "parameters": 133570
+      },
+      {
+        "pair": 1,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.24275000393390656
+          },
+          {
+            "branches": 2,
+            "seen_validation": 0.12675000727176666
+          },
+          {
+            "branches": 3,
+            "seen_validation": 0.1262499988079071
+          },
+          {
+            "branches": 4,
+            "seen_validation": 0.1264999955892563
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.9691479206085205,
+          0.0
+        ],
+        "overall": 0.19789999723434448,
+        "parameters": 133570
+      },
+      {
+        "pair": 0,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.19980000257492064
+          },
+          {
+            "branches": 2,
+            "seen_validation": 0.19980000257492064
+          },
+          {
+            "branches": 3,
+            "seen_validation": 0.20100000258535147
+          },
+          {
+            "branches": 4,
+            "seen_validation": 0.2010000025620684
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.9981087446212769
+        ],
+        "overall": 0.2110999971628189,
+        "parameters": 133570
+      }
+    ]
+  },
+  {
+    "arm": "1",
+    "seed": 103,
+    "order": [
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "stages": [
+      {
+        "pair": 4,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.9779999852180481
+          }
+        ],
+        "pair_accuracy": [
+          0.9768028259277344,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.19370000064373016,
+        "parameters": 133570
+      },
+      {
+        "pair": 3,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.49900001287460327
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.9949647784233093,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.19760000705718994,
+        "parameters": 133570
+      },
+      {
+        "pair": 2,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.32733333110809326
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.9893276691436768,
+          0.0,
+          0.0
+        ],
+        "overall": 0.18539999425411224,
+        "parameters": 133570
+      },
+      {
+        "pair": 1,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.24275000393390656
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.9691479206085205,
+          0.0
+        ],
+        "overall": 0.19789999723434448,
+        "parameters": 133570
+      },
+      {
+        "pair": 0,
+        "branches": 1,
+        "validation_trials": [
+          {
+            "branches": 1,
+            "seen_validation": 0.19980000257492064
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.9981087446212769
+        ],
+        "overall": 0.2110999971628189,
+        "parameters": 133570
+      }
+    ]
+  },
+  {
+    "arm": "2",
+    "seed": 103,
+    "order": [
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "stages": [
+      {
+        "pair": 4,
+        "branches": 2,
+        "validation_trials": [
+          {
+            "branches": 2,
+            "seen_validation": 0.9819999933242798
+          }
+        ],
+        "pair_accuracy": [
+          0.9727685451507568,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.19290000200271606,
+        "parameters": 265450
+      },
+      {
+        "pair": 3,
+        "branches": 2,
+        "validation_trials": [
+          {
+            "branches": 2,
+            "seen_validation": 0.4980000024079345
+          }
+        ],
+        "pair_accuracy": [
+          0.0010085728717967868,
+          0.9909365773200989,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.19699999690055847,
+        "parameters": 265450
+      },
+      {
+        "pair": 2,
+        "branches": 2,
+        "validation_trials": [
+          {
+            "branches": 2,
+            "seen_validation": 0.57833331823349
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.7693856954574585,
+          0.9642475843429565,
+          0.0,
+          0.0
+        ],
+        "overall": 0.3334999978542328,
+        "parameters": 265450
+      },
+      {
+        "pair": 1,
+        "branches": 2,
+        "validation_trials": [
+          {
+            "branches": 2,
+            "seen_validation": 0.5649999976158142
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.5392749309539795,
+          0.8815368413925171,
+          0.8163565397262573,
+          0.0
+        ],
+        "overall": 0.4390000104904175,
+        "parameters": 265450
+      },
+      {
+        "pair": 0,
+        "branches": 2,
+        "validation_trials": [
+          {
+            "branches": 2,
+            "seen_validation": 0.5847999930381775
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.4204430878162384,
+          0.789220929145813,
+          0.7771792411804199,
+          0.9404255151748657
+        ],
+        "overall": 0.5889999866485596,
+        "parameters": 265450
+      }
+    ]
+  },
+  {
+    "arm": "3",
+    "seed": 103,
+    "order": [
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "stages": [
+      {
+        "pair": 4,
+        "branches": 3,
+        "validation_trials": [
+          {
+            "branches": 3,
+            "seen_validation": 0.9779999852180481
+          }
+        ],
+        "pair_accuracy": [
+          0.9752899408340454,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.19339999556541443,
+        "parameters": 397330
+      },
+      {
+        "pair": 3,
+        "branches": 3,
+        "validation_trials": [
+          {
+            "branches": 3,
+            "seen_validation": 0.49999998952262104
+          }
+        ],
+        "pair_accuracy": [
+          0.0015128592494875193,
+          0.9904330372810364,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.19699999690055847,
+        "parameters": 397330
+      },
+      {
+        "pair": 2,
+        "branches": 3,
+        "validation_trials": [
+          {
+            "branches": 3,
+            "seen_validation": 0.5033333500226339
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.6863041520118713,
+          0.8463180065155029,
+          0.0,
+          0.0
+        ],
+        "overall": 0.29490000009536743,
+        "parameters": 397330
+      },
+      {
+        "pair": 1,
+        "branches": 3,
+        "validation_trials": [
+          {
+            "branches": 3,
+            "seen_validation": 0.4792499989271164
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.4823766350746155,
+          0.7977588176727295,
+          0.6459353566169739,
+          0.0
+        ],
+        "overall": 0.37720000743865967,
+        "parameters": 397330
+      },
+      {
+        "pair": 0,
+        "branches": 3,
+        "validation_trials": [
+          {
+            "branches": 3,
+            "seen_validation": 0.546399986743927
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.5508559942245483,
+          0.7646744847297668,
+          0.6273261308670044,
+          0.7905437350273132
+        ],
+        "overall": 0.5479999780654907,
+        "parameters": 397330
+      }
+    ]
+  },
+  {
+    "arm": "4",
+    "seed": 103,
+    "order": [
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "stages": [
+      {
+        "pair": 4,
+        "branches": 4,
+        "validation_trials": [
+          {
+            "branches": 4,
+            "seen_validation": 0.9779999852180481
+          }
+        ],
+        "pair_accuracy": [
+          0.9727685451507568,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.19290000200271606,
+        "parameters": 529210
+      },
+      {
+        "pair": 3,
+        "branches": 4,
+        "validation_trials": [
+          {
+            "branches": 4,
+            "seen_validation": 0.5039999959990382
+          }
+        ],
+        "pair_accuracy": [
+          0.010590014979243279,
+          0.9874118566513062,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overall": 0.19820000231266022,
+        "parameters": 529210
+      },
+      {
+        "pair": 2,
+        "branches": 4,
+        "validation_trials": [
+          {
+            "branches": 4,
+            "seen_validation": 0.54666668176651
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.8388720750808716,
+          0.8159018158912659,
+          0.0,
+          0.0
+        ],
+        "overall": 0.31949999928474426,
+        "parameters": 529210
+      },
+      {
+        "pair": 1,
+        "branches": 4,
+        "validation_trials": [
+          {
+            "branches": 4,
+            "seen_validation": 0.5602499842643738
+          }
+        ],
+        "pair_accuracy": [
+          0.0,
+          0.7603222727775574,
+          0.9429028630256653,
+          0.5533790588378906,
+          0.0
+        ],
+        "overall": 0.4406999945640564,
+        "parameters": 529210
+      },
+      {
+        "pair": 0,
+        "branches": 4,
+        "validation_trials": [
+          {
+            "branches": 4,
+            "seen_validation": 0.4990000154590234
+          }
+        ],
+        "pair_accuracy": [
+          0.002521432237699628,
+          0.7069486379623413,
+          0.9012807011604309,
+          0.57835453748703,
+          0.3257683217525482
+        ],
+        "overall": 0.4968000054359436,
+        "parameters": 529210
+      }
+    ]
+  }
+]

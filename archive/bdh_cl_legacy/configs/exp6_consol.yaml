@@ -1,0 +1,74 @@
+# Phase 4: branch-granular synaptic consolidation, WITHOUT replay.
+#
+# The question this answers: every model tested so far sits at the naive floor
+# (exactly 0.197 on split MNIST, i.e. 1/5) because nothing in the loss rewards
+# leaving an old parameter alone. Replay supplies that pressure by keeping old
+# tasks in the objective and gets 0.83-0.87. Consolidation supplies it
+# explicitly, from the model's own activity, with NO buffer.
+#
+# The four strategies are the whole point of the design:
+#
+#   naive          the floor              0.197 (measured, exp5)
+#   naive+consol   THE TEST: no replay, no task ids, just importance masking
+#   replay         the bar to beat        0.831 (bdh) / 0.866 (gated)
+#   replay+consol  does it stack on top of replay, or is it redundant?
+#
+# Two models, because the interesting claim is about GRANULARITY:
+#   bdh_den_gated  k=4 branches -> importance per (branch, neuron)
+#   bdh            k=1          -> importance per neuron only
+# If branch granularity does not beat neuron granularity, the dendritic
+# structure is not buying anything for consolidation and that gets reported.
+#
+# Task IDS are never used: mnist_task_tags stays false, so at evaluation
+# nothing says which task an input came from. Task BOUNDARIES are used, since
+# importance is estimated at the end of each task.
+name: exp6_consol
+family: mnist
+preset: tiny
+mnist_cache: data_cache/mnist
+mnist_side: 14
+mnist_task_tags: false
+tasks: [mnist_01, mnist_23, mnist_45, mnist_67, mnist_89]
+models: [bdh_den_gated, bdh]
+strategies: [naive, naive+consol, replay, replay+consol]
+seeds: [0, 1, 2]
+n_eval: 200
+eval_batch_size: 64
+probe_batches: 2
+save_checkpoints: true
+plasticity_target_frac: 0.5
+
+narrow:
+  mlp_internal_dim_multiplier: 11
+
+dendritic_variants:
+  gated:
+    mlp_internal_dim_multiplier: 11
+    neuron_unit_kwargs: {n_branches: 4, soma: gated}
+
+consolidation:
+  # activity = mean |branch activation| on the task, which is the only signal
+  # that varies ACROSS branches. The synaptic-state signal is per-neuron by
+  # construction (attention runs on the post-soma code), so it is run as a
+  # separate arm via --consol-signal rather than being the default.
+  signal: activity
+  granularity: branch
+  mode: penalty      # NOT "scale": AdamW cancels a constant gradient rescale
+  lam: 100.0         # set from calib_consol; override with --consol-lam
+  decay: 0.9         # old importance fades, so rigidity cannot run away
+  cap: 0.25          # protect at most 25% of units per task
+  batches: 8
+  protect_decoder: true
+
+train:
+  block_size: 200
+  batch_size: 32
+  steps_per_task: 800
+  warmup_steps: 80
+  eval_every: 100
+  log_every: 200
+
+wandb:
+  enabled: true
+  project: bdh-cl
+  group: exp6_consol

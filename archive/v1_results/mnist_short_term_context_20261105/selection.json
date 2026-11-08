@@ -1,0 +1,17 @@
+{
+  "magnitude": {
+    "decay": 0.9,
+    "strength": 0.5,
+    "validation_accuracy": 0.6757
+  },
+  "pseudo": {
+    "decay": 0.9,
+    "strength": 0.9,
+    "validation_accuracy": 0.7751
+  },
+  "supervised": {
+    "decay": 0.9,
+    "strength": 0.9,
+    "validation_accuracy": 0.9574666666666667
+  }
+}

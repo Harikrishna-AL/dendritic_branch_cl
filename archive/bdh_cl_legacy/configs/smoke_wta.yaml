@@ -1,0 +1,42 @@
+# Smoke test for the WTA variants before the real sweep: does every new soma /
+# wta_frac combination run end to end, and does k-WTA actually reduce the
+# measured activation density (the probes report it, so an inert wta_frac would
+# show up here as unchanged density).
+name: smoke_wta
+family: synthetic
+preset: tiny
+tasks: [copy, reverse]
+models: [bdh_den_max, bdh_den_topk2, bdh_den_max_wta05, bdh_den_sum_wta05]
+strategies: [naive]
+seeds: [0]
+n_eval: 32
+eval_batch_size: 32
+probe_batches: 1
+save_checkpoints: false
+
+narrow:
+  mlp_internal_dim_multiplier: 11
+dendritic_variants:
+  max:
+    mlp_internal_dim_multiplier: 11
+    neuron_unit_kwargs: {n_branches: 4, soma: max}
+  topk2:
+    mlp_internal_dim_multiplier: 11
+    neuron_unit_kwargs: {n_branches: 4, soma: topk, soma_topk: 2}
+  max_wta05:
+    mlp_internal_dim_multiplier: 11
+    neuron_unit_kwargs: {n_branches: 4, soma: max, wta_frac: 0.05}
+  sum_wta05:
+    mlp_internal_dim_multiplier: 11
+    neuron_unit_kwargs: {n_branches: 4, soma: sum, wta_frac: 0.05}
+
+train:
+  block_size: 96
+  batch_size: 16
+  steps_per_task: 60
+  warmup_steps: 10
+  eval_every: 30
+  log_every: 30
+
+wandb:
+  enabled: false

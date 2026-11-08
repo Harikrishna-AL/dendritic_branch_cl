@@ -1,0 +1,70 @@
+# MILESTONE 1 of the persistent-memory direction.
+#
+# Question, deliberately narrow: does a decaying outer-product state that
+# survives across sequences buy anything measurable when an environment
+# RECURS -- with no dendrites, no task ids, and no task-conditioned routing?
+#
+# Answering this first is what makes the next step attributable. If persistent
+# memory alone buys nothing, dendritic plasticity gating layered on top cannot
+# be credited to the dendrites.
+#
+# Schedule: A -> B -> A. The same environment is visited twice, so the headline
+# is SAVINGS -- how much faster it is relearned on return - rather than final
+# accuracy, which for a lifelong stream measures the readout as much as the
+# memory.
+#
+# ENVIRONMENTS ARE 5-WAY, NOT BINARY, and the first attempt at this is why.
+# With binary pairs every arm hit the target at the FIRST sampled step, so
+# steps-to-target sat on the resolution floor and savings could not come out
+# positive by construction -- there is nothing to be faster than. Five classes
+# per environment make the learning curve long enough to measure, and the
+# sampling interval is 25 rather than 50 because that interval IS the
+# measurement resolution.
+#
+# Arms:
+#   bdh                 no memory, the control
+#   bdh_mem_slow        decay 0.999: retains across the whole B phase
+#   bdh_mem_fast        decay 0.99: forgets within B, so it should show LESS
+#                       savings. Included so a positive result has to be about
+#                       retention rather than about adding any extra state.
+#   bdh_mem_nodecay     decay 1.0: never forgets, so it saturates. The other
+#                       end of the axis.
+name: exp9_persistent
+family: mnist
+preset: tiny
+mnist_cache: data_cache/mnist
+mnist_side: 14
+mnist_task_tags: false
+mnist_splits: [[0, 1, 2, 3, 4], [5, 6, 7, 8, 9], [0, 1, 2, 3, 4]]
+tasks: [mnist_01234, mnist_56789, mnist_01234]
+models: [bdh, bdh_mem_slow, bdh_mem_fast, bdh_mem_nodecay]
+strategies: [naive]
+seeds: [0, 1, 2]
+n_eval: 200
+eval_batch_size: 64
+probe_batches: 2
+save_checkpoints: true
+plasticity_target_frac: 0.5
+
+memory_variants:
+  slow:
+    persistent_memory: {enabled: true, decay: 0.999, eta: 1.0, read_scale: 1.0}
+  fast:
+    persistent_memory: {enabled: true, decay: 0.99, eta: 1.0, read_scale: 1.0}
+  nodecay:
+    persistent_memory: {enabled: true, decay: 1.0, eta: 1.0, read_scale: 1.0}
+
+train:
+  block_size: 200
+  batch_size: 32
+  steps_per_task: 800
+  warmup_steps: 80
+  # 25: savings is steps-to-target read off these curves, so this interval is
+  # the measurement resolution. 32 points per visit.
+  eval_every: 25
+  log_every: 200
+
+wandb:
+  enabled: true
+  project: bdh-cl
+  group: exp9_persistent

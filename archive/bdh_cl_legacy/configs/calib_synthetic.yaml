@@ -1,0 +1,19 @@
+# Calibration: how many steps does `tiny` need to actually learn a task?
+name: calib_synthetic
+family: synthetic
+preset: tiny
+tasks: [copy, reverse]
+models: [bdh]
+strategies: [naive]
+seeds: [0]
+n_eval: 64
+eval_batch_size: 32
+probe_batches: 2
+save_checkpoints: false
+train:
+  block_size: 96
+  batch_size: 32
+  steps_per_task: 1200
+  warmup_steps: 100
+  eval_every: 150
+  log_every: 200

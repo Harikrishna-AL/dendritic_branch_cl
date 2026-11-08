@@ -1,0 +1,88 @@
+# Smoke for exp19_coactivity_rewire (generated from it; tiny steps, 7x7, rewire every 10).
+name: smoke_exp19
+family: mnist
+preset: tiny
+mnist_cache: data_cache/mnist
+mnist_side: 7
+mnist_task_tags: false
+tasks:
+- mnist_01
+- mnist_23
+- mnist_45
+- mnist_67
+- mnist_89
+models:
+- bdh_narrow
+- bdh_den_max
+- bdh_den_point_sparse_fixed
+- bdh_den_point_coactivity_rewire
+- bdh_den_sparse_fixed
+- bdh_den_coactivity_rewire
+strategies:
+- naive
+seeds:
+- 0
+n_eval: 64
+eval_batch_size: 32
+probe_batches: 1
+save_checkpoints: true
+plasticity_target_frac: 0.5
+narrow:
+  mlp_internal_dim_multiplier: 11
+dendritic_variants:
+  max:
+    mlp_internal_dim_multiplier: 11
+    neuron_unit_kwargs:
+      n_branches: 4
+      soma: max
+  point_sparse_fixed:
+    mlp_internal_dim_multiplier: 11
+    neuron_unit: sparse_dendritic
+    neuron_unit_kwargs:
+      n_branches: 1
+      soma: max
+      contacts: 64
+    neuron_unit_kwargs_y:
+      mask_seed: 1
+  point_coactivity_rewire:
+    mlp_internal_dim_multiplier: 11
+    neuron_unit: sparse_dendritic
+    neuron_unit_kwargs:
+      n_branches: 1
+      soma: max
+      contacts: 64
+      rewire_every: 10
+      rewire_frac: 0.1
+      rewire_mode: coactivity
+    neuron_unit_kwargs_y:
+      mask_seed: 1
+  sparse_fixed:
+    mlp_internal_dim_multiplier: 11
+    neuron_unit: sparse_dendritic
+    neuron_unit_kwargs:
+      n_branches: 4
+      soma: max
+      contacts: 16
+    neuron_unit_kwargs_y:
+      mask_seed: 1
+  coactivity_rewire:
+    mlp_internal_dim_multiplier: 11
+    neuron_unit: sparse_dendritic
+    neuron_unit_kwargs:
+      n_branches: 4
+      soma: max
+      contacts: 16
+      rewire_every: 10
+      rewire_frac: 0.1
+      rewire_mode: coactivity
+    neuron_unit_kwargs_y:
+      mask_seed: 1
+train:
+  block_size: 56
+  batch_size: 16
+  steps_per_task: 60
+  warmup_steps: 10
+  eval_every: 30
+  log_every: 30
+wandb:
+  enabled: false

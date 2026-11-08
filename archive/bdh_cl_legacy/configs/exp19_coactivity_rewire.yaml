@@ -1,0 +1,85 @@
+# Step 3: does Hebbian/coactivity-driven regrowth do what SET (magnitude
+# prune, random regrow) could not?
+#
+# exp18 found that SET-style rewiring does not make dendritic branches
+# segregate by task (same_branch_frac does not drop below its fixed-mask
+# sibling, and point vs. dendritic stay statistically tied). The closing note
+# there: "Rewiring was gradient-magnitude based (SET), not Hebbian or
+# coactivity driven like Limbacher. The most plausible missing piece is that
+# nothing correlates a branch's inputs with a task."
+#
+# This swaps the regrow rule only: instead of regrowing a uniformly random
+# dormant synapse, regrow the dormant synapse whose input most correlates
+# (EMA of input_i * branch_activity_c) with what the branch is already doing
+# (SparseDendriticNeuronUnit(rewire_mode="coactivity")). Prune rule, budget,
+# schedule, and every other knob are unchanged from exp18, so this isolates
+# the regrow-target rule as the only variable:
+#
+#                     fixed mask              SET rewire (exp18)   coactivity rewire (this)
+#   k=1, 64 contacts  point_sparse_fixed      point_rewire          point_coactivity_rewire
+#   k=4, 16 contacts  den_sparse_fixed        den_rewire            den_coactivity_rewire
+#
+# References: dense den_max (k=4, 128 contacts/branch) and bdh_narrow. Same
+# question as exp18: does same_branch_frac drop below its own init and below
+# the fixed-mask sibling? proto_eval on the checkpoints remains the
+# readout-independent retention metric.
+name: exp19_coactivity_rewire
+family: mnist
+preset: tiny
+mnist_cache: data_cache/mnist
+mnist_side: 14
+mnist_task_tags: false
+tasks: [mnist_01, mnist_23, mnist_45, mnist_67, mnist_89]
+models: [bdh_narrow, bdh_den_max, bdh_den_point_sparse_fixed, bdh_den_point_coactivity_rewire,
+         bdh_den_sparse_fixed, bdh_den_coactivity_rewire]
+strategies: [naive, replay]
+seeds: [0, 1, 2]
+n_eval: 200
+eval_batch_size: 64
+probe_batches: 2
+save_checkpoints: true
+plasticity_target_frac: 0.5
+
+narrow:
+  mlp_internal_dim_multiplier: 11
+
+# mask_seed 1 on the y path so the x and y masks are not identical.
+dendritic_variants:
+  max:
+    mlp_internal_dim_multiplier: 11
+    neuron_unit_kwargs: {n_branches: 4, soma: max}
+  point_sparse_fixed:
+    mlp_internal_dim_multiplier: 11
+    neuron_unit: sparse_dendritic
+    neuron_unit_kwargs: {n_branches: 1, soma: max, contacts: 64}
+    neuron_unit_kwargs_y: {mask_seed: 1}
+  point_coactivity_rewire:
+    mlp_internal_dim_multiplier: 11
+    neuron_unit: sparse_dendritic
+    neuron_unit_kwargs: {n_branches: 1, soma: max, contacts: 64, rewire_every: 50,
+                          rewire_frac: 0.1, rewire_mode: coactivity}
+    neuron_unit_kwargs_y: {mask_seed: 1}
+  sparse_fixed:
+    mlp_internal_dim_multiplier: 11
+    neuron_unit: sparse_dendritic
+    neuron_unit_kwargs: {n_branches: 4, soma: max, contacts: 16}
+    neuron_unit_kwargs_y: {mask_seed: 1}
+  coactivity_rewire:
+    mlp_internal_dim_multiplier: 11
+    neuron_unit: sparse_dendritic
+    neuron_unit_kwargs: {n_branches: 4, soma: max, contacts: 16, rewire_every: 50,
+                          rewire_frac: 0.1, rewire_mode: coactivity}
+    neuron_unit_kwargs_y: {mask_seed: 1}
+
+train:
+  block_size: 200
+  batch_size: 32
+  steps_per_task: 800
+  warmup_steps: 80
+  eval_every: 100
+  log_every: 200
+
+wandb:
+  enabled: true
+  project: bdh-cl
+  group: exp19_coactivity_rewire

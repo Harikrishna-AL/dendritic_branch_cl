@@ -1,0 +1,28 @@
+# Smoke test for the split-MNIST pipeline: one seed, few steps per task.
+# Ground rule -- every new pipeline runs end to end on a tiny config before any
+# real run. 7x7 images keep the context short so this finishes in seconds
+# (28 = 2^2 * 7, so 7 / 14 / 28 are the usable sides).
+name: smoke_mnist
+family: mnist
+preset: tiny
+mnist_cache: data_cache/mnist
+mnist_side: 7
+tasks: [mnist_01, mnist_23, mnist_45, mnist_67, mnist_89]  # names only; pools drive the run
+models: [bdh, gpt]
+strategies: [naive]
+seeds: [0]
+n_eval: 64
+eval_batch_size: 32
+probe_batches: 1
+save_checkpoints: false
+
+train:
+  block_size: 56        # rendered_len(7) - 1 = 53, rounded up
+  batch_size: 16
+  steps_per_task: 60
+  warmup_steps: 10
+  eval_every: 30
+  log_every: 30
+
+wandb:
+  enabled: false

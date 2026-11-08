@@ -1,0 +1,34 @@
+# Learnability check before spending GPU-hours on the exp5 sweep.
+#
+# The smoke run reached only ~0.5 on the CURRENT task after 60 steps, which is
+# "learned the output format, has not learned to classify". Before running the
+# full sweep we need to know (a) that a 1.6M byte-level model can actually
+# classify 14x14 hex-rendered MNIST, and (b) how many steps that takes, so
+# steps_per_task in exp5 is set from evidence rather than guessed.
+#
+# Two pairs: 0-vs-1 (the easy one) and 8-vs-9 (the hard one). If 8/9 does not
+# get there, exp5's ceiling is too low for forgetting to mean anything.
+name: calib_mnist
+family: mnist
+preset: tiny
+mnist_cache: data_cache/mnist
+mnist_side: 14
+mnist_splits: [[0, 1], [8, 9]]
+models: [bdh, gpt]
+strategies: [naive]
+seeds: [0]
+n_eval: 200
+eval_batch_size: 64
+probe_batches: 1
+save_checkpoints: false
+
+train:
+  block_size: 200
+  batch_size: 32
+  steps_per_task: 2500
+  warmup_steps: 100
+  eval_every: 250
+  log_every: 250
+
+wandb:
+  enabled: false

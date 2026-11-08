@@ -1,0 +1,170 @@
+[
+  {
+    "normalized": false,
+    "inputs": 784,
+    "metrics": {
+      "strongest_linear": {
+        "mean": 56.556665897369385,
+        "seed_sd": 4.775421918430306
+      },
+      "strongest_tanh": {
+        "mean": 53.753332793712616,
+        "seed_sd": 3.7078767218038835
+      },
+      "oracle": {
+        "mean": 97.38666812578838,
+        "seed_sd": 0.9023902721792249
+      }
+    },
+    "parameters": 529210,
+    "model_bytes": 2119528,
+    "forgetting_pp": 30.417115134575095,
+    "training_seconds": 3.6515357563330326,
+    "paired_seed_mean_delta_pp": 0.0,
+    "paired_seed_t95_interval": [
+      0.0,
+      0.0
+    ],
+    "positive_seed_order_pairs": 0
+  },
+  {
+    "normalized": false,
+    "inputs": 392,
+    "metrics": {
+      "strongest_linear": {
+        "mean": 61.78166667620341,
+        "seed_sd": 1.597156424315812
+      },
+      "strongest_tanh": {
+        "mean": 62.46833304564158,
+        "seed_sd": 1.473620867690495
+      },
+      "oracle": {
+        "mean": 98.08999995390575,
+        "seed_sd": 0.34054964565750123
+      }
+    },
+    "parameters": 265786,
+    "model_bytes": 3173224,
+    "forgetting_pp": 28.064431276288815,
+    "training_seconds": 3.668296541679107,
+    "paired_seed_mean_delta_pp": 5.225000778834025,
+    "paired_seed_t95_interval": [
+      -2.7027543825647893,
+      13.15275594023284
+    ],
+    "positive_seed_order_pairs": 5
+  },
+  {
+    "normalized": false,
+    "inputs": 196,
+    "metrics": {
+      "strongest_linear": {
+        "mean": 63.46833308537801,
+        "seed_sd": 1.0984121347523321
+      },
+      "strongest_tanh": {
+        "mean": 64.51833248138428,
+        "seed_sd": 1.447466736435096
+      },
+      "oracle": {
+        "mean": 98.33333194255829,
+        "seed_sd": 0.3053818198872427
+      }
+    },
+    "parameters": 134074,
+    "model_bytes": 1592680,
+    "forgetting_pp": 28.33005040884018,
+    "training_seconds": 3.5293885693342113,
+    "paired_seed_mean_delta_pp": 6.911667188008626,
+    "paired_seed_t95_interval": [
+      -5.522938578278105,
+      19.346272954295358
+    ],
+    "positive_seed_order_pairs": 4
+  },
+  {
+    "normalized": true,
+    "inputs": 784,
+    "metrics": {
+      "strongest_linear": {
+        "mean": 59.459999203681946,
+        "seed_sd": 4.200306572672685
+      },
+      "strongest_tanh": {
+        "mean": 56.7783330877622,
+        "seed_sd": 4.222866589955886
+      },
+      "oracle": {
+        "mean": 96.76166673501332,
+        "seed_sd": 0.6974474129972578
+      }
+    },
+    "parameters": 529210,
+    "model_bytes": 2119528,
+    "forgetting_pp": 26.019061268501293,
+    "training_seconds": 3.65005268084739,
+    "paired_seed_mean_delta_pp": 0.0,
+    "paired_seed_t95_interval": [
+      0.0,
+      0.0
+    ],
+    "positive_seed_order_pairs": 0
+  },
+  {
+    "normalized": true,
+    "inputs": 392,
+    "metrics": {
+      "strongest_linear": {
+        "mean": 57.17166711886724,
+        "seed_sd": 2.4760536127098574
+      },
+      "strongest_tanh": {
+        "mean": 57.62499968210856,
+        "seed_sd": 2.6579265187300303
+      },
+      "oracle": {
+        "mean": 98.21666677792867,
+        "seed_sd": 0.483590278651698
+      }
+    },
+    "parameters": 265786,
+    "model_bytes": 3173224,
+    "forgetting_pp": 31.30409826893204,
+    "training_seconds": 3.7539037081587594,
+    "paired_seed_mean_delta_pp": -2.2883320848147073,
+    "paired_seed_t95_interval": [
+      -17.16226618387409,
+      12.585602014244678
+    ],
+    "positive_seed_order_pairs": 4
+  },
+  {
+    "normalized": true,
+    "inputs": 196,
+    "metrics": {
+      "strongest_linear": {
+        "mean": 62.04833388328552,
+        "seed_sd": 3.184561556975929
+      },
+      "strongest_tanh": {
+        "mean": 61.82666619618734,
+        "seed_sd": 2.253222276003216
+      },
+      "oracle": {
+        "mean": 98.20833305517833,
+        "seed_sd": 0.4463552457240115
+      }
+    },
+    "parameters": 134074,
+    "model_bytes": 1592680,
+    "forgetting_pp": 28.400680189952254,
+    "training_seconds": 3.6406602979889917,
+    "paired_seed_mean_delta_pp": 2.5883346796035767,
+    "paired_seed_t95_interval": [
+      -0.37899686886093287,
+      5.555666228068086
+    ],
+    "positive_seed_order_pairs": 4
+  }
+]

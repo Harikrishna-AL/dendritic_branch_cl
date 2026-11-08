@@ -1,0 +1,21 @@
+# Smoke config: a few hundred steps, 1 seed, 2 tasks. Must run end to end
+# before any real experiment (ground rule: smoke-test first).
+name: smoke_synthetic
+family: synthetic
+preset: tiny
+tasks: [copy, reverse]
+models: [bdh, gpt]
+strategies: [naive]
+seeds: [0]
+n_eval: 48
+eval_batch_size: 24
+probe_batches: 2
+save_checkpoints: false
+plasticity_target_frac: 0.5
+train:
+  block_size: 96
+  batch_size: 16
+  steps_per_task: 60
+  warmup_steps: 10
+  eval_every: 30
+  log_every: 30

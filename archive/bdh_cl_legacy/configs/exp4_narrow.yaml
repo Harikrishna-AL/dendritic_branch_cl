@@ -1,0 +1,61 @@
+# Just the narrow control, submitted separately so the in-flight exp4
+# sweep is not restarted. Results land in the same results/ tag.
+# Step 7 / phase 2: dendritic BDH trained continually, alongside its controls.
+#
+# Variants, all parameter-matched to baseline BDH within 10%:
+#   gated  -- sigma_c = softmax_c(beta_j * a_c), learnable per-neuron beta.
+#             The general form: beta->0 makes the neuron behave as one ordinary
+#             unit (mean over branches), beta->inf routes hard to one branch.
+#             Each neuron picks its own, so the network decides how much branch
+#             structure to use. Gate costs ~0.1% of parameters.
+#   max    -- hard winner-take-all. Gradient reaches exactly ONE branch per
+#             (token, neuron), so an unused branch is structurally shielded
+#             from another task's gradients. The protection mechanism.
+#   sum    -- every active branch gets gradient: no shielding. The control that
+#             says whether branching per se, or the routing, is what matters.
+#
+# mlp_internal_dim_multiplier is reduced from 32 to 11 because the two encoders
+# scale with k: matched neurons n' = 3n/(2k+1), so k=4 costs ~3x fewer neurons.
+name: exp4_narrow_control
+family: synthetic
+preset: tiny
+tasks: [copy, reverse, sort]
+models: [bdh_narrow]
+strategies: [naive, replay]
+seeds: [0, 1, 2]
+n_eval: 100
+eval_batch_size: 32
+probe_batches: 2
+save_checkpoints: true
+plasticity_target_frac: 0.5
+
+# CONTROL: baseline BDH at the dendritic models' neuron count (n=1408 rather
+# than 4096, mult 11 not 32) and therefore NOT parameter-matched (~1/3 the
+# params). Without it, a dendritic gain could just be "this width trains
+# better", since matching parameters forced the dendritic models narrower.
+narrow:
+  mlp_internal_dim_multiplier: 11
+
+dendritic_variants:
+  gated:
+    mlp_internal_dim_multiplier: 11
+    neuron_unit_kwargs: {n_branches: 4, soma: gated}
+  max:
+    mlp_internal_dim_multiplier: 11
+    neuron_unit_kwargs: {n_branches: 4, soma: max}
+  sum:
+    mlp_internal_dim_multiplier: 11
+    neuron_unit_kwargs: {n_branches: 4, soma: sum}
+
+train:
+  block_size: 96
+  batch_size: 32
+  steps_per_task: 800
+  warmup_steps: 80
+  eval_every: 400
+  log_every: 400
+
+wandb:
+  enabled: true
+  project: bdh-cl
+  group: exp4_dendritic

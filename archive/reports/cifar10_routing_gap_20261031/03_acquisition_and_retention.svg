@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="576pt" height="360pt" viewBox="0 0 576 360" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-01T09:46:29.813399</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.6, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 360 
+L 576 360 
+L 576 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 42.765865 315.532811 
+L 572.99976 315.532811 
+L 572.99976 18.118365 
+L 42.765865 18.118365 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 66.867406 315.532811 
+L 167.757576 315.532811 
+L 167.757576 82.659552 
+L 66.867406 82.659552 
+z
+" clip-path="url(#p9ecf2b1a51)" style="fill: #8faabd"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 167.757576 315.532811 
+L 268.647746 315.532811 
+L 268.647746 168.560505 
+L 167.757576 168.560505 
+z
+" clip-path="url(#p9ecf2b1a51)" style="fill: #c8a051"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 347.117879 315.532811 
+L 448.008049 315.532811 
+L 448.008049 83.24537 
+L 347.117879 83.24537 
+z
+" clip-path="url(#p9ecf2b1a51)" style="fill: #8faabd"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 448.008049 315.532811 
+L 548.898219 315.532811 
+L 548.898219 161.406786 
+L 448.008049 161.406786 
+z
+" clip-path="url(#p9ecf2b1a51)" style="fill: #c8a051"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="m07ebef35e9" d="M 0 0 
+L 0 3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m07ebef35e9" x="167.757576" y="315.532811" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="167.757576" y="330.131249" transform="rotate(-0 167.757576 330.131249)">Auxiliary loss</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#m07ebef35e9" x="448.008049" y="315.532811" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="448.008049" y="330.131249" transform="rotate(-0 448.008049 330.131249)">CE-only</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_3">
+      <defs>
+       <path id="ma878287082" d="M 0 0 
+L -3.5 0 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#ma878287082" x="42.765865" y="315.532811" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end" x="35.765865" y="319.33203" transform="rotate(-0 35.765865 319.33203)">0</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#ma878287082" x="42.765865" y="261.457457" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end" x="35.765865" y="265.256676" transform="rotate(-0 35.765865 265.256676)">20</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#ma878287082" x="42.765865" y="207.382104" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end" x="35.765865" y="211.181322" transform="rotate(-0 35.765865 211.181322)">40</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#ma878287082" x="42.765865" y="153.30675" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end" x="35.765865" y="157.105968" transform="rotate(-0 35.765865 157.105968)">60</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_7">
+      <g>
+       <use xlink:href="#ma878287082" x="42.765865" y="99.231396" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end" x="35.765865" y="103.030615" transform="rotate(-0 35.765865 103.030615)">80</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#ma878287082" x="42.765865" y="45.156042" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end" x="35.765865" y="48.955261" transform="rotate(-0 35.765865 48.955261)">100</text>
+     </g>
+    </g>
+    <g id="text_9">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="10.598678" y="166.825588" transform="rotate(-90 10.598678 166.825588)">Earlier-pair validation accuracy (%)</text>
+    </g>
+   </g>
+   <g id="patch_7">
+    <path d="M 42.765865 315.532811 
+L 42.765865 18.118365 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 42.765865 315.532811 
+L 572.99976 315.532811 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="117.312491" y="79.955785" transform="rotate(-0 117.312491 79.955785)">86.1%</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="218.202661" y="165.856737" transform="rotate(-0 218.202661 165.856737)">54.4%</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="397.562964" y="80.541602" transform="rotate(-0 397.562964 80.541602)">85.9%</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="498.453134" y="158.703019" transform="rotate(-0 498.453134 158.703019)">57.0%</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="307.882813" y="12.118365" transform="rotate(-0 307.882813 12.118365)">Are earlier capabilities still retained under oracle routing?</text>
+   </g>
+   <g id="legend_1">
+    <g id="patch_9">
+     <path d="M 391.402885 34.716802 
+L 411.402885 34.716802 
+L 411.402885 27.716802 
+L 391.402885 27.716802 
+z
+" style="fill: #8faabd"/>
+    </g>
+    <g id="text_15">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="419.402885" y="34.716802" transform="rotate(-0 419.402885 34.716802)">At acquisition</text>
+    </g>
+    <g id="patch_10">
+     <path d="M 391.402885 49.394927 
+L 411.402885 49.394927 
+L 411.402885 42.394927 
+L 391.402885 42.394927 
+z
+" style="fill: #c8a051"/>
+    </g>
+    <g id="text_16">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="419.402885" y="49.394927" transform="rotate(-0 419.402885 49.394927)">Final weights, true-pair route</text>
+    </g>
+   </g>
+  </g>
+  <g id="text_17">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(25.915078 345.05001)">First four acquired pairs, averaged across three seeds × two orders. Same held-out validation images at both times.</text>
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(52.589531 355.128041)">All ten classes compete; the final diagnostic selects the saved pair route but leaves weights unchanged.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p9ecf2b1a51">
+   <rect x="42.765865" y="18.118365" width="530.233895" height="297.414446"/>
+  </clipPath>
+ </defs>
+</svg>

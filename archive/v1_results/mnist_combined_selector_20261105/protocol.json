@@ -1,0 +1,27 @@
+{
+  "arms": [
+    "baseline",
+    "magnitude_joint",
+    "selector_hard",
+    "selector_soft",
+    "selector_soft_slow"
+  ],
+  "seeds": [
+    101,
+    102,
+    103
+  ],
+  "orders": [
+    "forward",
+    "reverse"
+  ],
+  "neurons": 168,
+  "branches": 4,
+  "inputs_per_branch": 196,
+  "epochs_per_task": 2,
+  "selector": "784 -> 32 tanh -> 168x4 scores",
+  "loss": "trace CE + .5 counterfactual CE; nonbaseline adds image-route CE; selector arms add .5 soft-target cross entropy with relative error temperature .2",
+  "slow": "after first task branch/head LR .0001; selector stays .0005",
+  "selection": "validation averaged across six runs, then test only selected arm/mode and baseline",
+  "limits": "No replay/prototypes/pretraining or task IDs at inference; known boundaries in training; selector has no explicit protection from forgetting; slow arm is a shared-weight slowdown, not importance-based protection"
+}

@@ -1,0 +1,20 @@
+{
+  "numenta": {
+    "allocated_parameters": 556810,
+    "free_coefficients": 529354,
+    "fixed_zero_coefficients": 27456,
+    "model_state_bytes": 3341104
+  },
+  "branch_aux": {
+    "allocated_parameters": 529210,
+    "free_coefficients": 529210,
+    "fixed_zero_coefficients": 0,
+    "model_state_bytes": 2119528
+  },
+  "branch_ce": {
+    "allocated_parameters": 529210,
+    "free_coefficients": 529210,
+    "fixed_zero_coefficients": 0,
+    "model_state_bytes": 2119528
+  }
+}

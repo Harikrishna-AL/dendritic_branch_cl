@@ -1,0 +1,87 @@
+# Phase 6: winner-take-all, in the two forms NOT already tested.
+#
+# Branch-level WTA is `soma: max` and is already measured twice -- 0.868 on the
+# synthetic sequence (worst of three somas) and 0.864 on split MNIST (a dead
+# heat). So it is present here only as the reference point, not as the question.
+#
+# The two untested forms:
+#
+#   soma: topk        winner-take-MOST across a neuron's branches. soma_topk=1
+#                     is exactly max and soma_topk=k is exactly sum (asserted in
+#                     tests), so it fills the gap those two leave. If the
+#                     max-vs-sum dead heat hides a non-monotone middle, this
+#                     finds it.
+#
+#   wta_frac          k-WTA ACROSS NEURONS, after the soma: keep the top
+#                     fraction of the layer's units per token and silence the
+#                     rest. Different axis from branch competition -- that picks
+#                     within one neuron, this picks among the whole layer. This
+#                     is the form the sparse-representation literature ties to
+#                     forgetting resistance (Ahmad & Scheinkman; Numenta's
+#                     active-dendrites work). Measured density is ~20% and
+#                     unconstrained, so 5% and 10% are real constraints.
+#
+# Neither adds a parameter (asserted in tests), so every arm stays matched to
+# baseline BDH and to the exp5 numbers.
+#
+# Same benchmark as exp5 -- split MNIST, class-incremental, 5 tasks -- so every
+# arm is directly comparable to: bdh 0.831, gated 0.866, max 0.864, gpt 0.782
+# under replay, and the 0.197 naive floor.
+name: exp7_wta
+family: mnist
+preset: tiny
+mnist_cache: data_cache/mnist
+mnist_side: 14
+mnist_task_tags: false
+tasks: [mnist_01, mnist_23, mnist_45, mnist_67, mnist_89]
+models:
+  - bdh_den_gated        # exp5 reference, unchanged
+  - bdh_den_max          # branch WTA, the already-measured reference
+  - bdh_den_topk2        # winner-take-most: 2 of 4 branches
+  - bdh_den_max_wta10    # branch WTA + 10% of neurons
+  - bdh_den_max_wta05    # branch WTA + 5% of neurons
+  - bdh_den_sum_wta05    # no branch competition, neuron WTA only -- isolates
+                         # which of the two forms of WTA is doing the work
+strategies: [naive, replay]
+seeds: [0, 1, 2]
+n_eval: 200
+eval_batch_size: 64
+probe_batches: 2
+save_checkpoints: true
+plasticity_target_frac: 0.5
+
+narrow:
+  mlp_internal_dim_multiplier: 11
+
+dendritic_variants:
+  gated:
+    mlp_internal_dim_multiplier: 11
+    neuron_unit_kwargs: {n_branches: 4, soma: gated}
+  max:
+    mlp_internal_dim_multiplier: 11
+    neuron_unit_kwargs: {n_branches: 4, soma: max}
+  topk2:
+    mlp_internal_dim_multiplier: 11
+    neuron_unit_kwargs: {n_branches: 4, soma: topk, soma_topk: 2}
+  max_wta10:
+    mlp_internal_dim_multiplier: 11
+    neuron_unit_kwargs: {n_branches: 4, soma: max, wta_frac: 0.10}
+  max_wta05:
+    mlp_internal_dim_multiplier: 11
+    neuron_unit_kwargs: {n_branches: 4, soma: max, wta_frac: 0.05}
+  sum_wta05:
+    mlp_internal_dim_multiplier: 11
+    neuron_unit_kwargs: {n_branches: 4, soma: sum, wta_frac: 0.05}
+
+train:
+  block_size: 200
+  batch_size: 32
+  steps_per_task: 800
+  warmup_steps: 80
+  eval_every: 100
+  log_every: 200
+
+wandb:
+  enabled: true
+  project: bdh-cl
+  group: exp7_wta

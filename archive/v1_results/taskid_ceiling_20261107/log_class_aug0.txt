@@ -1,0 +1,24 @@
+/Users/harikrishna/Documents/lossfunk/cl-tokenformer/.venv/lib/python3.13/site-packages/numpy/_core/getlimits.py:559: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/Users/harikrishna/Documents/lossfunk/cl-tokenformer/.venv/lib/python3.13/site-packages/numpy/_core/getlimits.py:91: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+class_aug0_s201 1 {'val_task': 48.52, 'val_class': 42.26, 'test_task': 49.92, 'test_class': 43.07} 22s
+class_aug0_s201 2 {'val_task': 51.04, 'val_class': 45.18, 'test_task': 51.96, 'test_class': 45.78} 29s
+class_aug0_s201 3 {'val_task': 53.52, 'val_class': 47.42, 'test_task': 54.44, 'test_class': 48.32} 26s
+class_aug0_s201 4 {'val_task': 56.4, 'val_class': 50.72, 'test_task': 56.49, 'test_class': 50.9} 24s
+class_aug0_s201 5 {'val_task': 58.66, 'val_class': 52.9, 'test_task': 59.33, 'test_class': 53.49} 24s
+class_aug0_s201 6 {'val_task': 59.22, 'val_class': 53.8, 'test_task': 59.16, 'test_class': 54.1} 24s
+class_aug0_s201 7 {'val_task': 59.72, 'val_class': 54.38, 'test_task': 60.88, 'test_class': 55.7} 24s
+class_aug0_s201 8 {'val_task': 62.16, 'val_class': 56.64, 'test_task': 61.89, 'test_class': 56.88} 24s
+class_aug0_s201 9 {'val_task': 62.76, 'val_class': 57.3, 'test_task': 62.08, 'test_class': 57.17} 26s
+class_aug0_s201 10 {'val_task': 63.56, 'val_class': 58.7, 'test_task': 62.77, 'test_class': 58.16} 27s
+class_aug0_s201 11 {'val_task': 64.44, 'val_class': 59.78, 'test_task': 63.77, 'test_class': 59.24} 29s
+class_aug0_s201 12 {'val_task': 63.98, 'val_class': 59.6, 'test_task': 64.12, 'test_class': 59.78} 30s
+class_aug0_s201 13 {'val_task': 65.72, 'val_class': 61.12, 'test_task': 65.06, 'test_class': 60.15} 30s
+class_aug0_s201 14 {'val_task': 65.26, 'val_class': 61.02, 'test_task': 65.38, 'test_class': 60.93} 28s
+class_aug0_s201 15 {'val_task': 65.62, 'val_class': 61.38, 'test_task': 65.66, 'test_class': 60.99} 29s
+class_aug0_s201 16 {'val_task': 65.02, 'val_class': 60.84, 'test_task': 65.86, 'test_class': 61.05} 29s
+class_aug0_s201 17 {'val_task': 65.7, 'val_class': 61.5, 'test_task': 66.2, 'test_class': 61.55} 28s
+class_aug0_s201 18 {'val_task': 66.26, 'val_class': 61.76, 'test_task': 65.96, 'test_class': 61.43} 28s
+class_aug0_s201 19 {'val_task': 66.06, 'val_class': 61.38, 'test_task': 65.91, 'test_class': 60.93} 29s
+class_aug0_s201 20 {'val_task': 65.14, 'val_class': 60.52, 'test_task': 65.66, 'test_class': 60.84} 29s

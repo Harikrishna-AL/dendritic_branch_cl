@@ -1,0 +1,20 @@
+method,accuracy_percent,seed_sd_pp,retained_state_MB,status
+Joint training (offline),96.9699998696645,0.10582846464026095,2.11792,Earlier common-protocol run
+"Replay: 1,000 images",90.54999947547913,0.28969935779039147,2.910936,Earlier common-protocol run
+Raw-pixel class means,82.3199987411499,0.0,0.03144,Earlier common-protocol run
+Frozen-feature class means,81.71333273251851,0.35275276920026927,2.11796,Earlier common-protocol run
+Replay: 200 images,81.59333268801372,0.9299499358145464,2.276536,Earlier common-protocol run
+Branch + auxiliary loss,74.76333280404408,0.5320309966817028,2.136048,Earlier common-protocol run
+Branch CE-only,72.10999925931294,2.6426727541926387,2.136048,Earlier common-protocol run
+Online EWC,23.383333285649616,0.35501206249378187,6.35376,Earlier common-protocol run
+Synaptic Intelligence,20.340000092983246,0.02179486364878823,8.47168,Earlier common-protocol run
+Fine-tuning,20.30999983350436,0.018027648262659058,2.11792,Earlier common-protocol run
+Numenta (5% activity),18.57166662812233,1.990492052156536,3.356784,Earlier common-protocol run
+DER++: 200 images,88.44499886035919,0.39950063099851274,2.284696,Earlier common-protocol run
+"DER++: 1,000 images",94.51666673024495,0.11405508598451443,2.951096,Earlier common-protocol run
+ER-ACE: 200 images,85.71833372116089,0.577437401486149,2.276736,Earlier common-protocol run
+"ER-ACE: 1,000 images",91.12666447957356,0.2527022388905436,2.911136,Earlier common-protocol run
+Numenta (20% activity)*,20.280000070730846,0.027838958522274967,3.356784,exploratory activity sensitivity
+Numenta (ReLU)*,20.178333421548206,0.055075781012651565,3.356264,exploratory activity sensitivity
+"OCAR (ICML 2025), adapted",93.0616666873296,0.12553318777917144,14.314882,Explicit local adaptation; different intrinsic optimizer/modules; not original-paper reproduction
+"RFE (TMLR 2026), adapted",59.25833384195963,0.5229097375107931,3.524176,Explicit local adaptation; different intrinsic optimizer/modules; not original-paper reproduction

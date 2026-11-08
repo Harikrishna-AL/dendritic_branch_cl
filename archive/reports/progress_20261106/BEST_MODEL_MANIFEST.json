@@ -1,0 +1,57 @@
+[
+  {
+    "path": "/Users/harikrishna/Documents/lossfunk/graph_cl/q_graph_cl/bdh-d/bdh_cl/scripts/mnist_gradient_branch_scoring.py",
+    "sha256": "245aa2afc84e1217648e01e76c53dce647a6a265974e43dc3ad6ffc92681900f",
+    "bytes": 8219
+  },
+  {
+    "path": "/Users/harikrishna/Documents/lossfunk/graph_cl/q_graph_cl/bdh-d/bdh_cl/scripts/mnist_combined_selector.py",
+    "sha256": "a23671969d3c342d781d9a6f174d3e1d48c9a3341249ee73069ca76ce293af33",
+    "bytes": 7176
+  },
+  {
+    "path": "/Users/harikrishna/Documents/lossfunk/graph_cl/q_graph_cl/bdh-d/bdh_cl/scripts/mnist_sparse_reproducibility.py",
+    "sha256": "b3ad58e7dae9cde06741157c918dafcf0d8da45543df5f15909ca041c35d3299",
+    "bytes": 7831
+  },
+  {
+    "path": "/Users/harikrishna/Documents/lossfunk/graph_cl/q_graph_cl/bdh-d/bdh_cl/scripts/mnist_quadratic_branches.py",
+    "sha256": "2b759c62e2644b47719b6ce8484a925467001fbaf115b5bee212f05422f264ba",
+    "bytes": 7401
+  },
+  {
+    "path": "/Users/harikrishna/Documents/lossfunk/graph_cl/q_graph_cl/bdh-d/bdh_cl/scripts/split_mnist_usefulness.py",
+    "sha256": "0071026d21b70952e9ad9e5463e5d0e6a74afc6e36e1d3502bd80ea2dd2fa751",
+    "bytes": 13111
+  },
+  {
+    "path": "/Users/harikrishna/Documents/lossfunk/graph_cl/q_graph_cl/bdh-d/results/mnist_gradient_branch_scoring_20261106/hybrid5_102_4.pt",
+    "sha256": "7fe8b3a304201bcda13b8b2966cce99fe83cba3078075078e02dee73e12a70d2",
+    "bytes": 1596831
+  },
+  {
+    "path": "/Users/harikrishna/Documents/lossfunk/graph_cl/q_graph_cl/bdh-d/results/mnist_gradient_branch_scoring_20261106/hybrid5_102_0.pt",
+    "sha256": "bb65ee12c4e6af1f035f729b08edb04738d9432ee9c78f96483b2f36833df55f",
+    "bytes": 1596831
+  },
+  {
+    "path": "/Users/harikrishna/Documents/lossfunk/graph_cl/q_graph_cl/bdh-d/results/mnist_gradient_branch_scoring_20261106/hybrid5_103_0.pt",
+    "sha256": "19e4cc035925189f220405d0f00e9b90dbda458354cd5ea8d1845f4b6705efc5",
+    "bytes": 1596831
+  },
+  {
+    "path": "/Users/harikrishna/Documents/lossfunk/graph_cl/q_graph_cl/bdh-d/results/mnist_gradient_branch_scoring_20261106/hybrid5_103_4.pt",
+    "sha256": "dbaa594d919ea6171b8429875065df20c495daefbd7ee02141f5fb960b176744",
+    "bytes": 1596831
+  },
+  {
+    "path": "/Users/harikrishna/Documents/lossfunk/graph_cl/q_graph_cl/bdh-d/results/mnist_gradient_branch_scoring_20261106/hybrid5_101_0.pt",
+    "sha256": "4d2a1ea3155432285170087b295517b1893a360c84ab9969eb2428378ab899d3",
+    "bytes": 1596831
+  },
+  {
+    "path": "/Users/harikrishna/Documents/lossfunk/graph_cl/q_graph_cl/bdh-d/results/mnist_gradient_branch_scoring_20261106/hybrid5_101_4.pt",
+    "sha256": "1760ab59fee69fc3d2dc84a0b7f94e277e7683b5c36a078037b07313fbec6748",
+    "bytes": 1596831
+  }
+]

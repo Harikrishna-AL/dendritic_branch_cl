@@ -1,0 +1,82 @@
+# How well does baseline BDH learn continually?
+
+**Phase 1.** Baseline BDH only — no dendrites implemented. This report answers
+one question: *how does BDH's resistance to catastrophic forgetting compare
+with a parameter-matched Transformer's?*
+
+> **Scale caveat, up front.** Everything here is at ~1.6 M parameters on a
+> 16 GiB laptop. The upstream default config (25 M) needs ~37 GiB of activation
+> memory for a backward pass and could not be run at all (NOTES.md). Nothing
+> below should be read as a claim about BDH at the scales the paper reports
+> (10 M–1 B). Treat it as a measurement of *this* model at *this* size.
+
+## Setup
+
+**Hardware.** Apple M4, 10 cores, 16 GiB unified memory, MPS backend, fp32.
+No CUDA. Full detail in `results/env.json`.
+
+**Upstream.** `pathwaycom/bdh` pinned at `2b0d7a45`, cloned to `upstream_bdh/`
+and never edited. `BDHWrapper` holds a real upstream `BDH` as its only
+parameter owner and re-walks its layer loop so that per-layer `x_sparse` /
+`y_sparse` can be read out (upstream's ReLUs are functional calls, so no
+forward hook can see them). `tests/test_bdh_equivalence.py` asserts the
+re-expression is exact: logits and loss identical at `atol=0, rtol=0` in both
+eval and train mode, and gradients equal for every parameter.
+
+**Models.** Parameter-matched, not layer-matched — BDH shares its three weight
+matrices across all layers, so its parameter count does not depend on
+`n_layer` at all.
+
+| | BDH (`tiny`) | GPT baseline |
+|---|---|---|
+| shape | 4 layers, d=128, 4 heads, mult=32 (N=1024, n=4096) | 8 layers, d=128, 4 heads |
+| parameters | 1,638,400 | 1,640,576 (**+0.13%**) |
+| vocabulary | 256 bytes | 256 bytes |
+| positions | upstream RoPE (θ=2¹⁶, quantised pairs) | RoPE (θ=10⁴) |
+| causality | `tril(diagonal=-1)` — excludes the current token | standard causal — includes it |
+| attention | no softmax, no scaling | softmax, scaled |
+
+The GPT baseline uses RoPE rather than learned position embeddings so its
+parameter count does not depend on context length; each model keeps its native
+causality convention rather than being crippled to match the other.
+
+**Throughput.** At matched parameters BDH is **~5.6× slower per step**
+(341 ms vs 61 ms at B=32, T=96), because of three `(B, nh, T, N)` elementwise
+tensors per layer and an unfused `T×T` matmul against a fused SDPA kernel.
+
+## Method
+
+**Tasks (Step 2B).** Five algorithmic tasks, each rendered
+`<tag>|<input>><output>\n` as raw bytes. Loss is masked to the output bytes
+only (the terminating newline included, so generation has a stopping signal).
+Each task has a length-generalization split whose inputs are strictly longer
+than anything seen in training.
+
+**Scoring.** Exact match by **free-running greedy generation**, not teacher
+forcing — teacher forcing would credit a model for continuing a prefix it
+could never have produced. Because neither model takes a padding mask,
+examples are bucketed by exact prompt length and generated per bucket, so
+left-padding never corrupts the context. Teacher-forced token accuracy is
+recorded alongside, and is what the dense in-training curves use.
+
+**Protocol.** Train T1 → … → T5 in order; after each task, evaluate all five
+held-out sets to fill row *i* of the accuracy matrix `R[i][j]`. AdamW state is
+reset between tasks by default. Row −1 (a freshly initialised model on every
+task) supplies the forward-transfer baseline; each task is also trained alone
+from random init to give a single-task ceiling and the plasticity reference.
+
+**Metrics.** Forgetting = best score ever reached on a task minus its final
+score. BWT = mean over *j*<k of `R[k-1][j] − R[j][j]`. FWT = mean zero-shot
+score before a task is trained, minus a fresh model's score on it.
+Plasticity = steps to reach a fraction of **that task's own** single-task
+ceiling, versus a fresh model's steps. All metric code is pinned against
+hand-computed matrices in `tests/test_metrics.py`, in both metric directions.
+
+**Probes.** Per-layer activation density (fraction of units > 0), top-k
+neuron-set Jaccard between tasks with k as a *fraction* of width so the two
+architectures are comparable, cosine similarity of full mean-activation
+profiles (which does not depend on k), and a repurposing measure comparing a
+task's own neurons right after it was learned against the end of the sequence.
+For GPT the unit is the post-GELU MLP hidden state — dense and signed, where
+BDH's is sparse and non-negative. That difference is the thing under test, not
+a defect in the probe.

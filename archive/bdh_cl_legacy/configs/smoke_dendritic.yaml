@@ -1,0 +1,16 @@
+# Smoke: dendritic path end-to-end before spending GPU time.
+name: smoke_dendritic
+family: synthetic
+preset: tiny
+tasks: [copy, reverse]
+models: [bdh_den_gated, bdh_den_max]
+strategies: [naive]
+seeds: [0]
+n_eval: 16
+eval_batch_size: 16
+probe_batches: 1
+save_checkpoints: false
+dendritic_variants:
+  gated: {mlp_internal_dim_multiplier: 11, neuron_unit_kwargs: {n_branches: 4, soma: gated}}
+  max:   {mlp_internal_dim_multiplier: 11, neuron_unit_kwargs: {n_branches: 4, soma: max}}
+train: {block_size: 96, batch_size: 8, steps_per_task: 20, warmup_steps: 5, eval_every: 10, log_every: 10}

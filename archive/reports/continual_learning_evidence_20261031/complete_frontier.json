@@ -1,0 +1,56 @@
+[
+  {
+    "label": "Raw-pixel class means",
+    "accuracy": 82.3199987411499,
+    "sd": 0.0,
+    "mb": 0.03144,
+    "kind": "centroid"
+  },
+  {
+    "label": "ER-ACE: 200 images",
+    "accuracy": 85.71833372116089,
+    "sd": 0.577437401486149,
+    "mb": 2.276736,
+    "kind": "er_ace",
+    "capacity": 200,
+    "buffer_mb": 0.158616,
+    "optimizer_mb": 4.235772
+  },
+  {
+    "label": "DER++: 200 images",
+    "accuracy": 88.44499886035919,
+    "sd": 0.39950063099851274,
+    "mb": 2.284696,
+    "kind": "derpp",
+    "capacity": 200,
+    "buffer_mb": 0.166616,
+    "optimizer_mb": 4.235856
+  },
+  {
+    "label": "Replay: 1,000 images",
+    "accuracy": 90.54999947547913,
+    "sd": 0.28969935779039147,
+    "mb": 2.910936,
+    "kind": "replay"
+  },
+  {
+    "label": "ER-ACE: 1,000 images",
+    "accuracy": 91.12666447957356,
+    "sd": 0.2527022388905436,
+    "mb": 2.911136,
+    "kind": "er_ace",
+    "capacity": 1000,
+    "buffer_mb": 0.793016,
+    "optimizer_mb": 4.235772
+  },
+  {
+    "label": "DER++: 1,000 images",
+    "accuracy": 94.51666673024495,
+    "sd": 0.11405508598451443,
+    "mb": 2.951096,
+    "kind": "derpp",
+    "capacity": 1000,
+    "buffer_mb": 0.833016,
+    "optimizer_mb": 4.235856
+  }
+]

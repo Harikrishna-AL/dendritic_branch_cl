@@ -1,0 +1,27 @@
+{
+  "arms": [
+    "original",
+    "normalized",
+    "extra_linear",
+    "quadratic"
+  ],
+  "branches_per_neuron": 4,
+  "seeds": [
+    101,
+    102,
+    103
+  ],
+  "orders": [
+    "forward",
+    "reverse"
+  ],
+  "epochs_per_pair": 2,
+  "batch_size": 128,
+  "learning_rate": 0.0005,
+  "optimizer": "Continuous Adam, clip5",
+  "training_loss": "Selected CE + .5 mean single-neuron substitution CE",
+  "inference": "Image-only strongest absolute branch response, preserving sign; linear and tanh responses reported. Oracle uses true pair only to select saved branch indices.",
+  "normalization": "Per-image LayerNorm without affine parameters before first projections, for every arm except original.",
+  "interaction": "alpha * (u dot x) * (v dot x), alpha starts at zero. Extra-linear control uses alpha * (u dot x + v dot x)/sqrt2 with same parameter count.",
+  "limits": "One fixed training recipe; no per-arm tuning. Low-rank quadratic adaptation of the paper, raw-pixel MLP, not its CNN implementation. Training uses known boundaries for archives, which only oracle inference accesses."
+}

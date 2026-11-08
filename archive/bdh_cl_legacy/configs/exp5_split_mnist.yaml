@@ -1,0 +1,66 @@
+# Step 2C / phase 3: split MNIST, the dendritic variants against their controls.
+#
+# Why this is a real test and not a restatement of exp4:
+#
+#   * Real data, not a generated grammar.
+#   * 5 tasks rather than 3, so forgetting has dynamic range. In exp4 `sort`
+#     sat at 1.000 for every model and naive sat at exactly 1/3.
+#   * CLASS-incremental, not task-aware. The synthetic tasks each carry their
+#     own tag in the prompt, so a model there can tell tasks apart from the
+#     input. Here every task shares one tag, nothing at test time says which
+#     digit pair an image came from, and the model may emit any digit. This is
+#     the standard split-MNIST setting and it is strictly harder.
+#
+# Same models, same parameter matching and same metric (exact match on the
+# label byte == classification accuracy) as exp4, so the two are comparable.
+name: exp5_split_mnist
+family: mnist
+preset: tiny
+mnist_cache: data_cache/mnist
+mnist_side: 14          # 28 = 2^2 * 7, so 7 / 14 / 28 are the usable sides
+mnist_task_tags: false  # false => class-incremental; true => task-aware
+tasks: [mnist_01, mnist_23, mnist_45, mnist_67, mnist_89]  # advisory; pools decide
+models: [bdh, gpt, bdh_narrow, bdh_den_gated, bdh_den_sum, bdh_den_max]
+strategies: [naive, replay, joint]
+seeds: [0, 1, 2]
+n_eval: 200
+eval_batch_size: 64
+probe_batches: 2
+save_checkpoints: true
+plasticity_target_frac: 0.5
+
+# CONTROL: baseline BDH at the dendritic neuron count, so a dendritic gain
+# cannot be explained by "this width happens to train better".
+narrow:
+  mlp_internal_dim_multiplier: 11
+
+dendritic_variants:
+  gated:
+    mlp_internal_dim_multiplier: 11
+    neuron_unit_kwargs: {n_branches: 4, soma: gated}
+  sum:
+    mlp_internal_dim_multiplier: 11
+    neuron_unit_kwargs: {n_branches: 4, soma: sum}
+  max:
+    mlp_internal_dim_multiplier: 11
+    neuron_unit_kwargs: {n_branches: 4, soma: max}
+
+train:
+  block_size: 200       # rendered_len(14) - 1 = 200 exactly
+  batch_size: 32
+  # 800, from calib_mnist (job 4310166): both models reach held-out 1.000 on
+  # 0/1 and 0.995 on 8/9 by step 250-500, so 800 converges with margin. Going
+  # further would only add gradient steps for later tasks to overwrite with,
+  # which inflates forgetting without making the comparison fairer.
+  steps_per_task: 800
+  warmup_steps: 80
+  # 100, not 400: at 400 the plasticity curve had only 3 points and every task
+  # reported the same steps-to-target, which NOTES.md records as a sampling
+  # artifact rather than a null result. 8 points here.
+  eval_every: 100
+  log_every: 200
+
+wandb:
+  enabled: true
+  project: bdh-cl
+  group: exp5_split_mnist

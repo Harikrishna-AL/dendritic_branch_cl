@@ -1,0 +1,30 @@
+{
+  "arms": [
+    "exact",
+    "linear",
+    "quadratic",
+    "hybrid5",
+    "hybrid10"
+  ],
+  "seeds": [
+    101,
+    102,
+    103
+  ],
+  "orders": [
+    "forward",
+    "reverse"
+  ],
+  "epochs": 2,
+  "batch_size": 128,
+  "learning_rate": 0.0005,
+  "trace_decay": 0.95,
+  "architecture": "Sparse original 168x4 MLP, 196 inputs per branch, 134074 parameters",
+  "gradient": "Per-example CE derivative g=(softmax(logits)-onehot(y))@W; closed-form equivalent of local hidden gradient, uses current linear ten-class head",
+  "surrogate": "1.5*CE + .5 mean(g*delta); residual probabilities stopped, W and delta differentiated. Quadratic adds .25 mean(curvature*delta^2), with curvature Var_p(W_i). This includes base CE and head-weight gradients unlike a stopped-g-only branch surrogate.",
+  "feedback": "Estimated absolute substitution CE = current per-example CE + g*delta (+ .5 curvature*delta\u00b2 for quadratic); EMA .95 unchanged",
+  "hybrids": "Exact objective+feedback every 5/10 global training batches, first batch exact; linear surrogate+feedback otherwise; no inverse-frequency loss scaling",
+  "selection": "Pick approximate arm by aggregate final validation magnitude-soft accuracy; official tests only exact baseline and selected approximate arm",
+  "timing": "Training-step wall time including branch feedback, excludes diagnostics and evaluation; CPU two threads. Exact baseline currently computes unused Taylor terms as well; separate clean benchmark will address overhead.",
+  "limits": "Closed-form gradients/curvature for final linear classifier; deeper layers require local backprop gradients and curvature approximations. All branch responses still computed. Fixed training recipe; no replay, pretraining, task ID or saved routes in image-only inference."
+}

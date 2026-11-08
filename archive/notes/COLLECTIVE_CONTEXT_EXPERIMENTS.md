@@ -1,0 +1,17 @@
+# Collective context without an orchestrator
+
+Each branch forms a learned four-dimensional context vector from its layer input. Eight synchronous rounds exchange vectors between immediate neighbors on a 128-branch ring. Each branch combines incoming vectors with its own and gates its activity using the resulting context. There is no leader or supplied task ID.
+
+Compare independent branch updates, fixed neighbor averaging followed by learned transformation, and separate learned self/left/right transformations. Each arm allocates and trains the same modules, uses the same initialization, and runs the same number of update rounds. Independent receives its own vector in all three transformation inputs; averaging receives the same neighborhood mean in all three; learned exchange receives different self/neighbor vectors. Their effective function classes differ, as intended, although parameter counts match.
+
+Use the same eight-step AR(1) history task and data seeds as earlier tests. Three paired seeds; 1,024 training examples per regime, 20 epochs per regime; 512 validation and 1,024 independent test examples per regime. One Adam optimizer continues through the switch. A fixed signed projection produces the answer. No context labels, IDs, or boundary signals enter the learner. Targets supply regression loss only. No replay, protection, pre-training, or hyperparameter search. Joint control matches presentations and optimizer updates.
+
+An observer fits ridge task decoders on validation context vectors and evaluates on test vectors. Measure a decoder using all concatenated branch contexts and one using a validation-selected individual branch. Select that branch with a split inside validation, never test accuracy. The combined decoder sees 512 coordinates versus four for a single branch, so decoding gains are not by themselves proof of communication benefits. The model itself only reads each branch's local context, never the observer's global decoder. Compare decoding across matched arms and measure output retention as the primary outcome.
+
+Record both checkpoints, final old/new MSE, joint MSE, exchange-removal intervention, and cue decoding. Removing exchange replaces incoming neighbor vectors with self vectors, preserving learned modules and computation rounds. Message influence can travel at most eight ring positions per layer update. Every initial branch projection sees the full incoming layer activity, rather than a separately supplied fragment of raw sensory input; diversity must be learned.
+
+Tests verify bounded communication influence, absence of exchange in the independent arm, matched allocated parameter counts, finite gradients to every trained module, and an unchanged readout. Implementation: `bdh_cl/scripts/collective_context_pilot.py`. Results: `results/collective_context_pilot_20261010`.
+
+## Completed outcome
+
+Nine configurations and joint controls completed; two mechanistic tests pass. Learned exchange gives 78.7% combined layer-2 regime decoding versus independent 77.8%, but old-task MSE remains 1.823 versus independent 1.849. A frozen checkpoint-one observer drops from 80.2% to 48.9% after new learning in the learned-exchange arm, while a refitted observer can still decode the final representation. Thus collective context is informative but unstable, and neighbor learning adds little in this protocol. Source, results, interpretation, and stability diagnostics are saved under `results/collective_context_pilot_20261010`.

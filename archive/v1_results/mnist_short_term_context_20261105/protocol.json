@@ -1,0 +1,30 @@
+{
+  "scope": "Frozen-checkpoint inference-state experiment, not training/weight-forgetting ablation",
+  "models": "Three seeds x two training orders; sparse 168x4 MLP, 196 pixels/branch, original hard supervised-trace training",
+  "policies": {
+    "none": "Current-image magnitude soft gate only",
+    "magnitude": "EMA of previous images magnitude-soft branch weights",
+    "pseudo": "EMA branch preferences from counterfactual CE against own prediction; no labels",
+    "supervised": "Matched EMA branch preferences from true-label counterfactual CE, explicit postprediction-feedback control"
+  },
+  "preferences": "Counterfactual errors relative to stateless prediction; standardize within each neuron then softmax(-error). Fixed probes; not recomputed for state-conditioned prediction.",
+  "grid": {
+    "decay": [
+      0.9,
+      0.99
+    ],
+    "strength": [
+      0.5,
+      0.9
+    ]
+  },
+  "selection": "Choose each state policy by mean validation accuracy on persistent-context stream over six checkpoints; no test tuning",
+  "streams": "All images once: persistent context rotates blocks of 200 within digit pair, or random mixed stream; no boundaries passed to algorithm",
+  "controls": [
+    "retain",
+    "reset_each",
+    "shuffle_branches"
+  ],
+  "causality": "Predict current image before adding its observation. Only supervised feedback control receives true labels after prediction.",
+  "limits": "Pretrained checkpoint architecture previously selected on same validation pool; exploratory secondary evaluation. Labels only construct benchmark streams, metrics, and explicit supervised control. No task-ID input, no prototypes, no query-label input to label-free policies. State resets only at start of independent streams except specified intervention."
+}

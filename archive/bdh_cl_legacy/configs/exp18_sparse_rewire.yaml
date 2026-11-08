@@ -1,0 +1,75 @@
+# Step 2: can structural rewiring make dendritic branches segregate by task?
+#
+# Step 1 (exp5 data) found ~94-97% of neurons keep the SAME dominant branch
+# across digit pairs even under joint training: branches do not specialise, so
+# branch-level protection has nothing to protect. Limbacher & Legenstein (2020)
+# get clustering from three ingredients: a sparse contact budget per branch,
+# rewiring (prune weakest, regrow at random; DEEP R simplified to SET style),
+# and branch competition (max soma). This is a 2x2 at matched neurons (1408)
+# and matched synapses per neuron (64):
+#
+#                     fixed mask              rewired
+#   k=1, 64 contacts  point_sparse_fixed      point_rewire
+#   k=4, 16 contacts  den_sparse_fixed        den_rewire
+#
+# References: dense den_max (k=4, 128 contacts/branch) and bdh_narrow.
+# The question is the den_rewire cell: does same_branch_frac drop below its
+# own init, and below den_sparse_fixed? Accuracy is secondary (readout
+# collapse floors naive at ~0.2); proto_eval on the checkpoints is the
+# readout-independent retention metric.
+name: exp18_sparse_rewire
+family: mnist
+preset: tiny
+mnist_cache: data_cache/mnist
+mnist_side: 14
+mnist_task_tags: false
+tasks: [mnist_01, mnist_23, mnist_45, mnist_67, mnist_89]
+models: [bdh_narrow, bdh_den_max, bdh_den_point_sparse_fixed, bdh_den_point_rewire,
+         bdh_den_sparse_fixed, bdh_den_rewire]
+strategies: [naive, replay]
+seeds: [0, 1, 2]
+n_eval: 200
+eval_batch_size: 64
+probe_batches: 2
+save_checkpoints: true
+plasticity_target_frac: 0.5
+
+narrow:
+  mlp_internal_dim_multiplier: 11
+
+# mask_seed 1 on the y path so the x and y masks are not identical.
+dendritic_variants:
+  max:
+    mlp_internal_dim_multiplier: 11
+    neuron_unit_kwargs: {n_branches: 4, soma: max}
+  point_sparse_fixed:
+    mlp_internal_dim_multiplier: 11
+    neuron_unit: sparse_dendritic
+    neuron_unit_kwargs: {n_branches: 1, soma: max, contacts: 64}
+    neuron_unit_kwargs_y: {mask_seed: 1}
+  point_rewire:
+    mlp_internal_dim_multiplier: 11
+    neuron_unit: sparse_dendritic
+    neuron_unit_kwargs: {n_branches: 1, soma: max, contacts: 64, rewire_every: 50, rewire_frac: 0.1}
+    neuron_unit_kwargs_y: {mask_seed: 1}
+  sparse_fixed:
+    mlp_internal_dim_multiplier: 11
+    neuron_unit: sparse_dendritic
+    neuron_unit_kwargs: {n_branches: 4, soma: max, contacts: 16}
+    neuron_unit_kwargs_y: {mask_seed: 1}
+  rewire:
+    mlp_internal_dim_multiplier: 11
+    neuron_unit: sparse_dendritic
+    neuron_unit_kwargs: {n_branches: 4, soma: max, contacts: 16, rewire_every: 50, rewire_frac: 0.1}
+    neuron_unit_kwargs_y: {mask_seed: 1}
+
+train:
+  block_size: 200
+  batch_size: 32
+  steps_per_task: 800
+  warmup_steps: 80
+  eval_every: 100
+  log_every: 200
+
+wandb:
+  enabled: false

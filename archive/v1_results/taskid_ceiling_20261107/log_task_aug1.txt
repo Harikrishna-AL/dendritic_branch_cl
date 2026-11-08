@@ -1,0 +1,24 @@
+/Users/harikrishna/Documents/lossfunk/cl-tokenformer/.venv/lib/python3.13/site-packages/numpy/_core/getlimits.py:559: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/Users/harikrishna/Documents/lossfunk/cl-tokenformer/.venv/lib/python3.13/site-packages/numpy/_core/getlimits.py:91: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+task_aug1_s201 1 {'val_task': 47.94, 'test_task': 47.9} 22s
+task_aug1_s201 2 {'val_task': 50.74, 'test_task': 50.44} 29s
+task_aug1_s201 3 {'val_task': 51.56, 'test_task': 52.14} 26s
+task_aug1_s201 4 {'val_task': 54.5, 'test_task': 55.19} 24s
+task_aug1_s201 5 {'val_task': 53.8, 'test_task': 54.52} 24s
+task_aug1_s201 6 {'val_task': 54.7, 'test_task': 54.32} 24s
+task_aug1_s201 7 {'val_task': 57.04, 'test_task': 56.43} 24s
+task_aug1_s201 8 {'val_task': 57.9, 'test_task': 56.42} 24s
+task_aug1_s201 9 {'val_task': 58.28, 'test_task': 57.71} 26s
+task_aug1_s201 10 {'val_task': 59.24, 'test_task': 58.57} 26s
+task_aug1_s201 11 {'val_task': 58.8, 'test_task': 58.74} 28s
+task_aug1_s201 12 {'val_task': 60.48, 'test_task': 59.4} 30s
+task_aug1_s201 13 {'val_task': 61.2, 'test_task': 59.97} 30s
+task_aug1_s201 14 {'val_task': 61.18, 'test_task': 60.17} 28s
+task_aug1_s201 15 {'val_task': 60.94, 'test_task': 61.12} 29s
+task_aug1_s201 16 {'val_task': 62.96, 'test_task': 61.93} 29s
+task_aug1_s201 17 {'val_task': 63.38, 'test_task': 63.15} 29s
+task_aug1_s201 18 {'val_task': 65.02, 'test_task': 63.72} 29s
+task_aug1_s201 19 {'val_task': 65.46, 'test_task': 64.18} 29s
+task_aug1_s201 20 {'val_task': 64.28, 'test_task': 63.15} 29s

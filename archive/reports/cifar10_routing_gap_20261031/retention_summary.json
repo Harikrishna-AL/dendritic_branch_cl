@@ -1,0 +1,12 @@
+{
+  "aux": {
+    "earlier_pairs_acquisition_percent": 86.12916693091393,
+    "earlier_pairs_final_oracle_percent": 54.35833359564034,
+    "earlier_pairs_acquisition_to_final_drop_pp": 31.77083333527359
+  },
+  "ce": {
+    "earlier_pairs_acquisition_percent": 85.91249982515971,
+    "earlier_pairs_final_oracle_percent": 57.004166913975496,
+    "earlier_pairs_acquisition_to_final_drop_pp": 28.908332911184214
+  }
+}

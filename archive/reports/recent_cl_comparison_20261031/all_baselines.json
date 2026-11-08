@@ -1,0 +1,169 @@
+[
+  {
+    "label": "Joint training (offline)",
+    "accuracy": 96.9699998696645,
+    "sd": 0.10582846464026095,
+    "mb": 2.11792,
+    "kind": "offline"
+  },
+  {
+    "label": "Replay: 1,000 images",
+    "accuracy": 90.54999947547913,
+    "sd": 0.28969935779039147,
+    "mb": 2.910936,
+    "kind": "replay"
+  },
+  {
+    "label": "Raw-pixel class means",
+    "accuracy": 82.3199987411499,
+    "sd": 0.0,
+    "mb": 0.03144,
+    "kind": "centroid"
+  },
+  {
+    "label": "Frozen-feature class means",
+    "accuracy": 81.71333273251851,
+    "sd": 0.35275276920026927,
+    "mb": 2.11796,
+    "kind": "centroid"
+  },
+  {
+    "label": "Replay: 200 images",
+    "accuracy": 81.59333268801372,
+    "sd": 0.9299499358145464,
+    "mb": 2.276536,
+    "kind": "replay"
+  },
+  {
+    "label": "Branch + auxiliary loss",
+    "accuracy": 74.76333280404408,
+    "sd": 0.5320309966817028,
+    "mb": 2.136048,
+    "kind": "branch"
+  },
+  {
+    "label": "Branch CE-only",
+    "accuracy": 72.10999925931294,
+    "sd": 2.6426727541926387,
+    "mb": 2.136048,
+    "kind": "branch"
+  },
+  {
+    "label": "Online EWC",
+    "accuracy": 23.383333285649616,
+    "sd": 0.35501206249378187,
+    "mb": 6.35376,
+    "kind": "other"
+  },
+  {
+    "label": "Synaptic Intelligence",
+    "accuracy": 20.340000092983246,
+    "sd": 0.02179486364878823,
+    "mb": 8.47168,
+    "kind": "other"
+  },
+  {
+    "label": "Fine-tuning",
+    "accuracy": 20.30999983350436,
+    "sd": 0.018027648262659058,
+    "mb": 2.11792,
+    "kind": "other"
+  },
+  {
+    "label": "Numenta (5% activity)",
+    "accuracy": 18.57166662812233,
+    "sd": 1.990492052156536,
+    "mb": 3.356784,
+    "kind": "other"
+  },
+  {
+    "label": "DER++: 200 images",
+    "accuracy": 88.44499886035919,
+    "sd": 0.39950063099851274,
+    "mb": 2.284696,
+    "kind": "derpp",
+    "capacity": 200,
+    "buffer_mb": 0.166616,
+    "optimizer_mb": 4.235856
+  },
+  {
+    "label": "DER++: 1,000 images",
+    "accuracy": 94.51666673024495,
+    "sd": 0.11405508598451443,
+    "mb": 2.951096,
+    "kind": "derpp",
+    "capacity": 1000,
+    "buffer_mb": 0.833016,
+    "optimizer_mb": 4.235856
+  },
+  {
+    "label": "ER-ACE: 200 images",
+    "accuracy": 85.71833372116089,
+    "sd": 0.577437401486149,
+    "mb": 2.276736,
+    "kind": "er_ace",
+    "capacity": 200,
+    "buffer_mb": 0.158616,
+    "optimizer_mb": 4.235772
+  },
+  {
+    "label": "ER-ACE: 1,000 images",
+    "accuracy": 91.12666447957356,
+    "sd": 0.2527022388905436,
+    "mb": 2.911136,
+    "kind": "er_ace",
+    "capacity": 1000,
+    "buffer_mb": 0.793016,
+    "optimizer_mb": 4.235772
+  },
+  {
+    "label": "Numenta (20% activity)*",
+    "accuracy": 20.280000070730846,
+    "sd": 0.027838958522274967,
+    "mb": 3.356784,
+    "kind": "other",
+    "experimental_status": "exploratory activity sensitivity"
+  },
+  {
+    "label": "Numenta (ReLU)*",
+    "accuracy": 20.178333421548206,
+    "sd": 0.055075781012651565,
+    "mb": 3.356264,
+    "kind": "other",
+    "experimental_status": "exploratory activity sensitivity"
+  },
+  {
+    "label": "OCAR (ICML 2025), adapted",
+    "accuracy": 93.0616666873296,
+    "sd": 0.12553318777917144,
+    "mb": 14.314882,
+    "kind": "ocar",
+    "experimental_status": "Explicit local adaptation; different intrinsic optimizer/modules; not original-paper reproduction",
+    "parameters": 529480,
+    "model_mb": 2.11792,
+    "teacher_mb": 0.0,
+    "curvature_mb": 12.03816,
+    "buffer_mb": 0.158616,
+    "optimizer_mb": 0.0,
+    "max_optimizer_mb": 0.0,
+    "extra_module_presentations": 0,
+    "mean_training_seconds": 12.655510305666516
+  },
+  {
+    "label": "RFE (TMLR 2026), adapted",
+    "accuracy": 59.25833384195963,
+    "sd": 0.5229097375107931,
+    "mb": 3.524176,
+    "kind": "rfe",
+    "experimental_status": "Explicit local adaptation; different intrinsic optimizer/modules; not original-paper reproduction",
+    "parameters": 528014,
+    "model_mb": 2.112056,
+    "teacher_mb": 1.41196,
+    "curvature_mb": 0.0,
+    "buffer_mb": 0.0,
+    "optimizer_mb": 2.823968,
+    "max_optimizer_mb": 3.28112,
+    "extra_module_presentations": 110000,
+    "mean_training_seconds": 8.412791117999708
+  }
+]

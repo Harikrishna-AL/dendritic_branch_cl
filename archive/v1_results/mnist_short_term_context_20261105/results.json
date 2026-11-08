@@ -1,0 +1,3842 @@
+[
+  {
+    "seed": 101,
+    "first": 0,
+    "stream": "blocked",
+    "policy": "none",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.625,
+      "pair_accuracy": [
+        0.6033096926713948,
+        0.885896180215475,
+        0.43169690501600855,
+        0.5503524672708963,
+        0.6369137670196672
+      ],
+      "early_after_switch": 0.610204081632653,
+      "late_after_switch": 0.6316889632107023,
+      "switch_curve": [
+        0.610204081632653,
+        0.6173469387755102,
+        0.6224489795918368,
+        0.6214285714285714,
+        0.6193877551020408,
+        0.6297435897435898,
+        0.628125,
+        0.6375,
+        0.628125,
+        0.635091496232508
+      ],
+      "context_gate_overlap": 0.8880116745444345
+    }
+  },
+  {
+    "seed": 101,
+    "first": 0,
+    "stream": "blocked",
+    "policy": "magnitude",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.6059,
+      "pair_accuracy": [
+        0.5158392434988179,
+        0.9319294809010774,
+        0.3799359658484525,
+        0.5327291037260826,
+        0.6530509329299042
+      ],
+      "early_after_switch": 0.5387755102040817,
+      "late_after_switch": 0.6162207357859532,
+      "switch_curve": [
+        0.5387755102040817,
+        0.5979591836734693,
+        0.6255102040816326,
+        0.6173469387755102,
+        0.613265306122449,
+        0.6184615384615385,
+        0.6041666666666666,
+        0.6302083333333334,
+        0.6135416666666667,
+        0.6146393972012917
+      ],
+      "context_gate_overlap": 0.891482794548172
+    }
+  },
+  {
+    "seed": 101,
+    "first": 0,
+    "stream": "blocked",
+    "policy": "magnitude",
+    "intervention": "reset_each",
+    "score": {
+      "accuracy": 0.625,
+      "pair_accuracy": [
+        0.6033096926713948,
+        0.885896180215475,
+        0.43169690501600855,
+        0.5503524672708963,
+        0.6369137670196672
+      ],
+      "early_after_switch": 0.610204081632653,
+      "late_after_switch": 0.6316889632107023,
+      "switch_curve": [
+        0.610204081632653,
+        0.6173469387755102,
+        0.6224489795918368,
+        0.6214285714285714,
+        0.6193877551020408,
+        0.6297435897435898,
+        0.628125,
+        0.6375,
+        0.628125,
+        0.635091496232508
+      ],
+      "context_gate_overlap": 0.8880116745444345
+    }
+  },
+  {
+    "seed": 101,
+    "first": 0,
+    "stream": "blocked",
+    "policy": "magnitude",
+    "intervention": "shuffle_branches",
+    "score": {
+      "accuracy": 0.5787,
+      "pair_accuracy": [
+        0.5952718676122931,
+        0.9191968658178257,
+        0.3991462113127001,
+        0.4949647532729104,
+        0.46394351991931415
+      ],
+      "early_after_switch": 0.5591836734693878,
+      "late_after_switch": 0.5788043478260869,
+      "switch_curve": [
+        0.5591836734693878,
+        0.5826530612244898,
+        0.5816326530612245,
+        0.5846938775510204,
+        0.5673469387755102,
+        0.5805128205128205,
+        0.5916666666666667,
+        0.5770833333333333,
+        0.5760416666666667,
+        0.5683530678148547
+      ],
+      "context_gate_overlap": 0.9438316804824323
+    }
+  },
+  {
+    "seed": 101,
+    "first": 0,
+    "stream": "blocked",
+    "policy": "pseudo",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.7858,
+      "pair_accuracy": [
+        0.8307328605200945,
+        0.9500489715964741,
+        0.4887940234791889,
+        0.797079556898288,
+        0.8381240544629349
+      ],
+      "early_after_switch": 0.6112244897959184,
+      "late_after_switch": 0.8091555183946488,
+      "switch_curve": [
+        0.6112244897959184,
+        0.7744897959183673,
+        0.7969387755102041,
+        0.8091836734693878,
+        0.826530612244898,
+        0.7948717948717948,
+        0.8010416666666667,
+        0.8177083333333334,
+        0.8083333333333333,
+        0.8245425188374597
+      ],
+      "context_gate_overlap": 0.8418451288451386
+    }
+  },
+  {
+    "seed": 101,
+    "first": 0,
+    "stream": "blocked",
+    "policy": "pseudo",
+    "intervention": "reset_each",
+    "score": {
+      "accuracy": 0.625,
+      "pair_accuracy": [
+        0.6033096926713948,
+        0.885896180215475,
+        0.43169690501600855,
+        0.5503524672708963,
+        0.6369137670196672
+      ],
+      "early_after_switch": 0.610204081632653,
+      "late_after_switch": 0.6316889632107023,
+      "switch_curve": [
+        0.610204081632653,
+        0.6173469387755102,
+        0.6224489795918368,
+        0.6214285714285714,
+        0.6193877551020408,
+        0.6297435897435898,
+        0.628125,
+        0.6375,
+        0.628125,
+        0.635091496232508
+      ],
+      "context_gate_overlap": 0.8880116745444345
+    }
+  },
+  {
+    "seed": 101,
+    "first": 0,
+    "stream": "blocked",
+    "policy": "pseudo",
+    "intervention": "shuffle_branches",
+    "score": {
+      "accuracy": 0.4896,
+      "pair_accuracy": [
+        0.5777777777777777,
+        0.9520078354554359,
+        0.3335112059765208,
+        0.3338368580060423,
+        0.22289460413514878
+      ],
+      "early_after_switch": 0.46530612244897956,
+      "late_after_switch": 0.4851588628762542,
+      "switch_curve": [
+        0.46530612244897956,
+        0.47959183673469385,
+        0.5,
+        0.5010204081632653,
+        0.4857142857142857,
+        0.48307692307692307,
+        0.478125,
+        0.4875,
+        0.4864583333333333,
+        0.4908503767491927
+      ],
+      "context_gate_overlap": 0.9878854896318287
+    }
+  },
+  {
+    "seed": 101,
+    "first": 0,
+    "stream": "blocked",
+    "policy": "supervised",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.9576,
+      "pair_accuracy": [
+        0.9716312056737588,
+        0.9471106758080313,
+        0.9583778014941302,
+        0.9647532729103726,
+        0.9455370650529501
+      ],
+      "early_after_switch": 0.7673469387755102,
+      "late_after_switch": 0.9793060200668896,
+      "switch_curve": [
+        0.7673469387755102,
+        0.9744897959183674,
+        0.9785714285714285,
+        0.9795918367346939,
+        0.9795918367346939,
+        0.9835897435897436,
+        0.9760416666666667,
+        0.9770833333333333,
+        0.9833333333333333,
+        0.976318622174381
+      ],
+      "context_gate_overlap": 0.7256439918419577
+    }
+  },
+  {
+    "seed": 101,
+    "first": 0,
+    "stream": "blocked",
+    "policy": "supervised",
+    "intervention": "reset_each",
+    "score": {
+      "accuracy": 0.625,
+      "pair_accuracy": [
+        0.6033096926713948,
+        0.885896180215475,
+        0.43169690501600855,
+        0.5503524672708963,
+        0.6369137670196672
+      ],
+      "early_after_switch": 0.610204081632653,
+      "late_after_switch": 0.6316889632107023,
+      "switch_curve": [
+        0.610204081632653,
+        0.6173469387755102,
+        0.6224489795918368,
+        0.6214285714285714,
+        0.6193877551020408,
+        0.6297435897435898,
+        0.628125,
+        0.6375,
+        0.628125,
+        0.635091496232508
+      ],
+      "context_gate_overlap": 0.8880116745444345
+    }
+  },
+  {
+    "seed": 101,
+    "first": 0,
+    "stream": "blocked",
+    "policy": "supervised",
+    "intervention": "shuffle_branches",
+    "score": {
+      "accuracy": 0.4861,
+      "pair_accuracy": [
+        0.573049645390071,
+        0.9471106758080313,
+        0.31963713980789754,
+        0.3252769385699899,
+        0.23701462430660616
+      ],
+      "early_after_switch": 0.47244897959183674,
+      "late_after_switch": 0.4845317725752508,
+      "switch_curve": [
+        0.47244897959183674,
+        0.46530612244897956,
+        0.4846938775510204,
+        0.4969387755102041,
+        0.47551020408163264,
+        0.48717948717948717,
+        0.47604166666666664,
+        0.4739583333333333,
+        0.5020833333333333,
+        0.48331539289558667
+      ],
+      "context_gate_overlap": 0.9869192726785501
+    }
+  },
+  {
+    "seed": 101,
+    "first": 0,
+    "stream": "mixed",
+    "policy": "none",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.625,
+      "pair_accuracy": [
+        0.6033096926713948,
+        0.885896180215475,
+        0.43169690501600855,
+        0.5503524672708963,
+        0.6369137670196672
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.8880116745444345
+    }
+  },
+  {
+    "seed": 101,
+    "first": 0,
+    "stream": "mixed",
+    "policy": "magnitude",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.5189,
+      "pair_accuracy": [
+        0.42505910165484634,
+        0.9098922624877571,
+        0.3057630736392743,
+        0.3499496475327291,
+        0.5869894099848714
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.9439846696513366
+    }
+  },
+  {
+    "seed": 101,
+    "first": 0,
+    "stream": "mixed",
+    "policy": "magnitude",
+    "intervention": "reset_each",
+    "score": {
+      "accuracy": 0.625,
+      "pair_accuracy": [
+        0.6033096926713948,
+        0.885896180215475,
+        0.43169690501600855,
+        0.5503524672708963,
+        0.6369137670196672
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.8880116745444345
+    }
+  },
+  {
+    "seed": 101,
+    "first": 0,
+    "stream": "mixed",
+    "policy": "magnitude",
+    "intervention": "shuffle_branches",
+    "score": {
+      "accuracy": 0.5831,
+      "pair_accuracy": [
+        0.6066193853427896,
+        0.925073457394711,
+        0.39381003201707576,
+        0.4984894259818731,
+        0.4694906707009581
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.9437812283424439
+    }
+  },
+  {
+    "seed": 101,
+    "first": 0,
+    "stream": "mixed",
+    "policy": "pseudo",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.4476,
+      "pair_accuracy": [
+        0.5621749408983452,
+        0.8834476003917727,
+        0.11792956243329776,
+        0.2134944612286002,
+        0.42259203227433184
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.9887579162401158
+    }
+  },
+  {
+    "seed": 101,
+    "first": 0,
+    "stream": "mixed",
+    "policy": "pseudo",
+    "intervention": "reset_each",
+    "score": {
+      "accuracy": 0.625,
+      "pair_accuracy": [
+        0.6033096926713948,
+        0.885896180215475,
+        0.43169690501600855,
+        0.5503524672708963,
+        0.6369137670196672
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.8880116745444345
+    }
+  },
+  {
+    "seed": 101,
+    "first": 0,
+    "stream": "mixed",
+    "policy": "pseudo",
+    "intervention": "shuffle_branches",
+    "score": {
+      "accuracy": 0.4945,
+      "pair_accuracy": [
+        0.5839243498817966,
+        0.955435847208619,
+        0.3431163287086446,
+        0.3333333333333333,
+        0.22894604135148763
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.9883494758071726
+    }
+  },
+  {
+    "seed": 101,
+    "first": 0,
+    "stream": "mixed",
+    "policy": "supervised",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.5883,
+      "pair_accuracy": [
+        0.7172576832151301,
+        0.816356513222331,
+        0.41889007470651013,
+        0.5614300100704934,
+        0.40292486132123045
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.9885025476174454
+    }
+  },
+  {
+    "seed": 101,
+    "first": 0,
+    "stream": "mixed",
+    "policy": "supervised",
+    "intervention": "reset_each",
+    "score": {
+      "accuracy": 0.625,
+      "pair_accuracy": [
+        0.6033096926713948,
+        0.885896180215475,
+        0.43169690501600855,
+        0.5503524672708963,
+        0.6369137670196672
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.8880116745444345
+    }
+  },
+  {
+    "seed": 101,
+    "first": 0,
+    "stream": "mixed",
+    "policy": "supervised",
+    "intervention": "shuffle_branches",
+    "score": {
+      "accuracy": 0.492,
+      "pair_accuracy": [
+        0.5843971631205673,
+        0.955435847208619,
+        0.3431163287086446,
+        0.3202416918429003,
+        0.22894604135148763
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.9882717145249823
+    }
+  },
+  {
+    "seed": 101,
+    "first": 4,
+    "stream": "blocked",
+    "policy": "none",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.6857,
+      "pair_accuracy": [
+        0.8936170212765957,
+        0.8481880509304603,
+        0.7748132337246532,
+        0.8539778449144008,
+        0.04387291981845688
+      ],
+      "early_after_switch": 0.689795918367347,
+      "late_after_switch": 0.6778846153846154,
+      "switch_curve": [
+        0.689795918367347,
+        0.7061224489795919,
+        0.6816326530612244,
+        0.6714285714285714,
+        0.6714285714285714,
+        0.6861538461538461,
+        0.6604166666666667,
+        0.6822916666666666,
+        0.6885416666666667,
+        0.6716899892357373
+      ],
+      "context_gate_overlap": 0.8874240186295346
+    }
+  },
+  {
+    "seed": 101,
+    "first": 4,
+    "stream": "blocked",
+    "policy": "magnitude",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.7147,
+      "pair_accuracy": [
+        0.939952718676123,
+        0.9059745347698335,
+        0.8153681963713981,
+        0.8811681772406847,
+        0.015632879475542108
+      ],
+      "early_after_switch": 0.6806122448979591,
+      "late_after_switch": 0.7102842809364549,
+      "switch_curve": [
+        0.6806122448979591,
+        0.726530612244898,
+        0.7122448979591837,
+        0.7122448979591837,
+        0.7071428571428572,
+        0.7220512820512821,
+        0.6864583333333333,
+        0.7125,
+        0.7135416666666666,
+        0.7168998923573735
+      ],
+      "context_gate_overlap": 0.8908491256410945
+    }
+  },
+  {
+    "seed": 101,
+    "first": 4,
+    "stream": "blocked",
+    "policy": "magnitude",
+    "intervention": "reset_each",
+    "score": {
+      "accuracy": 0.6857,
+      "pair_accuracy": [
+        0.8936170212765957,
+        0.8481880509304603,
+        0.7748132337246532,
+        0.8539778449144008,
+        0.04387291981845688
+      ],
+      "early_after_switch": 0.689795918367347,
+      "late_after_switch": 0.6778846153846154,
+      "switch_curve": [
+        0.689795918367347,
+        0.7061224489795919,
+        0.6816326530612244,
+        0.6714285714285714,
+        0.6714285714285714,
+        0.6861538461538461,
+        0.6604166666666667,
+        0.6822916666666666,
+        0.6885416666666667,
+        0.6716899892357373
+      ],
+      "context_gate_overlap": 0.8874240186295346
+    }
+  },
+  {
+    "seed": 101,
+    "first": 4,
+    "stream": "blocked",
+    "policy": "magnitude",
+    "intervention": "shuffle_branches",
+    "score": {
+      "accuracy": 0.6823,
+      "pair_accuracy": [
+        0.8671394799054374,
+        0.806562193927522,
+        0.7833511205976521,
+        0.8831822759315207,
+        0.060514372163388806
+      ],
+      "early_after_switch": 0.6948979591836735,
+      "late_after_switch": 0.6747491638795987,
+      "switch_curve": [
+        0.6948979591836735,
+        0.6928571428571428,
+        0.6795918367346939,
+        0.6714285714285714,
+        0.6642857142857143,
+        0.68,
+        0.6604166666666667,
+        0.68125,
+        0.6864583333333333,
+        0.6652314316469322
+      ],
+      "context_gate_overlap": 0.9434099048429623
+    }
+  },
+  {
+    "seed": 101,
+    "first": 4,
+    "stream": "blocked",
+    "policy": "pseudo",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.7581,
+      "pair_accuracy": [
+        0.9867612293144208,
+        0.9319294809010774,
+        0.8890074706510138,
+        0.9667673716012085,
+        0.0025214321734745334
+      ],
+      "early_after_switch": 0.6030612244897959,
+      "late_after_switch": 0.7694397993311036,
+      "switch_curve": [
+        0.6030612244897959,
+        0.7714285714285715,
+        0.7612244897959184,
+        0.763265306122449,
+        0.7744897959183673,
+        0.7702564102564102,
+        0.7739583333333333,
+        0.7697916666666667,
+        0.7583333333333333,
+        0.77502691065662
+      ],
+      "context_gate_overlap": 0.7900943422969661
+    }
+  },
+  {
+    "seed": 101,
+    "first": 4,
+    "stream": "blocked",
+    "policy": "pseudo",
+    "intervention": "reset_each",
+    "score": {
+      "accuracy": 0.6857,
+      "pair_accuracy": [
+        0.8936170212765957,
+        0.8481880509304603,
+        0.7748132337246532,
+        0.8539778449144008,
+        0.04387291981845688
+      ],
+      "early_after_switch": 0.689795918367347,
+      "late_after_switch": 0.6778846153846154,
+      "switch_curve": [
+        0.689795918367347,
+        0.7061224489795919,
+        0.6816326530612244,
+        0.6714285714285714,
+        0.6714285714285714,
+        0.6861538461538461,
+        0.6604166666666667,
+        0.6822916666666666,
+        0.6885416666666667,
+        0.6716899892357373
+      ],
+      "context_gate_overlap": 0.8874240186295346
+    }
+  },
+  {
+    "seed": 101,
+    "first": 4,
+    "stream": "blocked",
+    "policy": "pseudo",
+    "intervention": "shuffle_branches",
+    "score": {
+      "accuracy": 0.6293,
+      "pair_accuracy": [
+        0.7366430260047281,
+        0.6655239960822723,
+        0.7865528281750267,
+        0.891742195367573,
+        0.06606152294503277
+      ],
+      "early_after_switch": 0.6377551020408163,
+      "late_after_switch": 0.6172658862876255,
+      "switch_curve": [
+        0.6377551020408163,
+        0.6408163265306123,
+        0.6408163265306123,
+        0.6214285714285714,
+        0.6357142857142857,
+        0.6266666666666667,
+        0.6041666666666666,
+        0.6229166666666667,
+        0.6125,
+        0.620021528525296
+      ],
+      "context_gate_overlap": 0.9871755622777708
+    }
+  },
+  {
+    "seed": 101,
+    "first": 4,
+    "stream": "blocked",
+    "policy": "supervised",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.9495,
+      "pair_accuracy": [
+        0.9853427895981087,
+        0.9270323212536729,
+        0.935965848452508,
+        0.9718026183282981,
+        0.9248613212304589
+      ],
+      "early_after_switch": 0.7377551020408163,
+      "late_after_switch": 0.977633779264214,
+      "switch_curve": [
+        0.7377551020408163,
+        0.9724489795918367,
+        0.9653061224489796,
+        0.9612244897959183,
+        0.9714285714285714,
+        0.9815384615384616,
+        0.9770833333333333,
+        0.9802083333333333,
+        0.9708333333333333,
+        0.9784714747039828
+      ],
+      "context_gate_overlap": 0.7193725472976131
+    }
+  },
+  {
+    "seed": 101,
+    "first": 4,
+    "stream": "blocked",
+    "policy": "supervised",
+    "intervention": "reset_each",
+    "score": {
+      "accuracy": 0.6857,
+      "pair_accuracy": [
+        0.8936170212765957,
+        0.8481880509304603,
+        0.7748132337246532,
+        0.8539778449144008,
+        0.04387291981845688
+      ],
+      "early_after_switch": 0.689795918367347,
+      "late_after_switch": 0.6778846153846154,
+      "switch_curve": [
+        0.689795918367347,
+        0.7061224489795919,
+        0.6816326530612244,
+        0.6714285714285714,
+        0.6714285714285714,
+        0.6861538461538461,
+        0.6604166666666667,
+        0.6822916666666666,
+        0.6885416666666667,
+        0.6716899892357373
+      ],
+      "context_gate_overlap": 0.8874240186295346
+    }
+  },
+  {
+    "seed": 101,
+    "first": 4,
+    "stream": "blocked",
+    "policy": "supervised",
+    "intervention": "shuffle_branches",
+    "score": {
+      "accuracy": 0.6229,
+      "pair_accuracy": [
+        0.7092198581560284,
+        0.6571988246816847,
+        0.7812166488794023,
+        0.8831822759315207,
+        0.08522440746343923
+      ],
+      "early_after_switch": 0.6316326530612245,
+      "late_after_switch": 0.6091137123745819,
+      "switch_curve": [
+        0.6316326530612245,
+        0.6357142857142857,
+        0.639795918367347,
+        0.6091836734693877,
+        0.639795918367347,
+        0.6123076923076923,
+        0.6020833333333333,
+        0.6114583333333333,
+        0.6125,
+        0.6071044133476857
+      ],
+      "context_gate_overlap": 0.9865741601811594
+    }
+  },
+  {
+    "seed": 101,
+    "first": 4,
+    "stream": "mixed",
+    "policy": "none",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.6857,
+      "pair_accuracy": [
+        0.8936170212765957,
+        0.8481880509304603,
+        0.7748132337246532,
+        0.8539778449144008,
+        0.04387291981845688
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.8874240186295346
+    }
+  },
+  {
+    "seed": 101,
+    "first": 4,
+    "stream": "mixed",
+    "policy": "magnitude",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.6652,
+      "pair_accuracy": [
+        0.8728132387706856,
+        0.8486777668952008,
+        0.7588046958377801,
+        0.8172205438066465,
+        0.014120020171457387
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.9436206295918467
+    }
+  },
+  {
+    "seed": 101,
+    "first": 4,
+    "stream": "mixed",
+    "policy": "magnitude",
+    "intervention": "reset_each",
+    "score": {
+      "accuracy": 0.6857,
+      "pair_accuracy": [
+        0.8936170212765957,
+        0.8481880509304603,
+        0.7748132337246532,
+        0.8539778449144008,
+        0.04387291981845688
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.8874240186295346
+    }
+  },
+  {
+    "seed": 101,
+    "first": 4,
+    "stream": "mixed",
+    "policy": "magnitude",
+    "intervention": "shuffle_branches",
+    "score": {
+      "accuracy": 0.6814,
+      "pair_accuracy": [
+        0.8666666666666667,
+        0.8046033300685602,
+        0.7876200640341515,
+        0.878147029204431,
+        0.05950579929399899
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.9435052152393151
+    }
+  },
+  {
+    "seed": 101,
+    "first": 4,
+    "stream": "mixed",
+    "policy": "pseudo",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.5317,
+      "pair_accuracy": [
+        0.7172576832151301,
+        0.628305582761998,
+        0.7091782283884739,
+        0.594159113796576,
+        0.004034291477559254
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.9882071477383404
+    }
+  },
+  {
+    "seed": 101,
+    "first": 4,
+    "stream": "mixed",
+    "policy": "pseudo",
+    "intervention": "reset_each",
+    "score": {
+      "accuracy": 0.6857,
+      "pair_accuracy": [
+        0.8936170212765957,
+        0.8481880509304603,
+        0.7748132337246532,
+        0.8539778449144008,
+        0.04387291981845688
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.8874240186295346
+    }
+  },
+  {
+    "seed": 101,
+    "first": 4,
+    "stream": "mixed",
+    "policy": "pseudo",
+    "intervention": "shuffle_branches",
+    "score": {
+      "accuracy": 0.648,
+      "pair_accuracy": [
+        0.7905437352245863,
+        0.6890303623898139,
+        0.7902881536819637,
+        0.9008056394763343,
+        0.06606152294503277
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.9880831039590884
+    }
+  },
+  {
+    "seed": 101,
+    "first": 4,
+    "stream": "mixed",
+    "policy": "supervised",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.6049,
+      "pair_accuracy": [
+        0.840661938534279,
+        0.5617042115572968,
+        0.628068303094984,
+        0.7789526686807654,
+        0.20171457387796268
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.98832236663883
+    }
+  },
+  {
+    "seed": 101,
+    "first": 4,
+    "stream": "mixed",
+    "policy": "supervised",
+    "intervention": "reset_each",
+    "score": {
+      "accuracy": 0.6857,
+      "pair_accuracy": [
+        0.8936170212765957,
+        0.8481880509304603,
+        0.7748132337246532,
+        0.8539778449144008,
+        0.04387291981845688
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.8874240186295346
+    }
+  },
+  {
+    "seed": 101,
+    "first": 4,
+    "stream": "mixed",
+    "policy": "supervised",
+    "intervention": "shuffle_branches",
+    "score": {
+      "accuracy": 0.6481,
+      "pair_accuracy": [
+        0.7825059101654847,
+        0.6875612144955926,
+        0.7934898612593383,
+        0.905337361530715,
+        0.06908724155320221
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.9880988815733456
+    }
+  },
+  {
+    "seed": 102,
+    "first": 0,
+    "stream": "blocked",
+    "policy": "none",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.6609,
+      "pair_accuracy": [
+        0.7612293144208038,
+        0.8878550440744368,
+        0.29669156883671294,
+        0.5367573011077543,
+        0.7887039838628341
+      ],
+      "early_after_switch": 0.6581632653061225,
+      "late_after_switch": 0.6603260869565217,
+      "switch_curve": [
+        0.6581632653061225,
+        0.673469387755102,
+        0.676530612244898,
+        0.6418367346938776,
+        0.65,
+        0.6697435897435897,
+        0.6510416666666666,
+        0.6625,
+        0.6635416666666667,
+        0.6544671689989235
+      ],
+      "context_gate_overlap": 0.8869345883224317
+    }
+  },
+  {
+    "seed": 102,
+    "first": 0,
+    "stream": "blocked",
+    "policy": "magnitude",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.6499,
+      "pair_accuracy": [
+        0.68274231678487,
+        0.920666013712047,
+        0.2641408751334045,
+        0.4949647532729104,
+        0.8557740796772567
+      ],
+      "early_after_switch": 0.6091836734693877,
+      "late_after_switch": 0.6567725752508361,
+      "switch_curve": [
+        0.6091836734693877,
+        0.6663265306122449,
+        0.6653061224489796,
+        0.6428571428571429,
+        0.6479591836734694,
+        0.6615384615384615,
+        0.6552083333333333,
+        0.6552083333333333,
+        0.6572916666666667,
+        0.6544671689989235
+      ],
+      "context_gate_overlap": 0.8904234991803682
+    }
+  },
+  {
+    "seed": 102,
+    "first": 0,
+    "stream": "blocked",
+    "policy": "magnitude",
+    "intervention": "reset_each",
+    "score": {
+      "accuracy": 0.6609,
+      "pair_accuracy": [
+        0.7612293144208038,
+        0.8878550440744368,
+        0.29669156883671294,
+        0.5367573011077543,
+        0.7887039838628341
+      ],
+      "early_after_switch": 0.6581632653061225,
+      "late_after_switch": 0.6603260869565217,
+      "switch_curve": [
+        0.6581632653061225,
+        0.673469387755102,
+        0.676530612244898,
+        0.6418367346938776,
+        0.65,
+        0.6697435897435897,
+        0.6510416666666666,
+        0.6625,
+        0.6635416666666667,
+        0.6544671689989235
+      ],
+      "context_gate_overlap": 0.8869345883224317
+    }
+  },
+  {
+    "seed": 102,
+    "first": 0,
+    "stream": "blocked",
+    "policy": "magnitude",
+    "intervention": "shuffle_branches",
+    "score": {
+      "accuracy": 0.6392,
+      "pair_accuracy": [
+        0.741371158392435,
+        0.9167482859941234,
+        0.3068303094983991,
+        0.4808660624370594,
+        0.7170953101361573
+      ],
+      "early_after_switch": 0.6377551020408163,
+      "late_after_switch": 0.6321070234113713,
+      "switch_curve": [
+        0.6377551020408163,
+        0.6540816326530612,
+        0.6530612244897959,
+        0.636734693877551,
+        0.6438775510204081,
+        0.6225641025641026,
+        0.6427083333333333,
+        0.6416666666666667,
+        0.625,
+        0.628632938643703
+      ],
+      "context_gate_overlap": 0.9431659771959884
+    }
+  },
+  {
+    "seed": 102,
+    "first": 0,
+    "stream": "blocked",
+    "policy": "pseudo",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.7643,
+      "pair_accuracy": [
+        0.9635933806146572,
+        0.9539666993143977,
+        0.22838847385272146,
+        0.7280966767371602,
+        0.8991427130610187
+      ],
+      "early_after_switch": 0.6173469387755102,
+      "late_after_switch": 0.7744565217391305,
+      "switch_curve": [
+        0.6173469387755102,
+        0.7785714285714286,
+        0.8010204081632653,
+        0.7663265306122449,
+        0.789795918367347,
+        0.7784615384615384,
+        0.809375,
+        0.7552083333333334,
+        0.76875,
+        0.759956942949408
+      ],
+      "context_gate_overlap": 0.8217029630409095
+    }
+  },
+  {
+    "seed": 102,
+    "first": 0,
+    "stream": "blocked",
+    "policy": "pseudo",
+    "intervention": "reset_each",
+    "score": {
+      "accuracy": 0.6609,
+      "pair_accuracy": [
+        0.7612293144208038,
+        0.8878550440744368,
+        0.29669156883671294,
+        0.5367573011077543,
+        0.7887039838628341
+      ],
+      "early_after_switch": 0.6581632653061225,
+      "late_after_switch": 0.6603260869565217,
+      "switch_curve": [
+        0.6581632653061225,
+        0.673469387755102,
+        0.676530612244898,
+        0.6418367346938776,
+        0.65,
+        0.6697435897435897,
+        0.6510416666666666,
+        0.6625,
+        0.6635416666666667,
+        0.6544671689989235
+      ],
+      "context_gate_overlap": 0.8869345883224317
+    }
+  },
+  {
+    "seed": 102,
+    "first": 0,
+    "stream": "blocked",
+    "policy": "pseudo",
+    "intervention": "shuffle_branches",
+    "score": {
+      "accuracy": 0.5787,
+      "pair_accuracy": [
+        0.7002364066193854,
+        0.9255631733594515,
+        0.2833511205976521,
+        0.4244712990936556,
+        0.5254664649520928
+      ],
+      "early_after_switch": 0.5908163265306122,
+      "late_after_switch": 0.5696070234113713,
+      "switch_curve": [
+        0.5908163265306122,
+        0.5928571428571429,
+        0.5826530612244898,
+        0.5785714285714286,
+        0.5887755102040816,
+        0.5743589743589743,
+        0.5708333333333333,
+        0.5572916666666666,
+        0.5635416666666667,
+        0.5823466092572659
+      ],
+      "context_gate_overlap": 0.9874287454537094
+    }
+  },
+  {
+    "seed": 102,
+    "first": 0,
+    "stream": "blocked",
+    "policy": "supervised",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.9532,
+      "pair_accuracy": [
+        0.9730496453900709,
+        0.9451518119490695,
+        0.9493062966915689,
+        0.9667673716012085,
+        0.9304084720121029
+      ],
+      "early_after_switch": 0.7540816326530613,
+      "late_after_switch": 0.975752508361204,
+      "switch_curve": [
+        0.7540816326530613,
+        0.9785714285714285,
+        0.9816326530612245,
+        0.963265306122449,
+        0.976530612244898,
+        0.9774358974358974,
+        0.978125,
+        0.9791666666666666,
+        0.975,
+        0.9687836383207751
+      ],
+      "context_gate_overlap": 0.7258278179253929
+    }
+  },
+  {
+    "seed": 102,
+    "first": 0,
+    "stream": "blocked",
+    "policy": "supervised",
+    "intervention": "reset_each",
+    "score": {
+      "accuracy": 0.6609,
+      "pair_accuracy": [
+        0.7612293144208038,
+        0.8878550440744368,
+        0.29669156883671294,
+        0.5367573011077543,
+        0.7887039838628341
+      ],
+      "early_after_switch": 0.6581632653061225,
+      "late_after_switch": 0.6603260869565217,
+      "switch_curve": [
+        0.6581632653061225,
+        0.673469387755102,
+        0.676530612244898,
+        0.6418367346938776,
+        0.65,
+        0.6697435897435897,
+        0.6510416666666666,
+        0.6625,
+        0.6635416666666667,
+        0.6544671689989235
+      ],
+      "context_gate_overlap": 0.8869345883224317
+    }
+  },
+  {
+    "seed": 102,
+    "first": 0,
+    "stream": "blocked",
+    "policy": "supervised",
+    "intervention": "shuffle_branches",
+    "score": {
+      "accuracy": 0.5728,
+      "pair_accuracy": [
+        0.6855791962174941,
+        0.9245837414299706,
+        0.2934898612593383,
+        0.41540785498489424,
+        0.5118507312153303
+      ],
+      "early_after_switch": 0.5979591836734693,
+      "late_after_switch": 0.56061872909699,
+      "switch_curve": [
+        0.5979591836734693,
+        0.5938775510204082,
+        0.5785714285714286,
+        0.5826530612244898,
+        0.5622448979591836,
+        0.5661538461538461,
+        0.5510416666666667,
+        0.5604166666666667,
+        0.5604166666666667,
+        0.5651237890204521
+      ],
+      "context_gate_overlap": 0.9866408086154214
+    }
+  },
+  {
+    "seed": 102,
+    "first": 0,
+    "stream": "mixed",
+    "policy": "none",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.6609,
+      "pair_accuracy": [
+        0.7612293144208038,
+        0.8878550440744368,
+        0.29669156883671294,
+        0.5367573011077543,
+        0.7887039838628341
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.8869345883224317
+    }
+  },
+  {
+    "seed": 102,
+    "first": 0,
+    "stream": "mixed",
+    "policy": "magnitude",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.5686,
+      "pair_accuracy": [
+        0.5706855791962175,
+        0.8898139079333987,
+        0.20277481323372465,
+        0.3202416918429003,
+        0.8300554715078164
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.9434176451598052
+    }
+  },
+  {
+    "seed": 102,
+    "first": 0,
+    "stream": "mixed",
+    "policy": "magnitude",
+    "intervention": "reset_each",
+    "score": {
+      "accuracy": 0.6609,
+      "pair_accuracy": [
+        0.7612293144208038,
+        0.8878550440744368,
+        0.29669156883671294,
+        0.5367573011077543,
+        0.7887039838628341
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.8869345883224317
+    }
+  },
+  {
+    "seed": 102,
+    "first": 0,
+    "stream": "mixed",
+    "policy": "magnitude",
+    "intervention": "shuffle_branches",
+    "score": {
+      "accuracy": 0.6364,
+      "pair_accuracy": [
+        0.7394799054373522,
+        0.910871694417238,
+        0.29775880469583776,
+        0.473313192346425,
+        0.7271810388300555
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.943326578701403
+    }
+  },
+  {
+    "seed": 102,
+    "first": 0,
+    "stream": "mixed",
+    "policy": "pseudo",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.4856,
+      "pair_accuracy": [
+        0.6208037825059102,
+        0.8898139079333987,
+        0.06776947705442903,
+        0.19385699899295064,
+        0.6122037317196167
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.9882886894659715
+    }
+  },
+  {
+    "seed": 102,
+    "first": 0,
+    "stream": "mixed",
+    "policy": "pseudo",
+    "intervention": "reset_each",
+    "score": {
+      "accuracy": 0.6609,
+      "pair_accuracy": [
+        0.7612293144208038,
+        0.8878550440744368,
+        0.29669156883671294,
+        0.5367573011077543,
+        0.7887039838628341
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.8869345883224317
+    }
+  },
+  {
+    "seed": 102,
+    "first": 0,
+    "stream": "mixed",
+    "policy": "pseudo",
+    "intervention": "shuffle_branches",
+    "score": {
+      "accuracy": 0.587,
+      "pair_accuracy": [
+        0.7073286052009456,
+        0.9319294809010774,
+        0.2705442902881537,
+        0.4214501510574018,
+        0.5683308119011599
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.9881221134431735
+    }
+  },
+  {
+    "seed": 102,
+    "first": 0,
+    "stream": "mixed",
+    "policy": "supervised",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.6035,
+      "pair_accuracy": [
+        0.7635933806146572,
+        0.8099902056807052,
+        0.39167556029882605,
+        0.5730110775427996,
+        0.4508320726172466
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.9884689945814965
+    }
+  },
+  {
+    "seed": 102,
+    "first": 0,
+    "stream": "mixed",
+    "policy": "supervised",
+    "intervention": "reset_each",
+    "score": {
+      "accuracy": 0.6609,
+      "pair_accuracy": [
+        0.7612293144208038,
+        0.8878550440744368,
+        0.29669156883671294,
+        0.5367573011077543,
+        0.7887039838628341
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.8869345883224317
+    }
+  },
+  {
+    "seed": 102,
+    "first": 0,
+    "stream": "mixed",
+    "policy": "supervised",
+    "intervention": "shuffle_branches",
+    "score": {
+      "accuracy": 0.5875,
+      "pair_accuracy": [
+        0.7016548463356974,
+        0.9363369245837414,
+        0.28121664887940234,
+        0.4179254783484391,
+        0.5658093797276853
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.9880922824487969
+    }
+  },
+  {
+    "seed": 102,
+    "first": 4,
+    "stream": "blocked",
+    "policy": "none",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.6858,
+      "pair_accuracy": [
+        0.875177304964539,
+        0.5915768854064642,
+        0.8762006403415155,
+        0.7819738167170192,
+        0.30458900655572363
+      ],
+      "early_after_switch": 0.6683673469387755,
+      "late_after_switch": 0.6858277591973244,
+      "switch_curve": [
+        0.6683673469387755,
+        0.6826530612244898,
+        0.6887755102040817,
+        0.6683673469387755,
+        0.6704081632653062,
+        0.6923076923076923,
+        0.6895833333333333,
+        0.6854166666666667,
+        0.6895833333333333,
+        0.6716899892357373
+      ],
+      "context_gate_overlap": 0.8878851120633932
+    }
+  },
+  {
+    "seed": 102,
+    "first": 4,
+    "stream": "blocked",
+    "policy": "magnitude",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.7103,
+      "pair_accuracy": [
+        0.9078014184397163,
+        0.6665034280117532,
+        0.9348986125933831,
+        0.7945619335347432,
+        0.2481089258698941
+      ],
+      "early_after_switch": 0.6673469387755102,
+      "late_after_switch": 0.711747491638796,
+      "switch_curve": [
+        0.6673469387755102,
+        0.7081632653061225,
+        0.7153061224489796,
+        0.6959183673469388,
+        0.7010204081632653,
+        0.7138461538461538,
+        0.70625,
+        0.71875,
+        0.7135416666666666,
+        0.7061356297093649
+      ],
+      "context_gate_overlap": 0.8912263334187716
+    }
+  },
+  {
+    "seed": 102,
+    "first": 4,
+    "stream": "blocked",
+    "policy": "magnitude",
+    "intervention": "reset_each",
+    "score": {
+      "accuracy": 0.6858,
+      "pair_accuracy": [
+        0.875177304964539,
+        0.5915768854064642,
+        0.8762006403415155,
+        0.7819738167170192,
+        0.30458900655572363
+      ],
+      "early_after_switch": 0.6683673469387755,
+      "late_after_switch": 0.6858277591973244,
+      "switch_curve": [
+        0.6683673469387755,
+        0.6826530612244898,
+        0.6887755102040817,
+        0.6683673469387755,
+        0.6704081632653062,
+        0.6923076923076923,
+        0.6895833333333333,
+        0.6854166666666667,
+        0.6895833333333333,
+        0.6716899892357373
+      ],
+      "context_gate_overlap": 0.8878851120633932
+    }
+  },
+  {
+    "seed": 102,
+    "first": 4,
+    "stream": "blocked",
+    "policy": "magnitude",
+    "intervention": "shuffle_branches",
+    "score": {
+      "accuracy": 0.6727,
+      "pair_accuracy": [
+        0.8184397163120567,
+        0.5710088148873653,
+        0.8655282817502669,
+        0.797583081570997,
+        0.3146747352496218
+      ],
+      "early_after_switch": 0.6591836734693878,
+      "late_after_switch": 0.6728678929765887,
+      "switch_curve": [
+        0.6591836734693878,
+        0.676530612244898,
+        0.6693877551020408,
+        0.6663265306122449,
+        0.6561224489795918,
+        0.6820512820512821,
+        0.675,
+        0.6760416666666667,
+        0.6802083333333333,
+        0.6501614639397201
+      ],
+      "context_gate_overlap": 0.9436399392791521
+    }
+  },
+  {
+    "seed": 102,
+    "first": 4,
+    "stream": "blocked",
+    "policy": "pseudo",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.7945,
+      "pair_accuracy": [
+        0.9881796690307328,
+        0.8672869735553379,
+        0.951974386339381,
+        0.947129909365559,
+        0.21129601613716592
+      ],
+      "early_after_switch": 0.636734693877551,
+      "late_after_switch": 0.804556856187291,
+      "switch_curve": [
+        0.636734693877551,
+        0.8173469387755102,
+        0.8142857142857143,
+        0.8091836734693878,
+        0.7969387755102041,
+        0.8092307692307692,
+        0.8020833333333334,
+        0.7885416666666667,
+        0.8135416666666667,
+        0.8094725511302476
+      ],
+      "context_gate_overlap": 0.8032547000184845
+    }
+  },
+  {
+    "seed": 102,
+    "first": 4,
+    "stream": "blocked",
+    "policy": "pseudo",
+    "intervention": "reset_each",
+    "score": {
+      "accuracy": 0.6858,
+      "pair_accuracy": [
+        0.875177304964539,
+        0.5915768854064642,
+        0.8762006403415155,
+        0.7819738167170192,
+        0.30458900655572363
+      ],
+      "early_after_switch": 0.6683673469387755,
+      "late_after_switch": 0.6858277591973244,
+      "switch_curve": [
+        0.6683673469387755,
+        0.6826530612244898,
+        0.6887755102040817,
+        0.6683673469387755,
+        0.6704081632653062,
+        0.6923076923076923,
+        0.6895833333333333,
+        0.6854166666666667,
+        0.6895833333333333,
+        0.6716899892357373
+      ],
+      "context_gate_overlap": 0.8878851120633932
+    }
+  },
+  {
+    "seed": 102,
+    "first": 4,
+    "stream": "blocked",
+    "policy": "pseudo",
+    "intervention": "shuffle_branches",
+    "score": {
+      "accuracy": 0.6213,
+      "pair_accuracy": [
+        0.6486997635933807,
+        0.5254652301665035,
+        0.8303094983991463,
+        0.7885196374622356,
+        0.32576903681290975
+      ],
+      "early_after_switch": 0.6306122448979592,
+      "late_after_switch": 0.6204013377926422,
+      "switch_curve": [
+        0.6306122448979592,
+        0.6153061224489796,
+        0.6214285714285714,
+        0.6183673469387755,
+        0.6142857142857143,
+        0.6338461538461538,
+        0.6083333333333333,
+        0.628125,
+        0.6166666666666667,
+        0.6146393972012917
+      ],
+      "context_gate_overlap": 0.9874398832199105
+    }
+  },
+  {
+    "seed": 102,
+    "first": 4,
+    "stream": "blocked",
+    "policy": "supervised",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.9534,
+      "pair_accuracy": [
+        0.9853427895981087,
+        0.9333986287952988,
+        0.9445037353255069,
+        0.9677744209466264,
+        0.9339384770549672
+      ],
+      "early_after_switch": 0.7418367346938776,
+      "late_after_switch": 0.9753344481605352,
+      "switch_curve": [
+        0.7418367346938776,
+        0.9795918367346939,
+        0.9816326530612245,
+        0.9775510204081632,
+        0.9785714285714285,
+        0.9815384615384616,
+        0.9770833333333333,
+        0.9697916666666667,
+        0.975,
+        0.9730893433799784
+      ],
+      "context_gate_overlap": 0.7159821646689706
+    }
+  },
+  {
+    "seed": 102,
+    "first": 4,
+    "stream": "blocked",
+    "policy": "supervised",
+    "intervention": "reset_each",
+    "score": {
+      "accuracy": 0.6858,
+      "pair_accuracy": [
+        0.875177304964539,
+        0.5915768854064642,
+        0.8762006403415155,
+        0.7819738167170192,
+        0.30458900655572363
+      ],
+      "early_after_switch": 0.6683673469387755,
+      "late_after_switch": 0.6858277591973244,
+      "switch_curve": [
+        0.6683673469387755,
+        0.6826530612244898,
+        0.6887755102040817,
+        0.6683673469387755,
+        0.6704081632653062,
+        0.6923076923076923,
+        0.6895833333333333,
+        0.6854166666666667,
+        0.6895833333333333,
+        0.6716899892357373
+      ],
+      "context_gate_overlap": 0.8878851120633932
+    }
+  },
+  {
+    "seed": 102,
+    "first": 4,
+    "stream": "blocked",
+    "policy": "supervised",
+    "intervention": "shuffle_branches",
+    "score": {
+      "accuracy": 0.6151,
+      "pair_accuracy": [
+        0.6434988179669031,
+        0.5014691478942214,
+        0.8217716115261473,
+        0.7769385699899295,
+        0.34442763489662126
+      ],
+      "early_after_switch": 0.6142857142857143,
+      "late_after_switch": 0.6164297658862876,
+      "switch_curve": [
+        0.6142857142857143,
+        0.613265306122449,
+        0.6255102040816326,
+        0.5969387755102041,
+        0.610204081632653,
+        0.637948717948718,
+        0.6041666666666666,
+        0.6291666666666667,
+        0.603125,
+        0.6071044133476857
+      ],
+      "context_gate_overlap": 0.9867358745613454
+    }
+  },
+  {
+    "seed": 102,
+    "first": 4,
+    "stream": "mixed",
+    "policy": "none",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.6858,
+      "pair_accuracy": [
+        0.875177304964539,
+        0.5915768854064642,
+        0.8762006403415155,
+        0.7819738167170192,
+        0.30458900655572363
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.8878851120633932
+    }
+  },
+  {
+    "seed": 102,
+    "first": 4,
+    "stream": "mixed",
+    "policy": "magnitude",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.647,
+      "pair_accuracy": [
+        0.8132387706855791,
+        0.5577864838393731,
+        0.9146211312700107,
+        0.7230614300100705,
+        0.232476046394352
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.9438303450723212
+    }
+  },
+  {
+    "seed": 102,
+    "first": 4,
+    "stream": "mixed",
+    "policy": "magnitude",
+    "intervention": "reset_each",
+    "score": {
+      "accuracy": 0.6858,
+      "pair_accuracy": [
+        0.875177304964539,
+        0.5915768854064642,
+        0.8762006403415155,
+        0.7819738167170192,
+        0.30458900655572363
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.8878851120633932
+    }
+  },
+  {
+    "seed": 102,
+    "first": 4,
+    "stream": "mixed",
+    "policy": "magnitude",
+    "intervention": "shuffle_branches",
+    "score": {
+      "accuracy": 0.6733,
+      "pair_accuracy": [
+        0.8122931442080378,
+        0.5773751224289911,
+        0.8676627534685165,
+        0.796576032225579,
+        0.3166918809884014
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.9439309923562932
+    }
+  },
+  {
+    "seed": 102,
+    "first": 4,
+    "stream": "mixed",
+    "policy": "pseudo",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.4924,
+      "pair_accuracy": [
+        0.6855791962174941,
+        0.29676787463271304,
+        0.8612593383137673,
+        0.5095669687814703,
+        0.12203731719616742
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.9883466391581524
+    }
+  },
+  {
+    "seed": 102,
+    "first": 4,
+    "stream": "mixed",
+    "policy": "pseudo",
+    "intervention": "reset_each",
+    "score": {
+      "accuracy": 0.6858,
+      "pair_accuracy": [
+        0.875177304964539,
+        0.5915768854064642,
+        0.8762006403415155,
+        0.7819738167170192,
+        0.30458900655572363
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.8878851120633932
+    }
+  },
+  {
+    "seed": 102,
+    "first": 4,
+    "stream": "mixed",
+    "policy": "pseudo",
+    "intervention": "shuffle_branches",
+    "score": {
+      "accuracy": 0.6318,
+      "pair_accuracy": [
+        0.6562647754137115,
+        0.5337904015670911,
+        0.8537886872998933,
+        0.797079556898288,
+        0.3313161875945537
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.98827974547282
+    }
+  },
+  {
+    "seed": 102,
+    "first": 4,
+    "stream": "mixed",
+    "policy": "supervised",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.6065,
+      "pair_accuracy": [
+        0.8099290780141843,
+        0.5308521057786484,
+        0.6216648879402348,
+        0.7094662638469285,
+        0.34997478567826523
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.9884897634020546
+    }
+  },
+  {
+    "seed": 102,
+    "first": 4,
+    "stream": "mixed",
+    "policy": "supervised",
+    "intervention": "reset_each",
+    "score": {
+      "accuracy": 0.6858,
+      "pair_accuracy": [
+        0.875177304964539,
+        0.5915768854064642,
+        0.8762006403415155,
+        0.7819738167170192,
+        0.30458900655572363
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.8878851120633932
+    }
+  },
+  {
+    "seed": 102,
+    "first": 4,
+    "stream": "mixed",
+    "policy": "supervised",
+    "intervention": "shuffle_branches",
+    "score": {
+      "accuracy": 0.6306,
+      "pair_accuracy": [
+        0.660047281323877,
+        0.5230166503428012,
+        0.8511205976520811,
+        0.8056394763343404,
+        0.32627332324760466
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.9881637774286793
+    }
+  },
+  {
+    "seed": 103,
+    "first": 0,
+    "stream": "blocked",
+    "policy": "none",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.6758,
+      "pair_accuracy": [
+        0.5706855791962175,
+        0.8511263467189031,
+        0.6291355389541089,
+        0.6782477341389728,
+        0.649016641452345
+      ],
+      "early_after_switch": 0.6877551020408164,
+      "late_after_switch": 0.6783026755852842,
+      "switch_curve": [
+        0.6877551020408164,
+        0.6836734693877551,
+        0.6755102040816326,
+        0.689795918367347,
+        0.6571428571428571,
+        0.7025641025641025,
+        0.6604166666666667,
+        0.6604166666666667,
+        0.6822916666666666,
+        0.6856835306781486
+      ],
+      "context_gate_overlap": 0.8885167254482836
+    }
+  },
+  {
+    "seed": 103,
+    "first": 0,
+    "stream": "blocked",
+    "policy": "magnitude",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.7134,
+      "pair_accuracy": [
+        0.5456264775413712,
+        0.9020568070519099,
+        0.6734258271077909,
+        0.7316213494461229,
+        0.7175995965708523
+      ],
+      "early_after_switch": 0.6938775510204082,
+      "late_after_switch": 0.7217809364548495,
+      "switch_curve": [
+        0.6938775510204082,
+        0.7204081632653061,
+        0.7112244897959183,
+        0.7295918367346939,
+        0.7081632653061225,
+        0.7446153846153846,
+        0.7166666666666667,
+        0.7135416666666666,
+        0.7135416666666666,
+        0.7201291711517761
+      ],
+      "context_gate_overlap": 0.8919802768645088
+    }
+  },
+  {
+    "seed": 103,
+    "first": 0,
+    "stream": "blocked",
+    "policy": "magnitude",
+    "intervention": "reset_each",
+    "score": {
+      "accuracy": 0.6758,
+      "pair_accuracy": [
+        0.5706855791962175,
+        0.8511263467189031,
+        0.6291355389541089,
+        0.6782477341389728,
+        0.649016641452345
+      ],
+      "early_after_switch": 0.6877551020408164,
+      "late_after_switch": 0.6783026755852842,
+      "switch_curve": [
+        0.6877551020408164,
+        0.6836734693877551,
+        0.6755102040816326,
+        0.689795918367347,
+        0.6571428571428571,
+        0.7025641025641025,
+        0.6604166666666667,
+        0.6604166666666667,
+        0.6822916666666666,
+        0.6856835306781486
+      ],
+      "context_gate_overlap": 0.8885167254482836
+    }
+  },
+  {
+    "seed": 103,
+    "first": 0,
+    "stream": "blocked",
+    "policy": "magnitude",
+    "intervention": "shuffle_branches",
+    "score": {
+      "accuracy": 0.645,
+      "pair_accuracy": [
+        0.6307328605200946,
+        0.921645445641528,
+        0.5757737459978656,
+        0.5735146022155085,
+        0.5123550176500252
+      ],
+      "early_after_switch": 0.6632653061224489,
+      "late_after_switch": 0.6406772575250836,
+      "switch_curve": [
+        0.6632653061224489,
+        0.6489795918367347,
+        0.6540816326530612,
+        0.6510204081632653,
+        0.6346938775510204,
+        0.6646153846153846,
+        0.6385416666666667,
+        0.6291666666666667,
+        0.6270833333333333,
+        0.643702906350915
+      ],
+      "context_gate_overlap": 0.9439962976698165
+    }
+  },
+  {
+    "seed": 103,
+    "first": 0,
+    "stream": "blocked",
+    "policy": "pseudo",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.8437,
+      "pair_accuracy": [
+        0.6184397163120567,
+        0.94564152791381,
+        0.8505869797225186,
+        0.904833836858006,
+        0.9112455874936964
+      ],
+      "early_after_switch": 0.689795918367347,
+      "late_after_switch": 0.8712374581939799,
+      "switch_curve": [
+        0.689795918367347,
+        0.8846938775510204,
+        0.8581632653061224,
+        0.8775510204081632,
+        0.85,
+        0.8666666666666667,
+        0.88125,
+        0.8625,
+        0.8625,
+        0.883745963401507
+      ],
+      "context_gate_overlap": 0.8184972694256761
+    }
+  },
+  {
+    "seed": 103,
+    "first": 0,
+    "stream": "blocked",
+    "policy": "pseudo",
+    "intervention": "reset_each",
+    "score": {
+      "accuracy": 0.6758,
+      "pair_accuracy": [
+        0.5706855791962175,
+        0.8511263467189031,
+        0.6291355389541089,
+        0.6782477341389728,
+        0.649016641452345
+      ],
+      "early_after_switch": 0.6877551020408164,
+      "late_after_switch": 0.6783026755852842,
+      "switch_curve": [
+        0.6877551020408164,
+        0.6836734693877551,
+        0.6755102040816326,
+        0.689795918367347,
+        0.6571428571428571,
+        0.7025641025641025,
+        0.6604166666666667,
+        0.6604166666666667,
+        0.6822916666666666,
+        0.6856835306781486
+      ],
+      "context_gate_overlap": 0.8885167254482836
+    }
+  },
+  {
+    "seed": 103,
+    "first": 0,
+    "stream": "blocked",
+    "policy": "pseudo",
+    "intervention": "shuffle_branches",
+    "score": {
+      "accuracy": 0.5403,
+      "pair_accuracy": [
+        0.660047281323877,
+        0.9578844270323212,
+        0.4247598719316969,
+        0.4204431017119839,
+        0.2118003025718608
+      ],
+      "early_after_switch": 0.5489795918367347,
+      "late_after_switch": 0.5340719063545151,
+      "switch_curve": [
+        0.5489795918367347,
+        0.5214285714285715,
+        0.5693877551020409,
+        0.55,
+        0.5183673469387755,
+        0.5507692307692308,
+        0.51875,
+        0.5291666666666667,
+        0.5208333333333334,
+        0.5511302475780409
+      ],
+      "context_gate_overlap": 0.9875543489661611
+    }
+  },
+  {
+    "seed": 103,
+    "first": 0,
+    "stream": "blocked",
+    "policy": "supervised",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.9593,
+      "pair_accuracy": [
+        0.9787234042553191,
+        0.9529872673849168,
+        0.9535752401280683,
+        0.972306143001007,
+        0.9374684820978316
+      ],
+      "early_after_switch": 0.7795918367346939,
+      "late_after_switch": 0.9759615384615384,
+      "switch_curve": [
+        0.7795918367346939,
+        0.9795918367346939,
+        0.9806122448979592,
+        0.9846938775510204,
+        0.9877551020408163,
+        0.9764102564102564,
+        0.9770833333333333,
+        0.9697916666666667,
+        0.9802083333333333,
+        0.976318622174381
+      ],
+      "context_gate_overlap": 0.7255277747137419
+    }
+  },
+  {
+    "seed": 103,
+    "first": 0,
+    "stream": "blocked",
+    "policy": "supervised",
+    "intervention": "reset_each",
+    "score": {
+      "accuracy": 0.6758,
+      "pair_accuracy": [
+        0.5706855791962175,
+        0.8511263467189031,
+        0.6291355389541089,
+        0.6782477341389728,
+        0.649016641452345
+      ],
+      "early_after_switch": 0.6877551020408164,
+      "late_after_switch": 0.6783026755852842,
+      "switch_curve": [
+        0.6877551020408164,
+        0.6836734693877551,
+        0.6755102040816326,
+        0.689795918367347,
+        0.6571428571428571,
+        0.7025641025641025,
+        0.6604166666666667,
+        0.6604166666666667,
+        0.6822916666666666,
+        0.6856835306781486
+      ],
+      "context_gate_overlap": 0.8885167254482836
+    }
+  },
+  {
+    "seed": 103,
+    "first": 0,
+    "stream": "blocked",
+    "policy": "supervised",
+    "intervention": "shuffle_branches",
+    "score": {
+      "accuracy": 0.5376,
+      "pair_accuracy": [
+        0.6524822695035462,
+        0.9588638589618022,
+        0.41355389541088583,
+        0.4229607250755287,
+        0.21331316187594554
+      ],
+      "early_after_switch": 0.5448979591836735,
+      "late_after_switch": 0.5286371237458194,
+      "switch_curve": [
+        0.5448979591836735,
+        0.5275510204081633,
+        0.5581632653061225,
+        0.5438775510204081,
+        0.5265306122448979,
+        0.5364102564102564,
+        0.5145833333333333,
+        0.5197916666666667,
+        0.5177083333333333,
+        0.5554359526372443
+      ],
+      "context_gate_overlap": 0.9866601621229051
+    }
+  },
+  {
+    "seed": 103,
+    "first": 0,
+    "stream": "mixed",
+    "policy": "none",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.6758,
+      "pair_accuracy": [
+        0.5706855791962175,
+        0.8511263467189031,
+        0.6291355389541089,
+        0.6782477341389728,
+        0.649016641452345
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.8885167254482836
+    }
+  },
+  {
+    "seed": 103,
+    "first": 0,
+    "stream": "mixed",
+    "policy": "magnitude",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.6464,
+      "pair_accuracy": [
+        0.5205673758865248,
+        0.8609206660137121,
+        0.5901814300960512,
+        0.6102719033232629,
+        0.649016641452345
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.9443285098332523
+    }
+  },
+  {
+    "seed": 103,
+    "first": 0,
+    "stream": "mixed",
+    "policy": "magnitude",
+    "intervention": "reset_each",
+    "score": {
+      "accuracy": 0.6758,
+      "pair_accuracy": [
+        0.5706855791962175,
+        0.8511263467189031,
+        0.6291355389541089,
+        0.6782477341389728,
+        0.649016641452345
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.8885167254482836
+    }
+  },
+  {
+    "seed": 103,
+    "first": 0,
+    "stream": "mixed",
+    "policy": "magnitude",
+    "intervention": "shuffle_branches",
+    "score": {
+      "accuracy": 0.6409,
+      "pair_accuracy": [
+        0.6245862884160757,
+        0.9255631733594515,
+        0.571504802561366,
+        0.5704934541792548,
+        0.5012607160867373
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.9439739095625621
+    }
+  },
+  {
+    "seed": 103,
+    "first": 0,
+    "stream": "mixed",
+    "policy": "pseudo",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.5154,
+      "pair_accuracy": [
+        0.526241134751773,
+        0.8237022526934378,
+        0.47705442902881534,
+        0.3756294058408862,
+        0.3625819465456379
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.9885252269789615
+    }
+  },
+  {
+    "seed": 103,
+    "first": 0,
+    "stream": "mixed",
+    "policy": "pseudo",
+    "intervention": "reset_each",
+    "score": {
+      "accuracy": 0.6758,
+      "pair_accuracy": [
+        0.5706855791962175,
+        0.8511263467189031,
+        0.6291355389541089,
+        0.6782477341389728,
+        0.649016641452345
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.8885167254482836
+    }
+  },
+  {
+    "seed": 103,
+    "first": 0,
+    "stream": "mixed",
+    "policy": "pseudo",
+    "intervention": "shuffle_branches",
+    "score": {
+      "accuracy": 0.5454,
+      "pair_accuracy": [
+        0.6657210401891253,
+        0.960822722820764,
+        0.4210245464247599,
+        0.42245720040281975,
+        0.22995461422087746
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.9881987370652519
+    }
+  },
+  {
+    "seed": 103,
+    "first": 0,
+    "stream": "mixed",
+    "policy": "supervised",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.5907,
+      "pair_accuracy": [
+        0.7385342789598108,
+        0.8530852105778648,
+        0.4103521878335112,
+        0.5488418932527693,
+        0.3751891074130106
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.9887240208331334
+    }
+  },
+  {
+    "seed": 103,
+    "first": 0,
+    "stream": "mixed",
+    "policy": "supervised",
+    "intervention": "reset_each",
+    "score": {
+      "accuracy": 0.6758,
+      "pair_accuracy": [
+        0.5706855791962175,
+        0.8511263467189031,
+        0.6291355389541089,
+        0.6782477341389728,
+        0.649016641452345
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.8885167254482836
+    }
+  },
+  {
+    "seed": 103,
+    "first": 0,
+    "stream": "mixed",
+    "policy": "supervised",
+    "intervention": "shuffle_branches",
+    "score": {
+      "accuracy": 0.5464,
+      "pair_accuracy": [
+        0.667612293144208,
+        0.960822722820764,
+        0.4204909284951974,
+        0.42497482376636453,
+        0.23096318709026728
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.988296648644611
+    }
+  },
+  {
+    "seed": 103,
+    "first": 4,
+    "stream": "blocked",
+    "policy": "none",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.6685,
+      "pair_accuracy": [
+        0.8742316784869977,
+        0.6733594515181195,
+        0.8708644610458911,
+        0.891742195367573,
+        0.02924861321230459
+      ],
+      "early_after_switch": 0.6714285714285714,
+      "late_after_switch": 0.6647157190635451,
+      "switch_curve": [
+        0.6714285714285714,
+        0.6663265306122449,
+        0.6673469387755102,
+        0.6530612244897959,
+        0.6418367346938776,
+        0.6717948717948717,
+        0.65,
+        0.6541666666666667,
+        0.6729166666666667,
+        0.6749192680301399
+      ],
+      "context_gate_overlap": 0.8809091943403263
+    }
+  },
+  {
+    "seed": 103,
+    "first": 4,
+    "stream": "blocked",
+    "policy": "magnitude",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.6983,
+      "pair_accuracy": [
+        0.9134751773049645,
+        0.7355533790401567,
+        0.9252934898612594,
+        0.9108761329305136,
+        0.0030257186081694403
+      ],
+      "early_after_switch": 0.6693877551020408,
+      "late_after_switch": 0.6979515050167224,
+      "switch_curve": [
+        0.6693877551020408,
+        0.7051020408163265,
+        0.7010204081632653,
+        0.6816326530612244,
+        0.6683673469387755,
+        0.7035897435897436,
+        0.678125,
+        0.6989583333333333,
+        0.7041666666666667,
+        0.7050592034445641
+      ],
+      "context_gate_overlap": 0.884472748888285
+    }
+  },
+  {
+    "seed": 103,
+    "first": 4,
+    "stream": "blocked",
+    "policy": "magnitude",
+    "intervention": "reset_each",
+    "score": {
+      "accuracy": 0.6685,
+      "pair_accuracy": [
+        0.8742316784869977,
+        0.6733594515181195,
+        0.8708644610458911,
+        0.891742195367573,
+        0.02924861321230459
+      ],
+      "early_after_switch": 0.6714285714285714,
+      "late_after_switch": 0.6647157190635451,
+      "switch_curve": [
+        0.6714285714285714,
+        0.6663265306122449,
+        0.6673469387755102,
+        0.6530612244897959,
+        0.6418367346938776,
+        0.6717948717948717,
+        0.65,
+        0.6541666666666667,
+        0.6729166666666667,
+        0.6749192680301399
+      ],
+      "context_gate_overlap": 0.8809091943403263
+    }
+  },
+  {
+    "seed": 103,
+    "first": 4,
+    "stream": "blocked",
+    "policy": "magnitude",
+    "intervention": "shuffle_branches",
+    "score": {
+      "accuracy": 0.6531,
+      "pair_accuracy": [
+        0.8028368794326242,
+        0.6488736532810969,
+        0.8644610458911419,
+        0.9078549848942599,
+        0.04286434694906707
+      ],
+      "early_after_switch": 0.6551020408163265,
+      "late_after_switch": 0.6528010033444817,
+      "switch_curve": [
+        0.6551020408163265,
+        0.6540816326530612,
+        0.6479591836734694,
+        0.6265306122448979,
+        0.6244897959183674,
+        0.6471794871794871,
+        0.6375,
+        0.65625,
+        0.6614583333333334,
+        0.6620021528525296
+      ],
+      "context_gate_overlap": 0.9403982315414531
+    }
+  },
+  {
+    "seed": 103,
+    "first": 4,
+    "stream": "blocked",
+    "policy": "pseudo",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.766,
+      "pair_accuracy": [
+        0.9829787234042553,
+        0.9040156709108716,
+        0.959445037353255,
+        0.9753272910372608,
+        0.0
+      ],
+      "early_after_switch": 0.6306122448979592,
+      "late_after_switch": 0.7748745819397993,
+      "switch_curve": [
+        0.6306122448979592,
+        0.7663265306122449,
+        0.7775510204081633,
+        0.7785714285714286,
+        0.7683673469387755,
+        0.7784615384615384,
+        0.7729166666666667,
+        0.7729166666666667,
+        0.7697916666666667,
+        0.7804090419806243
+      ],
+      "context_gate_overlap": 0.7954627334665051
+    }
+  },
+  {
+    "seed": 103,
+    "first": 4,
+    "stream": "blocked",
+    "policy": "pseudo",
+    "intervention": "reset_each",
+    "score": {
+      "accuracy": 0.6685,
+      "pair_accuracy": [
+        0.8742316784869977,
+        0.6733594515181195,
+        0.8708644610458911,
+        0.891742195367573,
+        0.02924861321230459
+      ],
+      "early_after_switch": 0.6714285714285714,
+      "late_after_switch": 0.6647157190635451,
+      "switch_curve": [
+        0.6714285714285714,
+        0.6663265306122449,
+        0.6673469387755102,
+        0.6530612244897959,
+        0.6418367346938776,
+        0.6717948717948717,
+        0.65,
+        0.6541666666666667,
+        0.6729166666666667,
+        0.6749192680301399
+      ],
+      "context_gate_overlap": 0.8809091943403263
+    }
+  },
+  {
+    "seed": 103,
+    "first": 4,
+    "stream": "blocked",
+    "policy": "pseudo",
+    "intervention": "shuffle_branches",
+    "score": {
+      "accuracy": 0.5915,
+      "pair_accuracy": [
+        0.5673758865248227,
+        0.5563173359451518,
+        0.8372465314834578,
+        0.918932527693857,
+        0.09329299041855774
+      ],
+      "early_after_switch": 0.5867346938775511,
+      "late_after_switch": 0.596989966555184,
+      "switch_curve": [
+        0.5867346938775511,
+        0.5948979591836735,
+        0.5744897959183674,
+        0.5642857142857143,
+        0.5775510204081633,
+        0.5723076923076923,
+        0.5958333333333333,
+        0.5979166666666667,
+        0.6010416666666667,
+        0.6189451022604952
+      ],
+      "context_gate_overlap": 0.9868160176166565
+    }
+  },
+  {
+    "seed": 103,
+    "first": 4,
+    "stream": "blocked",
+    "policy": "supervised",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.957,
+      "pair_accuracy": [
+        0.9853427895981087,
+        0.941234084231146,
+        0.9551760939167556,
+        0.9718026183282981,
+        0.929904185577408
+      ],
+      "early_after_switch": 0.773469387755102,
+      "late_after_switch": 0.9755434782608695,
+      "switch_curve": [
+        0.773469387755102,
+        0.9816326530612245,
+        0.976530612244898,
+        0.9806122448979592,
+        0.9785714285714285,
+        0.9784615384615385,
+        0.978125,
+        0.9697916666666667,
+        0.9739583333333334,
+        0.9773950484391819
+      ],
+      "context_gate_overlap": 0.720221497959714
+    }
+  },
+  {
+    "seed": 103,
+    "first": 4,
+    "stream": "blocked",
+    "policy": "supervised",
+    "intervention": "reset_each",
+    "score": {
+      "accuracy": 0.6685,
+      "pair_accuracy": [
+        0.8742316784869977,
+        0.6733594515181195,
+        0.8708644610458911,
+        0.891742195367573,
+        0.02924861321230459
+      ],
+      "early_after_switch": 0.6714285714285714,
+      "late_after_switch": 0.6647157190635451,
+      "switch_curve": [
+        0.6714285714285714,
+        0.6663265306122449,
+        0.6673469387755102,
+        0.6530612244897959,
+        0.6418367346938776,
+        0.6717948717948717,
+        0.65,
+        0.6541666666666667,
+        0.6729166666666667,
+        0.6749192680301399
+      ],
+      "context_gate_overlap": 0.8809091943403263
+    }
+  },
+  {
+    "seed": 103,
+    "first": 4,
+    "stream": "blocked",
+    "policy": "supervised",
+    "intervention": "shuffle_branches",
+    "score": {
+      "accuracy": 0.5848,
+      "pair_accuracy": [
+        0.5555555555555556,
+        0.5362389813907933,
+        0.8271077908217717,
+        0.9174219536757301,
+        0.10388300554715078
+      ],
+      "early_after_switch": 0.5948979591836735,
+      "late_after_switch": 0.5865384615384616,
+      "switch_curve": [
+        0.5948979591836735,
+        0.5959183673469388,
+        0.5581632653061225,
+        0.5724489795918367,
+        0.5622448979591836,
+        0.5692307692307692,
+        0.58125,
+        0.5885416666666666,
+        0.5854166666666667,
+        0.6092572658772875
+      ],
+      "context_gate_overlap": 0.9863043149613274
+    }
+  },
+  {
+    "seed": 103,
+    "first": 4,
+    "stream": "mixed",
+    "policy": "none",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.6685,
+      "pair_accuracy": [
+        0.8742316784869977,
+        0.6733594515181195,
+        0.8708644610458911,
+        0.891742195367573,
+        0.02924861321230459
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.8809091943403263
+    }
+  },
+  {
+    "seed": 103,
+    "first": 4,
+    "stream": "mixed",
+    "policy": "magnitude",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.6395,
+      "pair_accuracy": [
+        0.8137115839243498,
+        0.6180215475024485,
+        0.8948772678762006,
+        0.8675730110775428,
+        0.006051437216338881
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.9403603544395293
+    }
+  },
+  {
+    "seed": 103,
+    "first": 4,
+    "stream": "mixed",
+    "policy": "magnitude",
+    "intervention": "reset_each",
+    "score": {
+      "accuracy": 0.6685,
+      "pair_accuracy": [
+        0.8742316784869977,
+        0.6733594515181195,
+        0.8708644610458911,
+        0.891742195367573,
+        0.02924861321230459
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.8809091943403263
+    }
+  },
+  {
+    "seed": 103,
+    "first": 4,
+    "stream": "mixed",
+    "policy": "magnitude",
+    "intervention": "shuffle_branches",
+    "score": {
+      "accuracy": 0.6533,
+      "pair_accuracy": [
+        0.8042553191489362,
+        0.6464250734573947,
+        0.8644610458911419,
+        0.9073514602215509,
+        0.0453857791225416
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.9401787825439054
+    }
+  },
+  {
+    "seed": 103,
+    "first": 4,
+    "stream": "mixed",
+    "policy": "pseudo",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.4952,
+      "pair_accuracy": [
+        0.6156028368794326,
+        0.28844270323212534,
+        0.8617929562433297,
+        0.7280966767371602,
+        0.0
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.987887140611784
+    }
+  },
+  {
+    "seed": 103,
+    "first": 4,
+    "stream": "mixed",
+    "policy": "pseudo",
+    "intervention": "reset_each",
+    "score": {
+      "accuracy": 0.6685,
+      "pair_accuracy": [
+        0.8742316784869977,
+        0.6733594515181195,
+        0.8708644610458911,
+        0.891742195367573,
+        0.02924861321230459
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.8809091943403263
+    }
+  },
+  {
+    "seed": 103,
+    "first": 4,
+    "stream": "mixed",
+    "policy": "pseudo",
+    "intervention": "shuffle_branches",
+    "score": {
+      "accuracy": 0.6022,
+      "pair_accuracy": [
+        0.6141843971631206,
+        0.5666013712047012,
+        0.8479188900747066,
+        0.9149043303121853,
+        0.08068582955118507
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.9874172150619319
+    }
+  },
+  {
+    "seed": 103,
+    "first": 4,
+    "stream": "mixed",
+    "policy": "supervised",
+    "intervention": "retain",
+    "score": {
+      "accuracy": 0.6049,
+      "pair_accuracy": [
+        0.7706855791962175,
+        0.5646425073457395,
+        0.6707577374599787,
+        0.8031218529707955,
+        0.2087745839636914
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.9875996029859901
+    }
+  },
+  {
+    "seed": 103,
+    "first": 4,
+    "stream": "mixed",
+    "policy": "supervised",
+    "intervention": "reset_each",
+    "score": {
+      "accuracy": 0.6685,
+      "pair_accuracy": [
+        0.8742316784869977,
+        0.6733594515181195,
+        0.8708644610458911,
+        0.891742195367573,
+        0.02924861321230459
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.8809091943403263
+    }
+  },
+  {
+    "seed": 103,
+    "first": 4,
+    "stream": "mixed",
+    "policy": "supervised",
+    "intervention": "shuffle_branches",
+    "score": {
+      "accuracy": 0.6054,
+      "pair_accuracy": [
+        0.6132387706855792,
+        0.578354554358472,
+        0.8511205976520811,
+        0.918429003021148,
+        0.07917297024710035
+      ],
+      "early_after_switch": null,
+      "late_after_switch": null,
+      "switch_curve": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "context_gate_overlap": 0.9875313787525043
+    }
+  }
+]

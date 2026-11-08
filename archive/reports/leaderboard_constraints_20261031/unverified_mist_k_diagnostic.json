@@ -1,0 +1,19 @@
+{
+  "method": "mist_k",
+  "label": "MIST-K, unverified diagnostic, PCA50",
+  "accuracy": 18.664999802907307,
+  "sd": 2.0602914158005494,
+  "mb": 0.9344146666666666,
+  "memory_min_mb": 0.724408,
+  "memory_max_mb": 1.198864,
+  "kind": "tree",
+  "representation": "PCA50 from first1000 initial-task samples",
+  "parameters": 0,
+  "optimizer_mb": 0.0,
+  "projection_mb": 0.319872,
+  "training_seconds": 3.6919241945009467,
+  "nodes_mean": 2.6666666666666665,
+  "python_model_heap_mb": 0.0,
+  "scope": "MIST paper reconstruction; not official code or verified paper reproduction",
+  "experimental_status": "Explicit local adaptation; MIST is a paper reconstruction, not official implementation"
+}

@@ -1,0 +1,31 @@
+{
+  "seeds": [
+    101,
+    102,
+    103
+  ],
+  "orders": [
+    "forward",
+    "reverse"
+  ],
+  "inputs": [
+    784,
+    392,
+    196
+  ],
+  "normalization": [
+    false,
+    true
+  ],
+  "neurons": 168,
+  "branches": 4,
+  "epochs": 2,
+  "batch_size": 128,
+  "learning_rate": 0.0005,
+  "train_examples": 55000,
+  "test_examples": 10000,
+  "loss": "CE + .5 mean single-neuron substitution CE",
+  "gate": "EMA .95 label-based training trace; image-only largest absolute response inference",
+  "sparse_implementation": "Compact learnable weights plus int64 indices; temporary dense scatter for GEMM",
+  "selection": "Prespecified factorial, no test-based hyperparameter selection"
+}

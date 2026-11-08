@@ -1,0 +1,60 @@
+# THE CONTROL for the dendritic continual-learning claim.
+#
+# Every dendritic result is an end-to-end gain with no mechanism behind it: beta
+# never trains, the gate is task-blind, the prototype readout shows identical
+# representation quality, the soma choice barely matters, and `sum` (no routing)
+# wins on language modelling. All consistent with a plainer story: a sum of k
+# rectified branches is a richer positive function than one rectifier, and ANY
+# equal-parameter increase in per-neuron nonlinearity might do as well.
+#
+# bdh_deep spends the SAME parameters on one hidden layer with a learned
+# projection instead of k branches with fixed pooling. Matched exactly:
+#   dendritic encoder  nh*d*(k*N)      this  nh*M*(d+N)      M = d*k*N/(d+N)
+# and the decoder is nh*N*d in both, so parameter count, neuron count and output
+# width all agree. Only the spending differs.
+#
+# All three arms run in ONE job so the comparison is within-run, and the numbers
+# are directly comparable to exp4 (same preset, tasks, strategies, seeds).
+name: exp13_depth_cl
+family: synthetic
+preset: tiny
+tasks: [copy, reverse, sort]
+models: [bdh, bdh_den_gated, bdh_den_sum, bdh_deep]
+strategies: [naive, replay]
+seeds: [0, 1, 2]
+n_eval: 100
+eval_batch_size: 32
+probe_batches: 2
+save_checkpoints: false
+plasticity_target_frac: 0.5
+
+narrow:
+  mlp_internal_dim_multiplier: 11
+
+dendritic_variants:
+  gated:
+    mlp_internal_dim_multiplier: 11
+    neuron_unit_kwargs: {n_branches: 4, soma: gated}
+  sum:
+    mlp_internal_dim_multiplier: 11
+    neuron_unit_kwargs: {n_branches: 4, soma: sum}
+
+# Same multiplier as the dendritic arms, so the same neuron count; the hidden
+# width is derived from match_branches rather than written here, so the match
+# cannot drift if the preset changes.
+deep:
+  mlp_internal_dim_multiplier: 11
+  neuron_unit_kwargs: {match_branches: 4}
+
+train:
+  block_size: 96
+  batch_size: 32
+  steps_per_task: 800
+  warmup_steps: 80
+  eval_every: 150
+  log_every: 400
+
+wandb:
+  enabled: true
+  project: bdh-cl
+  group: exp13_depth_cl

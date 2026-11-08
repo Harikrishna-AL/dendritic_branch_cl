@@ -1,0 +1,41 @@
+# Smoke test for branch-granular consolidation. Synthetic rather than MNIST
+# because the mechanism is model-level, not data-level, so this is the fastest
+# path that exercises every code path: estimate -> merge -> mask -> train.
+name: smoke_consol
+family: synthetic
+preset: tiny
+tasks: [copy, reverse, sort]
+models: [bdh_den_gated, bdh]
+strategies: [naive, naive+consol]
+seeds: [0]
+n_eval: 32
+eval_batch_size: 32
+probe_batches: 1
+save_checkpoints: false
+
+narrow:
+  mlp_internal_dim_multiplier: 11
+dendritic_variants:
+  gated:
+    mlp_internal_dim_multiplier: 11
+    neuron_unit_kwargs: {n_branches: 4, soma: gated}
+
+consolidation:
+  signal: activity
+  granularity: branch
+  lam: 10.0
+  decay: 0.9
+  cap: 0.25
+  batches: 4
+  protect_decoder: true
+
+train:
+  block_size: 96
+  batch_size: 16
+  steps_per_task: 60
+  warmup_steps: 10
+  eval_every: 30
+  log_every: 30
+
+wandb:
+  enabled: false
