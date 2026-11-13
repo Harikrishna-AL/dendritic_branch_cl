@@ -19,6 +19,14 @@ from torch.nn import functional as F
 INITIAL_ERROR = math.log(10)  # cross-entropy of a uniform 10-class guess
 
 
+def patch_indices(n_branches: int, gen: torch.Generator, side: int = 28, patch: int = 14) -> torch.Tensor:
+    """One compact patch x patch window of a side x side image per branch (random position),
+    as flat pixel indices. Same input count as a 196-pixel random subset when patch = 14."""
+    r = torch.randint(0, side - patch + 1, (n_branches, 2), generator=gen)
+    rows = r[:, :1, None] + torch.arange(patch)[None, :, None]; cols = r[:, 1:, None] + torch.arange(patch)[None, None, :]
+    return (rows * side + cols).reshape(n_branches, -1)
+
+
 class SparseBranchLayer(nn.Module):
     """n neurons x B branches; each branch reads k fixed random inputs out of d_in."""
 
@@ -32,6 +40,7 @@ class SparseBranchLayer(nn.Module):
         self.register_buffer('indices', torch.stack([torch.randperm(d_in, generator=gen)[:k] for _ in range(n * B)]))
         self.register_buffer('error', torch.full((n, B), INITIAL_ERROR))
         self.override = None  # set by a GateRule to replace error-trace selection (ablations only)
+        self.k_frac = None    # global k-winners-take-all over the layer's branches (APL-style; experiment only)
 
     @property
     def n_units(self) -> int:
@@ -50,7 +59,18 @@ class SparseBranchLayer(nn.Module):
         if mode == 'soft': w = raw.abs().softmax(-1)
         elif mode == 'route': w = F.one_hot(route, self.B).float()
         else: w = F.one_hot(self.selected(), self.B).float()
+        if self.k_frac:  # only the layer's top k_frac branches by |response| may be active, per input
+            w = (w > 0).float() * self.active_mask(raw) if mode != 'soft' else self.active_mask(raw)
         return (z * w).sum(-1), z
+
+    @torch.no_grad()
+    def active_mask(self, raw: torch.Tensor) -> torch.Tensor:
+        """APL-style global inhibition: 1 for the k_frac most strongly driven branches of the
+        whole layer (all neurons together), 0 elsewhere. In 'soft' mode a neuron outputs the
+        sum of its active branches (0 if none); in 'trace'/'route' mode its routed branch only
+        if that branch is active, so a branch drives its neuron, and learns, only when active."""
+        a = raw.abs().flatten(1); k = max(1, round(self.k_frac * a.shape[1]))
+        return (a >= a.topk(k, 1).values[:, -1:]).float().view_as(raw)
 
 
 class ConvBranchLayer(nn.Module):

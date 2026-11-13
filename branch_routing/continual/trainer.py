@@ -26,6 +26,8 @@ class TrainConfig:
     batch_size: int = 128
     clip: float = 5.
     trace_decay: float = .95
+    gate_weight: float = 0.     # weight of BranchNetwork.gate_loss (0 = off, the main results)
+    gate_mode: str = 'full'
     shuffle_seed_scale: int = 100000  # batch order seed = seed * scale + stage * 100 + epoch
 
 
@@ -67,7 +69,7 @@ class ContinualTrainer:
     def train_step(self, x, y):
         m = self.model; self.opt.zero_grad(set_to_none=True)
         if self.gate_rule: self.gate_rule.before_step(m, x)
-        if self.branch: loss, feedback = m.substitution_loss(x, y)
+        if self.branch: loss, feedback = m.substitution_loss(x, y, self.cfg.gate_weight, self.cfg.gate_mode)
         else: loss = F.cross_entropy(m(x), y)
         loss.backward(); nn.utils.clip_grad_norm_(m.parameters(), self.cfg.clip)
         if self.meta: self.meta.before_step()

@@ -1,6 +1,6 @@
 # Dendritic branch routing for continual learning
 
-Harikrishna · status as of 7 November 2026 · exploratory research code
+Harikrishna · status as of 13 November 2026 · exploratory research code
 
 ## Objective
 
@@ -174,6 +174,63 @@ Branch memory minus class-frequency memory: +4.2 [+3.6, +4.8] on blocks of 200, 
 
 **What this shows:** when the context persists, a label-free branch memory adds 9 points over no memory and 4 points over a memory that doesn't use branches. When inputs are mixed it costs nothing.
 
+### 4. Why image-only accuracy is low: diagnostics (MNIST)
+
+These experiments ask where the gap between image-only accuracy (69.6%) and true-route accuracy (98.5%) comes from, and whether simple fixes close it. All are on Split MNIST, so they are exploratory (see the note on the MNIST test set below).
+
+**Depth makes image-only accuracy worse because routing errors pile up, not because the training signal fails to reach early layers** (`results/depth/summary.md`).
+- With the true route, accuracy stays high at every depth: 98.5 / 98.0 / 94.5% at 1 / 2 / 3 layers. With soft mixing it falls: 69.6 / 50.0 / 40.3%.
+- The training signal is similar in every layer (mean |dCE/dh| 0.0047–0.0048 per layer in the 3-layer network).
+- In a 2-layer network, giving the true route to either layer alone recovers 92–97%; soft mixing in both layers gives 50%.
+- Giving the last layer another task's route collapses all-10 accuracy (11–16%), while doing so for earlier layers costs little (87–88%). The last layer's route decides the task.
+- Sharper soft mixing (a temperature) and picking one whole stored route do not help.
+
+**Branch representations are compressible.** Trained branch layers become far more compressible than at initialisation (a 2-unit autoencoder leaves 13% of the variance unexplained, against 66% untrained), and more than an ordinary network at 1 layer (32%). The task information is there; the soft mixture does not use it (`results/depth/compressibility.md`).
+
+**Training the gate directly fails** (`results/gate_loss/`).
+- *Gate loss:* a cross-entropy pushing softmax(|response|) towards the branch that is learning. Every weight tested lowers image-only accuracy (λ = 1: 20.7%), even though route mass (the soft weight on the true route's branch, chance 25%) rises from 31.6 to at most 41%.
+  - The reason is recency bias. With no old images there are no negatives, so the newest task's branches become loud on every digit.
+- *Calibration:* dividing each route's strength by its value at the end of its own task (the analogue of BiC / weight aligning) gives 51.6%, below soft mixing. Old routes' strength erodes as later tasks are trained.
+- *Upper bound, not legal:* the same gate loss with replayed old images as negatives reaches 80.4% at 1 layer (old-image weight 10), 74.7% at 2 and 71.1% at 3 layers. So even a perfectly informed gate of this form leaves about 18 points.
+
+**Global inhibition and local inputs do not help** (`results/kwta/`, `results/patch/`).
+- APL-style k-winners-take-all over a layer's branches (as in the fly mushroom body): at test only, at most 65.0%; trained with it, 39–58% at 1 layer and 11.0% at 3 layers. Active branches are enriched for the true route (1.25–2.6× chance), but not enough.
+- Each first-layer branch reading one 14×14 patch instead of 196 random pixels: +0.5 [−3.9, +4.8] points at 1 layer, +9.9 [+0.7, +19.1] at 2 layers, −1.0 [−7.1, +5.1] at 3 layers.
+
+**Where the missing accuracy is** (`results/gap_anatomy.md`).
+- Almost all errors are picking the wrong task. When the task is right, the class is right 99.4% of the time (1 layer).
+- The errors are between look-alike digits from tasks never trained together: 9→4, 0→5, 8→5, 4→9, 7→9.
+- A linear probe trained on all tasks jointly (not legal) reaches about 92% on the network's representation, close to 91.1% on raw pixels. So separating look-alike digits from different tasks is limited by the input features, not only by the gating.
+
+### 5. On frozen pretrained features (ImageNet ResNet-18)
+
+If look-alike inputs are the problem, better features should help. Here the branch network (1 layer, 168 neurons × 4 branches, each branch reading 128 of the 512 features) is trained on frozen ImageNet ResNet-18 features, with the same continual protocol. It is compared with two standard no-replay methods for pretrained features:
+- **SimpleCIL:** nearest cosine class mean.
+- **RanPAC:** a random ReLU projection followed by ridge regression from running sums. This equals joint training of the ridge readout, so it does not forget by construction. Our version has no first-session backbone adaptation.
+
+RanPAC stores no images, but it does keep statistics of all past data (the sums G = Σhhᵀ and C = Σhyᵀ), so it is also compared at matched storage.
+
+| Method | Numbers stored | MNIST | CIFAR-10 |
+|---|---:|---:|---:|
+| Branch network on raw pixels (sections 1–2) | | 69.6 ± 0.4 | 18.7 ± 0.8 |
+| **Branch network, soft mixing (no task info)** | 88,378 + 840 route indices | **88.6 ± 0.4** | **77.7 ± 0.5** |
+| Branch network + per-task feature key | 219,193 | 94.8 ± 0.1 | 79.8 ± 0.3 |
+| Ordinary MLP, same size | | 38.3 ± 0.2 | 32.6 ± 0.4 |
+| SimpleCIL | 5,120 | 77.1 | 70.4 |
+| RanPAC, 200-d projection | 42,000 | 92.0 ± 0.7 | 78.7 ± 0.4 |
+| RanPAC, 300-d projection (≈ branch network's storage) | 93,000 | 93.9 ± 0.3 | 81.4 ± 0.6 |
+| RanPAC, 5,000-d projection (standard) | 25,050,000 | 97.9 ± 0.0 | 88.0 ± 0.1 |
+| Ridge on raw 512-d features | 267,264 | 96.7 | 85.7 |
+| Linear probe on all tasks jointly (ceiling, not legal) | | 97.9 | 87.3 |
+
+All-10 accuracy, image only. Full tables, including the whole RanPAC size sweep and the confusions, are in `results/backbone/`.
+
+**What this shows:**
+- **Good features close most of the gap.** Image-only accuracy rises by 19 points on MNIST and 59 points on CIFAR-10. Forgetting stays near zero (0.0 and 0.3 points), and within-pair accuracy with the true route is 99.3 and 96.6%.
+- **The branch network beats SimpleCIL and an ordinary network**, by 7–12 and 45–50 points.
+- **It does not beat RanPAC.** At about the same storage, RanPAC is 5.3 points better on MNIST and 3.7 on CIFAR-10. The standard 5,000-d RanPAC is 9–10 points better.
+- **Routing itself barely improved.** Route mass is 33.6% (MNIST) and 31.7% (CIFAR-10), close to 31.6% on raw pixels. The gain comes from features on which the soft mixture's errors matter less, not from a better choice of branches.
+
 ## Novelty: what is claimed and what is not
 
 **Already known (not claimed):**
@@ -190,12 +247,14 @@ Branch memory minus class-frequency memory: +4.2 [+3.6, +4.8] on blocks of 200, 
   - For comparison, an ordinary network gets 20% and synaptic stability 51.5%.
   - Error-trace routes give much better soft mixing than task-assigned ones (69.6 vs 43.1%).
 - **A short-term branch memory helps in streams.** It is label-free, beats a matched non-branch memory when context persists, and costs nothing when inputs are mixed (section 3).
+- **On frozen pretrained features**, image-only accuracy reaches 88.6% (MNIST) and 77.7% (CIFAR-10) with near-zero forgetting (section 5). This is ahead of SimpleCIL but 4–5 points behind RanPAC at the same storage, so it is not a claim of superiority.
 
 **Not yet shown, and the next tests:**
 1. **PackNet and Supermasks** at the same size. HAT is done (section 1).
 2. **Stream memory on CIFAR-10:** accumulate the pixel-key evidence over a stream.
 3. **Fresh seeds and Fashion-MNIST.** The MNIST test set has been looked at many times during development, so the MNIST numbers are exploratory.
 4. **Why old routes survive.** The extra loss term also nudges losing branches, and it is not yet analysed why old routes still work.
+5. **Training the backbone.** Section 5 uses frozen features, where RanPAC's exact joint statistics are hard to beat. The open question is whether branch routing can adapt features continually without them drifting, and beat frozen-feature RanPAC where frozen features are weak.
 
 ## Earlier comparisons (archived, larger model)
 
@@ -226,7 +285,8 @@ Sources: `archive/reports/continual_learning_evidence_20261031/`, `archive/repor
 - Small networks (about 134k parameters on MNIST, 160k on CIFAR-10), 3 seeds, 2 epochs per task.
 - Task boundaries are known during training.
 - Image-only all-10 accuracy on CIFAR-10 is only slightly above the ordinary network (+2.3 points).
-- On MNIST, image-only accuracy falls as branch layers are added: 69.6 → 50.0 → 40.3% at 1 / 2 / 3 layers.
+- On MNIST, image-only accuracy falls as branch layers are added: 69.6 → 50.0 → 40.3% at 1 / 2 / 3 layers (section 4).
+- Sections 4 and 5 were run after looking at the MNIST test set many times; they are diagnostics, not final evaluations.
 - CPU results depend on the number of threads, so all runs use 2.
 
 ## Code layout
@@ -254,6 +314,13 @@ scripts/                        entry points (build objects, run, save JSON)
   task_keys.py                  section 2 -> results/task_keys/
   taskid_ceiling.py             section 2 ceiling -> results/taskid_ceiling/
   stream_state.py               section 3 -> results/stream_state/
+  depth_diagnostic.py           section 4, depth -> results/depth/
+  compressibility.py            section 4, compressibility -> results/depth/compressibility.md
+  route_calibration.py          section 4, calibration -> results/gate_loss/calibration*
+  gate_upper_bound.py           section 4, upper bound with replay -> results/gate_loss/upper_bound*
+  kwta_test.py                  section 4, k-winners-take-all -> results/kwta/
+  gap_anatomy.py                section 4, error anatomy -> results/gap_anatomy.md
+  backbone_test.py              section 5, frozen ResNet-18 features -> results/backbone/
 tests/                          fast interface tests (python -m pytest tests)
 data/splits/                    fixed MNIST train/validation split
 archive/                        earlier experiments and reports (see archive/README.md)
@@ -283,6 +350,24 @@ python scripts/task_keys.py --bench mnist                  # section 2
 python scripts/task_keys.py --bench cifar10
 python scripts/taskid_ceiling.py --target class
 python scripts/stream_state.py                             # section 3
+
+# section 4 (Split MNIST). Checkpoints: train.py --save-checkpoints <dir>
+python scripts/train.py --bench mnist --model branch --arch 3 --save-checkpoints results/depth/ckpt
+python scripts/depth_diagnostic.py
+python scripts/compressibility.py
+python scripts/train.py --bench mnist --model branch --gate-loss 0.1 --gate-mode full   # also --kwta 0.1, --input-layout patch
+python scripts/route_calibration.py run --depth 1 --gate-loss 0 --seed 101 --first 0
+python scripts/route_calibration.py summarize
+python scripts/gate_upper_bound.py run --depth 1 --cur 1 --old 10 --seed 101 --first 0
+python scripts/gate_upper_bound.py summarize
+python scripts/kwta_test.py
+python scripts/gap_anatomy.py
+
+# section 5 (needs torchvision ResNet-18 weights; features cached in data_cache/features/)
+python scripts/backbone_test.py extract --bench cifar10
+python scripts/backbone_test.py run --bench cifar10 --model branch --seed 201 --first 0
+python scripts/backbone_test.py baselines --bench cifar10
+python scripts/backbone_test.py summarize --bench cifar10
 ```
 
 A single run is `python scripts/train.py --bench mnist --model branch --seeds 101 --orders 0` (about 20 s).

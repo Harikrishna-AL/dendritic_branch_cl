@@ -1,6 +1,6 @@
 from .baselines import CNN, MLP, mlp_width
 from .branch_net import CNN_ARMS, BranchCNN, BranchMLP, BranchNetwork
-from .layers import ConvBranchLayer, SparseBranchLayer
+from .layers import ConvBranchLayer, SparseBranchLayer, patch_indices
 
 
 def build_model(bench: str, kind: str, seed: int, arch: str | None = None):

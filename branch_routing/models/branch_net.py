@@ -31,8 +31,8 @@ class BranchNetwork(nn.Module):
         raise NotImplementedError
 
     # ---- training rule
-    def substitution_loss(self, x: torch.Tensor, y: torch.Tensor):
-        logits, hs, zs, _ = self(x, 'trace', internals=True)
+    def substitution_loss(self, x: torch.Tensor, y: torch.Tensor, gate_weight: float = 0., gate_mode: str = 'full'):
+        logits, hs, zs, raws = self(x, 'trace', internals=True)
         ce_ex = F.cross_entropy(logits, y, reduction='none'); ce = ce_ex.mean()
         grads = torch.autograd.grad(ce, hs, retain_graph=True); aux = 0; feedback = []
         for h, z, g in zip(hs, zs, grads):
@@ -40,7 +40,40 @@ class BranchNetwork(nn.Module):
             if prod.dim() == 5: prod = prod.sum((3, 4))  # conv: sum over space
             aux = aux + prod.mean()
             with torch.no_grad(): feedback.append((ce_ex.detach()[:, None, None] + prod.detach()).mean(0))
-        return 1.5 * ce + .5 * aux / len(hs), feedback
+        loss = 1.5 * ce + .5 * aux / len(hs)
+        if gate_weight: loss = loss + gate_weight * self.gate_loss(raws, gate_mode)
+        return loss, feedback
+
+    def gate_loss(self, raws, mode: str = 'full') -> torch.Tensor:
+        """Cross-entropy of the image-only gate softmax(|response|) towards the branch that is
+        currently learning (lowest error trace), averaged over samples, neurons and layers.
+
+        It raises route mass: the share of the test-time soft mixture on the route's branch.
+        mode 'full': gradients reach every branch (selected one up, the others down).
+        mode 'up'  : only the selected branch's |response| is pushed up; the others are
+                     detached, so branches used by earlier tasks are not changed by this term."""
+        total = 0.
+        for layer, raw in zip(self.branch_layers(), raws):
+            a = raw.abs()
+            if a.dim() == 5: a = a.mean((3, 4))  # conv: same spatial average as soft mixing
+            sel = layer.selected().expand(len(a), -1)[..., None]  # (N, n, 1)
+            if mode == 'up':
+                is_sel = torch.zeros_like(a, dtype=torch.bool).scatter_(2, sel, True); a = torch.where(is_sel, a, a.detach())
+            total = total - a.log_softmax(-1).gather(2, sel).mean()
+        return total / len(raws)
+
+    @torch.no_grad()
+    def route_mass(self, x, routes, chunk: int = 500) -> list[float]:
+        """Per layer: mean soft weight on the route's branch, upstream layers mixing softly
+        (image-only inference). routes: per layer (N, n_units). 1/B = blind, 1 = soft == route."""
+        was = self.training; self.eval(); sums = [0.] * len(routes)
+        for j in range(0, len(x), chunk):
+            _, _, _, raws = self(x[j:j + chunk], 'soft', internals=True)
+            for i, (raw, r) in enumerate(zip(raws, routes)):
+                a = raw.abs()
+                if a.dim() == 5: a = a.mean((3, 4))
+                sums[i] += float(a.softmax(-1).gather(2, r[j:j + chunk, :, None]).mean(2).sum(0).mean())
+        self.train(was); return [s / len(x) for s in sums]
 
     @torch.no_grad()
     def update_traces(self, feedback, decay: float = .95):
@@ -57,9 +90,11 @@ class BranchMLP(BranchNetwork):
     """depth branch layers of 168 neurons x 4 branches, linear head.
     Layer 1: 196 random pixels per branch. Deeper layers: 42 of the previous 168 outputs."""
 
-    def __init__(self, depth: int = 1, seed: int = 0, n: int = 168, B: int = 4):
+    def __init__(self, depth: int = 1, seed: int = 0, n: int = 168, B: int = 4, d_in: int = 784):
+        """d_in: input width (784 pixels; other values, e.g. frozen backbone features, give each
+        first-layer branch d_in // 4 random inputs)."""
         super().__init__(); torch.manual_seed(seed); g = torch.Generator().manual_seed(seed)
-        self.layers = nn.ModuleList([SparseBranchLayer(784, n, B, 196, g)] + [SparseBranchLayer(n, n, B, n // 4, g) for _ in range(depth - 1)])
+        self.layers = nn.ModuleList([SparseBranchLayer(d_in, n, B, d_in // 4, g)] + [SparseBranchLayer(n, n, B, n // 4, g) for _ in range(depth - 1)])
         self.head = nn.Linear(n, 10)
 
     def branch_layers(self): return list(self.layers)

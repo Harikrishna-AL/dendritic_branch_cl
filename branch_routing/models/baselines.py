@@ -11,8 +11,8 @@ from ..data import normalize_cifar
 class MLP(nn.Module):
     is_branch = False
 
-    def __init__(self, depth: int, width: int, seed: int = 0):
-        super().__init__(); torch.manual_seed(seed); dims = [784] + [width] * depth
+    def __init__(self, depth: int, width: int, seed: int = 0, d_in: int = 784):
+        super().__init__(); torch.manual_seed(seed); dims = [d_in] + [width] * depth
         self.layers = nn.ModuleList([nn.Linear(a, b) for a, b in zip(dims, dims[1:])]); self.head = nn.Linear(width, 10)
 
     def forward(self, x, mode=None, routes=None):
